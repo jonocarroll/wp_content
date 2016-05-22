@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-22 14:54:16
+post_date: 2016-05-22 20:57:25
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -18,6 +18,7 @@ median(x)
 [/code]
 
 This line was added in `emacs` and was pulled into WP automatically via the GitHub webhook. How cool is that?
+This one was added in the WP editor and pushed to GitHub on save.
 
 <h2><a href="https://github.com/ropenscilabs/snowball" target="_blank">snowball</a></h2>
 
@@ -25,16 +26,16 @@ This line was added in `emacs` and was pulled into WP automatically via the GitH
 
 the <code>snowball</code> team
 <table width="100%">
-   <tr width="30%">
+   <tr>
       <td><a href="https://github.com/dpagendam" target="_blank">Dan Pagendam</a></td>
       <td><a href="https://github.com/jonocarroll" target="_blank">Jonathan Carroll</a></td>
       <td><a href="https://github.com/daniel-t" target="_blank">Daniel Thomas</a></td>
    </tr>
-   <tr width="30%">
+   <tr>
       <td><a href="https://github.com/zoevanhavre/" target="_blank">Zoé van Havre</a></td>
       <td><a href="https://github.com/camroach87/" target="_blank">Cameron Roach</a></td>
       <td><a href="https://github.com/felixleungsc" target="_blank">Felix Leung</a></td>
-   </tr width="30%">
+   </tr>
       <td>Suren Rathnayake</td>
       <td><a href="https://github.com/MilesMcBain" target="_blank">Miles McBain</a></td>
       <td><a href="https://github.com/mattyjkelly" target="_blank">Matt Kelly</a></td>
@@ -45,17 +46,17 @@ the <code>snowball</code> team
 <h2><a href="https://github.com/ropenscilabs/leafier" target="_blank">leafier</a></h2>
 the <code>leafier</code> team:
 <table width="100%">
-   <tr width="30%">
+   <tr>
       <td><a href="https://github.com/paleo13" target="_blank">Jeffrey Hanson</a></td>
       <td><a href="https://github.com/michaelcheng429" target="_blank">Michael Cheng</a></td>
       <td><a href="https://github.com/CourtneyCampany" target="_blank">Courtney Campany</a></td>
    </tr>
-   <tr width="30%">
+   <tr>
       <td><a href="https://github.com/mattwatts" target="_blank">Matt Watts</a></td>
       <td>Amy Cook</td>
       <td>Sam Rathmanner</td>
    </tr>
-   <tr width="30%">
+   <tr>
       <td>Ruth Luscombe</td>
       <td></td>
       <td></td>
