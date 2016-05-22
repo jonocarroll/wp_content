@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-22 13:37:46
+post_date: 2016-05-22 14:43:23
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -18,6 +18,7 @@ mean(x)
 <h2><a href="https://github.com/ropenscilabs/snowball" target="_blank">snowball</a></h2>
 
 <a href="http://jcarroll.com.au/wp-content/uploads/2016/05/CHsnowballs.gif"><img src="http://jcarroll.com.au/wp-content/uploads/2016/05/CHsnowballs-300x173.gif" alt="CHsnowballs" width="300" height="173" class="alignnone size-medium wp-image-845" /></a>
+
 the <code>snowball</code> team
 <table width="100%">
    <tr width="30%">
@@ -113,3 +114,6 @@ the <code>uncertVis</code> team
 
 <h2>Final Thoughts</h2>
 conf was awesome!
+
+
+<?php>get_the_github_view_link</php>
