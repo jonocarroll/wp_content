@@ -17,6 +17,8 @@ sum(x)
 median(x)
 [/code]
 
+This line was added in `emacs` and was pulled into WP automatically via the GitHub webhook. How cool is that?
+
 <h2><a href="https://github.com/ropenscilabs/snowball" target="_blank">snowball</a></h2>
 
 <a href="http://jcarroll.com.au/wp-content/uploads/2016/05/CHsnowballs.gif"><img src="http://jcarroll.com.au/wp-content/uploads/2016/05/CHsnowballs-300x173.gif" alt="CHsnowballs" width="300" height="173" class="alignnone size-medium wp-image-845" /></a>
