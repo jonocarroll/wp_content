@@ -13,6 +13,8 @@ published: false
 [code light="1" language="r"]
 x &lt;- c(1,2,3)
 mean(x)
+sum(x)
+median(x)
 [/code]
 
 <h2><a href="https://github.com/ropenscilabs/snowball" target="_blank">snowball</a></h2>
