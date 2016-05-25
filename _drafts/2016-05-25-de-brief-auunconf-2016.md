@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-25 22:55:51
+post_date: 2016-05-25 22:56:53
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -209,11 +209,6 @@ the <code>uncertVis</code> team
 <h2>Final Thoughts</h2>
 conf was awesome!
 
-
-[get_the_github_view_link]
-
-And another link:
-
-[wpghs type="url" text="Here's the post on GitHub"]
+[wpghs text="Here's the post on GitHub. Feel free to submit a pull request if you find an error."]
 
 That link should work.
