@@ -2,13 +2,12 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-22 20:57:25
+post_date: 2016-05-25 22:49:12
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
 published: false
 ---
-
 ###IMAGE OF ROPENSCI LOGO###
 
 <h1>The #auunconf</h1> 
@@ -212,3 +211,5 @@ conf was awesome!
 
 
 [get_the_github_view_link]
+
+[wpghs]
