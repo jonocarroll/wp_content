@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 15:13:26
+post_date: 2016-05-26 15:16:58
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -75,7 +75,7 @@ keep track of which machines you have running.
 
 [caption id="attachment_905" align="aligncenter" width="680"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/05/IMG_2870-e1464241125860.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/05/IMG_2870-e1464241125860-1024x768.jpg" alt="There weren&#039;t enough screens, so we added one more." width="680" height="510" class="size-large wp-image-905" /></a> There weren't enough screens, so we added one more.[/caption]
 
-
+[caption id="attachment_906" align="aligncenter" width="680"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/05/IMG_2871-e1464241279872.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/05/IMG_2871-e1464241279872-768x1024.jpg" alt="Microsoft said that Windows was perfect for coding. We may have misinterpreted that." width="680" height="907" class="size-large wp-image-906" /></a> Microsoft said that Windows was perfect for coding. We may have misinterpreted that.[/caption]
 
 Cue plentiful coffee, commits, and consults. The time went by disturbingly fast,
 but by the end of the day we had the beginnings of a working product. People
