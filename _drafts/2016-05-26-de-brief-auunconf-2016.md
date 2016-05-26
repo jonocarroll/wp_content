@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 15:03:25
+post_date: 2016-05-26 15:05:25
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -42,7 +42,7 @@ discussions that were had under the stars in the amazingly beautiful Brisbane
 Southbank Parklands, but that steak was utterly, mouthwateringly delicious. I
 digress.
 
-###IMAGE OF LANTERN WALKWAY###
+
 
 (steak: not pictured; devoured before one could be taken)
 
