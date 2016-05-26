@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 14:58:08
+post_date: 2016-05-26 15:00:22
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -206,12 +206,13 @@ the <code>uncertVis</code> team
 
 <h2>Participant's Thoughts</h2>
 
-I ran a short survey of the participants/organisers and have compiled the results using the very neat <code>likert</code> package. T
+I ran a short informal survey of the participants/organisers and have compiled the results using the very neat <code>likert</code> package.
+
+[caption id="attachment_901" align="aligncenter" width="900"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/05/likert.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/05/likert.png" alt="likert plot of #auunconf informal survey" width="900" height="1200" class="size-full wp-image-901" /></a> likert plot of #auunconf informal survey[/caption]
 
 The script to generate this can be found here.
 
 [gist id="2c84d9115478df2518f30507e482b909"]
-
 
 <h2>My Final Thoughts</h2>
 #auunconf was awesome!
