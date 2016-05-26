@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 15:05:25
+post_date: 2016-05-26 15:08:25
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -42,7 +42,7 @@ discussions that were had under the stars in the amazingly beautiful Brisbane
 Southbank Parklands, but that steak was utterly, mouthwateringly delicious. I
 digress.
 
-
+[caption id="attachment_904" align="aligncenter" width="680"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/05/IMG_2851.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/05/IMG_2851-1024x902.jpg" alt="A beautiful walk along the Brisbane Southside." width="680" height="599" class="size-large wp-image-904" /></a> A beautiful walk along the Brisbane Southside.[/caption]
 
 (steak: not pictured; devoured before one could be taken)
 
@@ -73,7 +73,7 @@ tell it anything, start the analysis, write out the results, or handle failures;
 and (c) you want to do it for parallel or multiple jobs, and as such need to
 keep track of which machines you have running. 
 
-###IMAGE OF COW PRESENTING###
+
 
 ###IMAGE OF MAP ON WINDOW###
 
