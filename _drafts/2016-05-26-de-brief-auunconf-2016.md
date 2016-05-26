@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 13:52:59
+post_date: 2016-05-26 14:39:23
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -204,33 +204,9 @@ the <code>uncertVis</code> team
    </tr>
 </table>
 
-
+<h2>Par
 
 <h2>Final Thoughts</h2>
-conf was awesome!
+#auunconf was awesome!
 
-1. [wpghs]
-
-.
-
-2. [wpghs target="view" text="This links to the view"]
-
-.
-
-3. [wpghs target="view"]
-
-.
-
-4. [wpghs target="edit" text="This links to the edit"]
-
-.
-
-5. [wpghs type="url"]
-
-. 
-
-6. [wpghs target="edit" type="url"]
-
-.
-
-That link should work.
+[wpghs]
