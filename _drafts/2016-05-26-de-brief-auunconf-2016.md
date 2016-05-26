@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 14:52:57
+post_date: 2016-05-26 14:55:55
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -210,6 +210,7 @@ I ran a short survey of the participants/organisers and have compiled the result
 
 The script to generate this can be found here.
 
+[gist https://gist.github.com/jonocarroll/2c84d9115478df2518f30507e482b909 /]
 
 
 <h2>My Final Thoughts</h2>
