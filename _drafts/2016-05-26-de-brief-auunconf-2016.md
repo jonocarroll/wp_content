@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 14:41:51
+post_date: 2016-05-26 14:49:55
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -206,7 +206,7 @@ the <code>uncertVis</code> team
 
 <h2>Participant's Thoughts</h2>
 
-I ran a short survey of the participants/organisers and 
+I ran a short survey of the participants/organisers and have compiled the results using the very neat <code>likert</code> package. The script to ge
 
 <h2>My Final Thoughts</h2>
 #auunconf was awesome!
