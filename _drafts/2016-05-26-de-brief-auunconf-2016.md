@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 13:50:09
+post_date: 2016-05-26 13:50:20
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -217,7 +217,7 @@ conf was awesome!
 
 .
 
-[wpghs target="view" text="This links to the view"]
+[wpghs target="view"]
 
 .
 
