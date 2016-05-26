@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 13:34:37
+post_date: 2016-05-26 13:34:51
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -221,6 +221,6 @@ conf was awesome!
 
 .
 
-[wpghs text="Here's the post on GitHub. Feel free to submit a pull request if you find an error."]
+[wpghs type="url"]
 
 That link should work.
