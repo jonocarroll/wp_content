@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 14:39:23
+post_date: 2016-05-26 14:41:51
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -204,9 +204,11 @@ the <code>uncertVis</code> team
    </tr>
 </table>
 
-<h2>Par
+<h2>Participant's Thoughts</h2>
 
-<h2>Final Thoughts</h2>
+I ran a short survey of the participants/organisers and 
+
+<h2>My Final Thoughts</h2>
 #auunconf was awesome!
 
 [wpghs]
