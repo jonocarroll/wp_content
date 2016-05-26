@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 13:34:51
+post_date: 2016-05-26 13:50:09
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -210,6 +210,10 @@ the <code>uncertVis</code> team
 conf was awesome!
 
 [wpghs]
+
+.
+
+[wpghs target="view" text="This links to the view"]
 
 .
 
