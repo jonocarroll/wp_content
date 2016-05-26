@@ -2,7 +2,7 @@
 ID: 835
 post_title: 'De-brief: #auunconf 2016'
 author: Jonathan Carroll
-post_date: 2016-05-26 15:08:25
+post_date: 2016-05-26 15:12:03
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=835
@@ -73,9 +73,9 @@ tell it anything, start the analysis, write out the results, or handle failures;
 and (c) you want to do it for parallel or multiple jobs, and as such need to
 keep track of which machines you have running. 
 
+[caption id="attachment_905" align="aligncenter" width="680"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/05/IMG_2870-e1464241125860.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/05/IMG_2870-e1464241125860-1024x768.jpg" alt="There weren&#039;t enough screens, so we added one more." width="680" height="510" class="size-large wp-image-905" /></a> There weren't enough screens, so we added one more.[/caption]
 
 
-###IMAGE OF MAP ON WINDOW###
 
 Cue plentiful coffee, commits, and consults. The time went by disturbingly fast,
 but by the end of the day we had the beginnings of a working product. People
