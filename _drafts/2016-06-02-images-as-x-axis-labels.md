@@ -2,7 +2,7 @@
 ID: 938
 post_title: Images as x-axis labels
 author: Jonathan Carroll
-post_date: 2016-06-02 22:37:03
+post_date: 2016-06-02 22:38:18
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=938
@@ -24,10 +24,11 @@ I decided that I perhaps had enough ammunition to hack something together myself
 
 The way to go about making your own is as follows;
 
- 1. Stop and carefully re-evaluate the choices that you've made to bring you to this decision. Are you sure? Okay...
- 2. Save the images (in the correct factor order) into a list (e.g. <code>pics</code>).
- 3. Build your bar graph with categorical x-axis as per normal, using <code>theme()</code> to remove the labels. Save as an object (e.g. <code>g</code>).
- 4. Source the function <a href="https://gist.github.com/jonocarroll/1d1bdb00a7b3910d62bf3eec8a77b4a7" target="_blank">from this gist</a> (at your own risk... copy and paste if you prefer): 
+<ol>
+ <li> Stop and carefully re-evaluate the choices that you've made to bring you to this decision. Are you sure? Okay...</li>
+ <li> Save the images (in the correct factor order) into a list (e.g. <code>pics</code>).
+ <li> Build your bar graph with categorical x-axis as per normal, using <code>theme()</code> to remove the labels. Save as an object (e.g. <code>g</code>).
+ <li> Source the function <a href="https://gist.github.com/jonocarroll/1d1bdb00a7b3910d62bf3eec8a77b4a7" target="_blank">from this gist</a> (at your own risk... copy and paste if you prefer): 
 
 [code language="r" light="1"]
 devtools::source_gist(&quot;1d1bdb00a7b3910d62bf3eec8a77b4a7&quot;)
