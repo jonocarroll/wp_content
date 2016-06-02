@@ -2,7 +2,7 @@
 ID: 952
 post_title: Images as x-axis labels (updated)
 author: Jonathan Carroll
-post_date: 2016-06-03 08:09:03
+post_date: 2016-06-03 08:09:20
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=952
@@ -30,4 +30,4 @@ This method
 
 I'd like to see this make it into <code>ggplot2</code>; Baptiste had an <a href="https://github.com/hadley/ggplot2/issues/1240" target="_blank">open GitHub issue</a> involving it a while ago but it has since been closed, presumably without the feature being incorporated.
 
-I started the previous post by saying how awesome open-source software is (e.g. <code>R</code>). You know what else is awesome? This
+I started the previous post by saying how awesome open-source software is (e.g. <code>R</code>). You know what else is awesome? The #rstats community. Thank you to every one of you.
