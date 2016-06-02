@@ -2,7 +2,7 @@
 ID: 938
 post_title: Images as x-axis labels
 author: Jonathan Carroll
-post_date: 2016-06-02 22:07:44
+post_date: 2016-06-02 22:08:58
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=938
@@ -44,5 +44,9 @@ add_images_as_xlabels(g, pics)
 [/code]
 
  6. Your image will be re-drawn with your pictures labelling the categories.
+
+Here's an example of the code used to generate the GDP per capita image, featuring some fairly brief (for what it does) <code>rvest</code> scraping.
+
+[gist id=""]
 
 I've no doubt that there must be a better way to do this, but it's beyond my understanding of how <code>ggproto</code> works, and I can't seem to bypass <code>element_text</code>'s requirements with what I do know. If you would like to help develop this into something more robust then I'm most interested. Given that it's a single function I wasn't going to create a package just for this, but I'm most happy to help incorporate it into someone's existing package. Hit the comments!
