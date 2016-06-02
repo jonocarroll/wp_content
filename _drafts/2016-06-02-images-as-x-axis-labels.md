@@ -2,13 +2,13 @@
 ID: 938
 post_title: Images as x-axis labels
 author: Jonathan Carroll
-post_date: 2016-06-02 22:11:26
+post_date: 2016-06-02 22:12:42
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=938
 published: false
 ---
-Open-source software is awesome. If I found that a piece of closed-source software was missing a feature that I wanted, well, bad luck. I probably couldn't even tell if was actually missing or if I just didn't know about it. When the source is available, maintained, and documented however, things get fun.
+Open-source software is awesome. If I found that a piece of closed-source software was missing a feature that I wanted, well, bad luck. I probably couldn't even tell if was actually missing or if I just didn't know about it. When the source is available, maintained, and documented however, things get fun. We can identify, and perhaps fill gaps.
 
 <!--more-->
 
