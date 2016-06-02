@@ -2,7 +2,7 @@
 ID: 952
 post_title: Images as x-axis labels (updated)
 author: Jonathan Carroll
-post_date: 2016-06-03 08:12:29
+post_date: 2016-06-03 08:13:16
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=952
@@ -18,12 +18,12 @@ Baptiste Auguié (<a href="https://twitter.com/tpab" target="_blank">@tpab</a> /
 
 [gist id="2f9490f1f5e7c82ef8b791a4b91fc9ca"]
 
-This method gets around the <code>element_text()</code> validation in a way that's above my pay grade/understanding of <code>ggplot2</code> internals, and is a much more 
+This method gets around the <code>element_text()</code> validation and updates the grobs in a way that's above my pay grade/understanding of <code>ggplot2</code> internals, and is a much more consistent way to go about it. This also"
 <ul>
-	<li> Places the factor labels on the graph along with the picture, covering some concerns about people not knowing which maps are for which country,</li>
-	<li> Leaves room for the <code>caption</code> to go back in, which I wanted,</li>
-	<li> Automatically scales the grob better,</li>
-	<li> Doesn't involve creating an external <code>grob</code> and thus turning off clipping; using <code>axis.text.x</code> is exactly what I was hoping for.</li>
+	<li> places the factor labels on the graph along with the picture, covering some concerns about people not knowing which maps are for which country,</li>
+	<li> leaves room for the <code>caption</code> to go back in, which I wanted,</li>
+	<li> automatically scales the grob better,</li>
+	<li> doesn't involve creating an external <code>grob</code> and thus turning off clipping; using <code>axis.text.x</code> is exactly what I was hoping for.</li>
 </ul>
 
 [caption id="attachment_953" align="alignnone" width="680"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/06/GDP_updated.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/06/GDP_updated-1024x640.png" alt="Updated version using @baptiste&#039;s method; much better." width="680" height="425" class="size-large wp-image-953" /></a> Updated version using @baptiste's method; much better.[/caption]
