@@ -2,7 +2,7 @@
 ID: 938
 post_title: Images as x-axis labels
 author: Jonathan Carroll
-post_date: 2016-06-02 22:00:00
+post_date: 2016-06-02 22:02:00
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=938
@@ -24,4 +24,8 @@ The way to go about making your own is as follows;
 
  1. Stop and carefully re-evaluate the choices that you've made to bring you to this decision. Are you sure? Okay...
  2. Build your bar graph with categorical x-axis as per normal, using <code>theme()</code> to remove the labels.
- 3. Source this function (at your own risk... copy and paste if you prefer):
+ 3. Source the function from this gist (at your own risk... copy and paste if you prefer): 
+
+[code language="r" light="1"]
+devtools::source_gist(&quot;1d1bdb00a7b3910d62bf3eec8a77b4a7&quot;)
+[/code]
