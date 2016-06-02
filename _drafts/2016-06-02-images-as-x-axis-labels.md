@@ -2,7 +2,7 @@
 ID: 938
 post_title: Images as x-axis labels
 author: Jonathan Carroll
-post_date: 2016-06-02 22:35:37
+post_date: 2016-06-02 22:36:51
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=938
@@ -47,7 +47,7 @@ add_images_as_xlabels(g, pics)
 
  6. Your image will be re-drawn with your pictures labelling the categories.
 
-Here's an example of the code used to generate the GDP per capita image, featuring some fairly brief (for what it does) <code>rvest</code> scraping.
+Here's an example of the code used to generate the GDP per capita image, featuring some fairly brief (for what it does) <code>rvest</code> scraping (to reiterate; I don't want to have to do any of this by hand, so let's code it up).
 
 [gist id="96d1dd879b535c3c7ffe8f74065d4bc4"]
 
