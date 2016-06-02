@@ -2,7 +2,7 @@
 ID: 938
 post_title: Images as x-axis labels
 author: Jonathan Carroll
-post_date: 2016-06-02 22:27:18
+post_date: 2016-06-02 22:29:17
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=938
@@ -57,4 +57,4 @@ At least a few caveats surround what I did manage to get working, including but 
  - Similarly, I've just expanded the plot range of the original graph by a seemingly okay amount which has worked for the few examples I've tried.
  - Using a graph like this places the onus of domain knowledge onto the reader; if you don't know what those flags refer to then this graph is less useful than one with the countries labelled with words. Prettier though.
 
-I've no doubt that there must be a better way to do this, but it's beyond my understanding of how <code>ggproto</code> works, and I can't seem to bypass <code>element_text</code>'s requirements with what I do know. If you would like to help develop this into something more robust then I'm most interested. Given that it's a single function I wasn't going to create a package just for this, but I'm willing to help incorporate it into someone's existing package. Hit the comments!
+I've no doubt that there must be a better way to do this, but it's beyond my understanding of how <code>ggproto</code> works, and I can't seem to bypass <code>element_text</code>'s requirements with what I do know. If you would like to help develop this into something more robust then I'm most interested. Given that it's a single function I wasn't going to create a package just for this, but I'm willing to help incorporate it into someone's existing package. Hit the comments or ping me on Twitter (<a href="https://twitter.com/carroll_jono" target="_blank">@carroll_jono</a>)!
