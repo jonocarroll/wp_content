@@ -2,7 +2,7 @@
 ID: 938
 post_title: Images as x-axis labels
 author: Jonathan Carroll
-post_date: 2016-06-02 22:40:25
+post_date: 2016-06-02 22:41:29
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=938
@@ -23,7 +23,6 @@ I decided that I perhaps had enough ammunition to hack something together myself
 [caption id="attachment_939" align="alignnone" width="680"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/06/GDP.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/06/GDP-1024x731.png" alt="GDP per capita with flags for x-axis labels. This is harder to make than it seemed." width="680" height="485" class="size-large wp-image-939" /></a> GDP per capita with flags for x-axis labels. This was harder to make than it seemed, but I've since added a little more flexibility to it.[/caption]
 
 The way to go about making your own is as follows;
-
 <ol>
  <li> Stop and carefully re-evaluate the choices that you've made to bring you to this decision. Are you sure? Okay...</li>
  <li> Save the images (in the correct factor order) into a list (e.g. <code>pics</code>).</li>
@@ -48,13 +47,11 @@ add_images_as_xlabels(g, pics)
 
  <li> Your image will be re-drawn with your pictures labelling the categories.</li>
 </ol>
-
 Here's an example of the code used to generate the GDP per capita image, featuring some fairly brief (for what it does) <code>rvest</code> scraping (to reiterate; I don't want to have to do any of this by hand, so let's code it up!).
 
 [gist id="96d1dd879b535c3c7ffe8f74065d4bc4"]
 
 At least a few caveats surround what I did manage to get working, including but not limited to:
- 
 <ul>
  <li> I'm not sure how to put the x-axis title back in at the right position without padding it with a lot of linebreaks (<code>"\n\n\n\nX-AXIS TITLE"</code>).</li>
  <li> I'm not sure how to move the <code>caption</code> line from <code>labs()</code> (assuming you're using the development version of <code>ggplot2</code> on GitHub with @hrbrmstr's excellent annotation additions) so it potentially gets drawn over.</li>
@@ -62,5 +59,4 @@ At least a few caveats surround what I did manage to get working, including but 
  <li> Similarly, I've just expanded the plot range of the original graph by a seemingly okay amount which has worked for the few examples I've tried.</li>
  <li> Using a graph like this places the onus of domain knowledge onto the reader; if you don't know what those flags refer to then this graph is less useful than one with the countries labelled with words. Prettier though.</li>
 </ul>
-
 I've no doubt that there must be a better way to do this, but it's beyond my understanding of how <code>ggproto</code> works, and I can't seem to bypass <code>element_text</code>'s requirements with what I do know. If you would like to help develop this into something more robust then I'm most interested. Given that it's a single function I wasn't going to create a package just for this, but I'm willing to help incorporate it into someone's existing package. Hit the comments or ping me on Twitter (<a href="https://twitter.com/carroll_jono" target="_blank">@carroll_jono</a>)!
