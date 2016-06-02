@@ -2,13 +2,13 @@
 ID: 952
 post_title: Images as x-axis labels (updated)
 author: Jonathan Carroll
-post_date: 2016-06-03 08:03:52
+post_date: 2016-06-03 08:05:25
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=952
 published: false
 ---
-They say "if you want to find an answer on the internet, first present a wrong one presented as fact. Then wait."
+They say "if you want to find an answer on the internet, just present a wrong one as fact. Then wait."
 
 <!--more-->
 
@@ -28,4 +28,4 @@ This method
 
 [caption id="attachment_953" align="alignnone" width="680"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/06/GDP_updated.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/06/GDP_updated-1024x640.png" alt="Updated version using @baptiste&#039;s method; much better." width="680" height="425" class="size-large wp-image-953" /></a> Updated version using @baptiste's method; much better.[/caption]
 
-I'd like to see this make it into <code>ggplot2</code>
+I'd like to see this make it into <code>ggplot2</code>; Baptiste had an <a href="https://github.com/hadley/ggplot2/issues/1240" target="_blank">open GitHub issue</a> involving it a while ago but it has since been closed, presumably without the feature being incorporated.
