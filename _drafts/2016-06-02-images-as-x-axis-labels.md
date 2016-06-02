@@ -2,7 +2,7 @@
 ID: 938
 post_title: Images as x-axis labels
 author: Jonathan Carroll
-post_date: 2016-06-02 22:23:49
+post_date: 2016-06-02 22:27:18
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=938
@@ -53,8 +53,8 @@ At least a few caveats surround what I did manage to get working, including but 
  
  - I'm not sure how to put the x-axis title back in at the right position without padding it with a lot of linebreaks (<code>"\n\n\n\nX-AXIS TITLE"</code>).
  - I'm not sure how to move the <code>caption</code> line from <code>labs()</code> (assuming you're using the development version of <code>ggplot2</code> on GitHub with @hrbrmstr's excellent annotation additions) so it potentially gets drawn over.
- - The spacing below the graph is currently arbitrarily set to a few lines more than necessary, but it's a compromise in having an arbitrary number of image loaded at their correct sizes.
+ - The spacing below the graph is currently arbitrarily set to a few lines more than necessary, but it's a compromise in having an arbitrary number of images loaded at their correct sizes.
  - Similarly, I've just expanded the plot range of the original graph by a seemingly okay amount which has worked for the few examples I've tried.
  - Using a graph like this places the onus of domain knowledge onto the reader; if you don't know what those flags refer to then this graph is less useful than one with the countries labelled with words. Prettier though.
 
-I've no doubt that there must be a better way to do this, but it's beyond my understanding of how <code>ggproto</code> works, and I can't seem to bypass <code>element_text</code>'s requirements with what I do know. If you would like to help develop this into something more robust then I'm most interested. Given that it's a single function I wasn't going to create a package just for this, but I'm most happy to help incorporate it into someone's existing package. Hit the comments!
+I've no doubt that there must be a better way to do this, but it's beyond my understanding of how <code>ggproto</code> works, and I can't seem to bypass <code>element_text</code>'s requirements with what I do know. If you would like to help develop this into something more robust then I'm most interested. Given that it's a single function I wasn't going to create a package just for this, but I'm willing to help incorporate it into someone's existing package. Hit the comments!
