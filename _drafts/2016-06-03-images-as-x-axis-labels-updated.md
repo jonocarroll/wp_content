@@ -2,7 +2,7 @@
 ID: 952
 post_title: Images as x-axis labels (updated)
 author: Jonathan Carroll
-post_date: 2016-06-03 08:00:51
+post_date: 2016-06-03 08:01:34
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=952
