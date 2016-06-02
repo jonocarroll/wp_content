@@ -2,7 +2,7 @@
 ID: 952
 post_title: Images as x-axis labels (updated)
 author: Jonathan Carroll
-post_date: 2016-06-03 08:14:09
+post_date: 2016-06-03 08:15:25
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=952
@@ -28,6 +28,6 @@ This method gets around the <code>element_text()</code> validation and updates t
 
 [caption id="attachment_953" align="alignnone" width="680"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/06/GDP_updated.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/06/GDP_updated-1024x640.png" alt="Updated version using @baptiste&#039;s method; much better." width="680" height="425" class="size-large wp-image-953" /></a> Updated version using @baptiste's method; much better.[/caption]
 
-I'd like to see this make it into <code>ggplot2</code>; Baptiste had an <a href="https://github.com/hadley/ggplot2/issues/1240" target="_blank">open GitHub issue</a> involving it a while ago but it has since been closed, presumably without the feature being incorporated.
+My version worked (sort of) but only because it used options that I'd like to see this make it into <code>ggplot2</code>; Baptiste had an <a href="https://github.com/hadley/ggplot2/issues/1240" target="_blank">open GitHub issue</a> involving it a while ago but it has since been closed, presumably without the feature being incorporated.
 
 I started the previous post by saying how awesome open-source software is (e.g. <code>R</code>). You know what else is awesome? The #rstats community. Thank you to every one of you.
