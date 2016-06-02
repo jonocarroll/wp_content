@@ -2,7 +2,7 @@
 ID: 952
 post_title: Images as x-axis labels (updated)
 author: Jonathan Carroll
-post_date: 2016-06-03 08:13:16
+post_date: 2016-06-03 08:14:09
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=952
@@ -18,7 +18,7 @@ Baptiste Auguié (<a href="https://twitter.com/tpab" target="_blank">@tpab</a> /
 
 [gist id="2f9490f1f5e7c82ef8b791a4b91fc9ca"]
 
-This method gets around the <code>element_text()</code> validation and updates the grobs in a way that's above my pay grade/understanding of <code>ggplot2</code> internals, and is a much more consistent way to go about it. This also"
+This method gets around the <code>element_text()</code> validation and updates the grobs in a way that's above my pay grade/understanding of <code>ggplot2</code> internals, and is a much more consistent way to go about it. This also:
 <ul>
 	<li> places the factor labels on the graph along with the picture, covering some concerns about people not knowing which maps are for which country,</li>
 	<li> leaves room for the <code>caption</code> to go back in, which I wanted,</li>
