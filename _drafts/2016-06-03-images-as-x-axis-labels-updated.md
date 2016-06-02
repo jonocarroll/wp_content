@@ -2,13 +2,13 @@
 ID: 952
 post_title: Images as x-axis labels (updated)
 author: Jonathan Carroll
-post_date: 2016-06-03 08:05:25
+post_date: 2016-06-03 08:06:39
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=952
 published: false
 ---
-They say "if you want to find an answer on the internet, just present a wrong one as fact. Then wait."
+They say "<em>if you want to find an answer on the internet, just present a wrong one as fact. Then wait.</em>"
 
 <!--more-->
 
