@@ -2,7 +2,7 @@
 ID: 952
 post_title: Images as x-axis labels (updated)
 author: Jonathan Carroll
-post_date: 2016-06-03 08:00:15
+post_date: 2016-06-03 08:00:51
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=952
@@ -25,3 +25,5 @@ This method
 	<li> Automatically scales the grob better,</li>
 	<li> Doesn't involve creating an external <code>grob</code> and thus turning off clipping; using <code>axis.text.x</code> is exactly what I was hoping for.</li>
 </ul>
+
+[caption id="attachment_953" align="alignnone" width="680"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/06/GDP_updated.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/06/GDP_updated-1024x640.png" alt="Updated version using @baptiste&#039;s method; much better." width="680" height="425" class="size-large wp-image-953" /></a> Updated version using @baptiste's method; much better.[/caption]
