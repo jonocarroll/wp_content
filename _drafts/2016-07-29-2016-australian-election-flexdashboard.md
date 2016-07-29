@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 23:08:32
+post_date: 2016-07-29 23:08:44
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -39,7 +39,7 @@ Secondly, there's no requirement on polling places that they each cater for the 
 
 With those in mind, we can now have a look at how polarised each electorate is and compare it to the overall winner. <a href="https://jcarroll.shinyapps.io/AUelection2016/" target="_blank">Here's the result</a>, hosted over at <a href="http://shinyapps.io" target="_blank">shinyapps.io</a>. I've added a tab for both the first preference votes and two-party preferred (this data isn't completely available at the time of writing, but I'll keep updating it).
 
-
+<a href="http://jcarroll.com.au/wp-content/uploads/2016/07/elecFD.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/elecFD-1024x576.png" alt="elecFD" width="680" height="383" class="alignnone size-large wp-image-981" /></a>
 
 In my home state of South Australia it's clear that there's a big geographical split between the northern and central/southern suburbs
 
