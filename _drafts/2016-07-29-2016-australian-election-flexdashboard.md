@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:31:11
+post_date: 2016-07-29 22:33:12
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -33,4 +33,4 @@ Secondly, there's no requirement on polling places that they each cater for the 
 
 [caption id="attachment_968" align="alignnone" width="300"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/07/democracysausage.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/democracysausage-300x300.jpg" alt="democracysausage.org" width="300" height="300" class="size-medium wp-image-968" /></a> democracysausage.org[/caption]
 
-With those in mind, we can now have a look at how polarised each electorate is and compare it to the overall winner. Here's the result.
+With those in mind, we can now have a look at how polarised each electorate is and compare it to the overall winner. <a href="https://jcarroll.shinyapps.io/AUelection2016/" target="_blank">Here's the result</a>, hosted over at <a href="http://shinyapps.io" target="_blank">shinyapps.io</a>. I've added a tab for both the first preference votes and two-party preferred (this data isn't completely available at the time of writing, but I'll keep updating it).
