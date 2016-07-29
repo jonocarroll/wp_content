@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:20:25
+post_date: 2016-07-29 22:21:32
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -28,4 +28,6 @@ I managed to grab a <a href="http://www.aec.gov.au/Electorates/gis/gis_datadownl
 
 There's two caveats to this. Firstly, while we're required to vote within our electorates (compulsory voting, or at least getting your name ticked off as present) it's an assumption that people vote at the closest polling place to where they live or work, in which case the distribution of people isn't biasing the result at each polling place. That might not necessarily be true - perhaps people who vote for a particular party tend towards the city center on election day.
 
-Secondly, there's no requirement on polling places that they each cater for the same number of people. Electorates are population-balanced, but a polling place could have anywhere from 0 to all of the voters for that electorate show up on that day (we tend to run BBQs at polling places serving up democracy sausages, so people do move around to find the best one). I did try scaling the polling place markers by the number of votes at each but something screwy was going on with the markers disappe
+Secondly, there's no requirement on polling places that they each cater for the same number of people. Electorates are population-balanced, but a polling place could have anywhere from 0 to all of the voters for that electorate show up on that day (we tend to run BBQs at polling places serving up democracy sausages, so people do move around to find the best one). I did try scaling the polling place markers by the number of votes at each but something screwy was going on with the markers disappearing on zoom-changes so I've left them all the same.
+
+With those in mind, we can now have a look at how polarised each electorate is and compare it to the overall winner.
