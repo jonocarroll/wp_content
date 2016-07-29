@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:26:27
+post_date: 2016-07-29 22:27:41
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -11,8 +11,6 @@ published: false
 Here in the land down under we've finally completed our Federal election. We complain that it seems to go on for too long, but it's a flash in the pan compared to the USA electoral process. 
 
 <!--more-->
-
-[caption id="attachment_968" align="alignnone" width="300"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/07/democracysausage.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/democracysausage-300x300.jpg" alt="democracysausage.org" width="300" height="300" class="size-medium wp-image-968" /></a> democracysausage.org[/caption]
 
 This year turned out to be quite eventful (when aren't they these days?) with what might appear to an outside observer to be a conspired attempt at a perfect split vote (a hung parliament). In the end, it seems the incumbent Liberal/National Coalition managed to form government in their own right by the slimmest of margins, with one electorate triggering a recount when the margin dropped to a single vote. 
 
@@ -31,5 +29,7 @@ I managed to grab a <a href="http://www.aec.gov.au/Electorates/gis/gis_datadownl
 There's two caveats to this. Firstly, while we're required to vote within our electorates (compulsory voting, or at least getting your name ticked off as present) it's an assumption that people vote at the closest polling place to where they live or work, in which case the distribution of people isn't biasing the result at each polling place. That might not necessarily be true - perhaps people who vote for a particular party tend towards the city center on election day.
 
 Secondly, there's no requirement on polling places that they each cater for the same number of people. Electorates are population-balanced, but a polling place could have anywhere from 0 to all of the voters for that electorate show up on that day (we tend to run BBQs at polling places serving up <a href="http://democracysausage.org" target="_blank">democracy sausages</a>, so people do move around to find the best one). I did try scaling the polling place markers by the number of votes at each but something screwy was going on with the markers disappearing on zoom-changes so I've left them all the same.
+
+[caption id="attachment_968" align="alignnone" width="300"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/07/democracysausage.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/democracysausage-300x300.jpg" alt="democracysausage.org" width="300" height="300" class="size-medium wp-image-968" /></a> democracysausage.org[/caption]
 
 With those in mind, we can now have a look at how polarised each electorate is and compare it to the overall winner.
