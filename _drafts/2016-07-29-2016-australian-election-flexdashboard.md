@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:16:25
+post_date: 2016-07-29 22:18:25
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -26,4 +26,6 @@ This seemed like a good opportunity to try out a <a href="https://github.com/rst
 
 I managed to grab a <a href="http://www.aec.gov.au/Electorates/gis/gis_datadownload.htm" target="_blank">shapefile of the electorates</a> from the AEC and merged the polling data with these to produce a map of each state with electorates colored by winning party and polling places colored by the party with the most votes. 
 
-There's two caveats to this. Firstly, while we're required to vote within our electorates (compulsory voting, orit's an assumption of course, there's not
+There's two caveats to this. Firstly, while we're required to vote within our electorates (compulsory voting, or at least getting your name ticked off as present) it's an assumption that people vote at the closest polling place to where they live or work, in which case the distribution of people isn't biasing the result at each polling place. That might not necessarily be true - perhaps people who vote for a particular party tend towards the city center on election day
+
+ of course, there's not
