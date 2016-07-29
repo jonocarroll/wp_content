@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:10:24
+post_date: 2016-07-29 22:12:25
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -21,3 +21,5 @@ This year, with voting completed and counted (eventually) the Liberal/National C
 In terms of open data, Australia doesn't do too bad. We have a few underutilised resources, such as <a href="http://data.gov.au" target="_blank">data.gov.au</a> (building an R interface to that site is on my to-do list), <a href="http://www.ands.org.au/" target="_blank">the Australian National Data Service</a>, <a href="https://researchdata.ands.org.au/" target="_blank">Research Data Australia</a>, and <a href="http://www.govpond.org/index.php" target="_blank">GovPond</a> and the <a href="http://www.aec.gov.au/" target="_blank">Australian Electoral Commission</a> (via the <a href="http://vtr.aec.gov.au/HouseDefault-20499.htm" target="_blank">Virtual Tally Room</a>) is one of the better agencies in terms of data availability.
 
 When I visited the <a href="http://vtr.aec.gov.au/HouseDefault-20499.htm" target="_blank">Virtual Tally Room</a> to find out what level of data was available, I was rather impressed to find that the results weren't only available at the electorate level, but the polling place ('booth') level even! Not the individual voters of course, that would be a bit much, but the 7741 polling places around the country with their latitudes/longitudes and votes per party. Not too bad, and certainly an opportunity to look more closely.
+
+This seemed like a good opportunity to try out a <a href="https://github.com/rstudio/flexdashboard/" target="_blank">flexdashboard</a> and the new <a href="https://github.com/rstudio/crosstalk" target="_blank">crosstalk</a> feature. I'll skip the minor details here and disappoint you early in that I didn't end up using crosstalk (properly, it's still in there); it turns out it's great for subsetting a data set,
