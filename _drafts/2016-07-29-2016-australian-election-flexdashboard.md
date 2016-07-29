@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:05:56
+post_date: 2016-07-29 22:07:57
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -20,4 +20,4 @@ This year, with voting completed and counted (eventually) the Liberal/National C
 
 In terms of open data, Australia doesn't do too bad. We have a few underutilised resources, such as <a href="http://data.gov.au" target="_blank">data.gov.au</a> (building an R interface to that site is on my to-do list), <a href="http://www.ands.org.au/" target="_blank">the Australian National Data Service</a>, <a href="https://researchdata.ands.org.au/" target="_blank">Research Data Australia</a>, and <a href="http://www.govpond.org/index.php" target="_blank">GovPond</a> and the <a href="http://www.aec.gov.au/" target="_blank">Australian Electoral Commission</a> (via the <a href="http://vtr.aec.gov.au/HouseDefault-20499.htm" target="_blank">Virtual Tally Room</a>) is one of the better agencies in terms of data availability.
 
-When I visited the
+When I visited the <a href="http://vtr.aec.gov.au/HouseDefault-20499.htm" target="_blank">Virtual Tally Room</a> to find out what level of data was available, I was rather impressed to find that the results weren't only available at the electorate level, but the polling place ('booth') level even! Not the individual voters of course, that would be a bit much, but
