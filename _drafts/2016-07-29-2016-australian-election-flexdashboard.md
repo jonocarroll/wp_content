@@ -2,13 +2,15 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:27:41
+post_date: 2016-07-29 22:29:57
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
 published: false
 ---
 Here in the land down under we've finally completed our Federal election. We complain that it seems to go on for too long, but it's a flash in the pan compared to the USA electoral process. 
+
+<a href="http://jcarroll.com.au/wp-content/uploads/2016/07/voting.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/voting-300x169.jpg" alt="voting" width="300" height="169" class="alignnone size-medium wp-image-970" /></a>
 
 <!--more-->
 
