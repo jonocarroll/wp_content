@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:14:26
+post_date: 2016-07-29 22:16:25
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -24,4 +24,6 @@ When I visited the <a href="http://vtr.aec.gov.au/HouseDefault-20499.htm" target
 
 This seemed like a good opportunity to try out a <a href="https://github.com/rstudio/flexdashboard/" target="_blank">flexdashboard</a> and the new <a href="https://github.com/rstudio/crosstalk" target="_blank">crosstalk</a> feature. I'll skip the minor details here and disappoint you early in that I didn't end up using crosstalk (properly, it's still in there); it turns out it's great for subsetting a data set, not so great for performing further aggregations on the data after subsetting. Not to worry.
 
-I managed to grab a shapefile of the electorates
+I managed to grab a <a href="http://www.aec.gov.au/Electorates/gis/gis_datadownload.htm" target="_blank">shapefile of the electorates</a> from the AEC and merged the polling data with these to produce a map of each state with electorates colored by winning party and polling places colored by the party with the most votes. 
+
+There's two caveats to this. Firstly, while we're required to vote within our electorates (compulsory voting, orit's an assumption of course, there's not
