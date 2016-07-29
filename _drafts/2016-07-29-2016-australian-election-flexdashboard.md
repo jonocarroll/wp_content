@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 21:59:35
+post_date: 2016-07-29 22:01:35
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -18,4 +18,4 @@ Things run a little more smoothly here because we (functionally) follow the <a h
 
 This year, with voting completed and counted (eventually) the Liberal/National Coalition held 76 seats and can govern in their own right. Given that electorates are defined to be of <a href="https://en.wikipedia.org/wiki/Redistribution_(election)#Australia" target="_blank">approximately equal population sizes</a>, this means that the majority of people voted for that party, right? Right? Let's see.
 
-In terms of open data, Australia doesn't do too bad. We have a few <a href="http://data.gov.au/" target="_blank">vastly underutilised resources</a> (building an R interface to that site is on my to-do list) and the Australian Electora
+In terms of open data, Australia doesn't do too bad. We have a few <a href="http://data.gov.au/" target="_blank">vastly underutilised resources</a> such as data.gov.au (building an R interface to that site is on my to-do list), ANDS and the Australian Electoral Commission is one of the better agencies in terms of data availability.
