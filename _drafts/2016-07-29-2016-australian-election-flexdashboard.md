@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:43:48
+post_date: 2016-07-29 22:46:09
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -54,3 +54,5 @@ Looking at the number of polling places won, it certainly seems like it was a la
 However, the population at just a few polling places showed the fuller story
 
 <a href="http://jcarroll.com.au/wp-content/uploads/2016/07/elec5.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/elec5.png" alt="elec5" width="545" height="600" class="alignnone size-full wp-image-976" /></a>
+
+In our most populous state of New South Wales, things look fairly consistent
