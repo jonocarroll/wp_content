@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:49:48
+post_date: 2016-07-29 22:51:58
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -58,3 +58,5 @@ However, the population at just a few polling places showed the fuller story
 In our most populous state of New South Wales, things look fairly consistent
 
 <a href="http://jcarroll.com.au/wp-content/uploads/2016/07/elec5.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/elec5.png" alt="elec5" width="545" height="600" class="alignnone size-full wp-image-976" /></a>
+
+In Victoria, the state capital of Melbourne fails to shake its hipster stereotype and
