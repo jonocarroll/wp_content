@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:37:47
+post_date: 2016-07-29 22:39:47
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -41,4 +41,4 @@ In my home state of South Australia it's clear that there's a big geographical s
 
 as well as a clear preference away from the two major parties in the country areas to the East.
 
-In Tasmania
+In Tasmania, in the electorate that contains the state capital of Hobart, most polling places appear to be overwhelmingly supportive of an independent candidate. Looking at the number of polling places w
