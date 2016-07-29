@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:12:25
+post_date: 2016-07-29 22:14:26
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -22,4 +22,6 @@ In terms of open data, Australia doesn't do too bad. We have a few underutilised
 
 When I visited the <a href="http://vtr.aec.gov.au/HouseDefault-20499.htm" target="_blank">Virtual Tally Room</a> to find out what level of data was available, I was rather impressed to find that the results weren't only available at the electorate level, but the polling place ('booth') level even! Not the individual voters of course, that would be a bit much, but the 7741 polling places around the country with their latitudes/longitudes and votes per party. Not too bad, and certainly an opportunity to look more closely.
 
-This seemed like a good opportunity to try out a <a href="https://github.com/rstudio/flexdashboard/" target="_blank">flexdashboard</a> and the new <a href="https://github.com/rstudio/crosstalk" target="_blank">crosstalk</a> feature. I'll skip the minor details here and disappoint you early in that I didn't end up using crosstalk (properly, it's still in there); it turns out it's great for subsetting a data set,
+This seemed like a good opportunity to try out a <a href="https://github.com/rstudio/flexdashboard/" target="_blank">flexdashboard</a> and the new <a href="https://github.com/rstudio/crosstalk" target="_blank">crosstalk</a> feature. I'll skip the minor details here and disappoint you early in that I didn't end up using crosstalk (properly, it's still in there); it turns out it's great for subsetting a data set, not so great for performing further aggregations on the data after subsetting. Not to worry.
+
+I managed to grab a shapefile of the electorates
