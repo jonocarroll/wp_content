@@ -2,17 +2,16 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:29:57
+post_date: 2016-07-29 22:31:11
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
 published: false
 ---
 Here in the land down under we've finally completed our Federal election. We complain that it seems to go on for too long, but it's a flash in the pan compared to the USA electoral process. 
-
-<a href="http://jcarroll.com.au/wp-content/uploads/2016/07/voting.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/voting-300x169.jpg" alt="voting" width="300" height="169" class="alignnone size-medium wp-image-970" /></a>
-
 <!--more-->
+
+<a href="http://jcarroll.com.au/wp-content/uploads/2016/07/voting.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/voting.jpg" alt="voting" width="624" height="351" class="alignnone size-full wp-image-970" /></a>
 
 This year turned out to be quite eventful (when aren't they these days?) with what might appear to an outside observer to be a conspired attempt at a perfect split vote (a hung parliament). In the end, it seems the incumbent Liberal/National Coalition managed to form government in their own right by the slimmest of margins, with one electorate triggering a recount when the margin dropped to a single vote. 
 
@@ -34,4 +33,4 @@ Secondly, there's no requirement on polling places that they each cater for the 
 
 [caption id="attachment_968" align="alignnone" width="300"]<a href="http://jcarroll.com.au/wp-content/uploads/2016/07/democracysausage.jpg"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/democracysausage-300x300.jpg" alt="democracysausage.org" width="300" height="300" class="size-medium wp-image-968" /></a> democracysausage.org[/caption]
 
-With those in mind, we can now have a look at how polarised each electorate is and compare it to the overall winner.
+With those in mind, we can now have a look at how polarised each electorate is and compare it to the overall winner. Here's the result.
