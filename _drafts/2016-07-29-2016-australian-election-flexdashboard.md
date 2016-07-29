@@ -2,7 +2,7 @@
 ID: 964
 post_title: 2016 Australian Election Flexdashboard
 author: Jonathan Carroll
-post_date: 2016-07-29 22:41:47
+post_date: 2016-07-29 22:43:48
 post_excerpt: ""
 layout: post
 permalink: http://jcarroll.com.au/?p=964
@@ -39,12 +39,18 @@ In my home state of South Australia it's clear that there's a big geographical s
 
 <a href="http://jcarroll.com.au/wp-content/uploads/2016/07/elec1.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/elec1.png" alt="elec1" width="618" height="511" class="alignnone size-full wp-image-972" /></a>
 
-as well as a clear preference away from the two major parties in the country areas to the East. Voters in the more regional North seemed to not get their way, likely outweighed by the larger population towards the state capital of Adelaid
+as well as a clear preference away from the two major parties in the country areas to the East. Voters in the more regional North seemed to not get their way, likely outweighed by the larger population towards the state capital of Adelaide.
 
 <a href="http://jcarroll.com.au/wp-content/uploads/2016/07/elec2.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/elec2.png" alt="elec2" width="629" height="507" class="alignnone size-full wp-image-974" /></a>
 
-In Tasmania, in the electorate that contains the state capital of Hobart, most polling places appear to be overwhelmingly supportive of an independent candidate. 
+In Tasmania, in the electorate (Denison) that contains the state capital of Hobart, most polling places appear to be overwhelmingly supportive of an independent candidate. 
 
 <a href="http://jcarroll.com.au/wp-content/uploads/2016/07/elec3.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/elec3.png" alt="elec3" width="622" height="513" class="alignnone size-full wp-image-973" /></a>
 
 Looking at the number of polling places won, it certainly seems like it was a landslide
+
+<a href="http://jcarroll.com.au/wp-content/uploads/2016/07/elec4.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/elec4.png" alt="elec4" width="547" height="603" class="alignnone size-full wp-image-975" /></a>
+
+However, the population at just a few polling places showed the fuller story
+
+<a href="http://jcarroll.com.au/wp-content/uploads/2016/07/elec5.png"><img src="http://jcarroll.com.au/wp-content/uploads/2016/07/elec5.png" alt="elec5" width="545" height="600" class="alignnone size-full wp-image-976" /></a>
