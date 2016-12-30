@@ -6,7 +6,7 @@ post_date: 2016-04-27 22:47:55
 post_excerpt: ""
 layout: post
 permalink: >
-  http://jcarroll.com.au/2016/04/27/solving-inequality-the-math-kind/
+  https://jcarroll.com.au/2016/04/27/solving-inequality-the-math-kind/
 published: true
 ---
 <a href="https://xianblog.wordpress.com/2016/04/21/an-integer-programming-riddle/" target="_blank">This neat approach</a> showed up recently as an answer to a <a href="http://fivethirtyeight.com/features/you-have-1-billion-to-win-a-space-race-go/" target="_blank">FiveThirtyEight puzzle</a> and of course I couldn't help but throw it at <code>dplyr</code> as soon as I could. Turns out that's not a terrible idea. The question posed is
@@ -37,15 +37,15 @@ I'm not suggesting that this is by any means always the best approach, but when 
 
 Alternatively, one could set this up as an equation and use a linear solver. In that case, we want to optimise
 
-\[ \max(\|A x\|) \]
+$latex \max(\|A x\|) $
 
 subject to the constraints
 
-\[ G x \ge h \]
+$latex G x \ge h $
 
 where $latex A$ and $latex x$ represent the coefficients and variables to be optimised, $latex h$ the constraint vector, and $latex G$  a matrix of coefficients for the constraints. For the system we're looking at, that matrix inequality looks like this
 
-\[ \left[\begin{array}{cccc}400 & 400 & 150 & 50 \\1 & 0 & 0 & 0 \\0 & 1 & 0 & 0 \\0 & 0 & 1 & 0 \\0 & 0 & 0 & 1\end{array}\right] \left[\begin{array}{c}a \\ b \\ c \\ d\end{array}\right] \le \left[\begin{array}{c}1000 \\ 1 \\ 1 \\ 8 \\ 4\end{array}\right]\ . \]
+$latex \left[\begin{array}{cccc}400 & 400 & 150 & 50 \\1 & 0 & 0 & 0 \\0 & 1 & 0 & 0 \\0 & 0 & 1 & 0 \\0 & 0 & 0 & 1\end{array}\right] \left[\begin{array}{c}a \\ b \\ c \\ d\end{array}\right] \le \left[\begin{array}{c}1000 \\ 1 \\ 1 \\ 8 \\ 4\end{array}\right]\ . $
 
 Of course, the constraint that $latex b \le a$ needs to be checked after the fact.
 
