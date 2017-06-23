@@ -2,12 +2,15 @@
 ID: 1068
 post_title: 'Data Munging With R &#8212; Preview'
 author: Jonathan Carroll
-post_date: 2017-06-23 23:36:26
+post_date: 2017-06-23 23:39:40
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
 published: false
 ---
+<style>
+.tbody vertical-align "middle"
+</style>
 <div class="asciidoc_entry_display"><div class="paragraph">
 <p>Since about October last year, I’ve been writing an introduction to R book. It’s
 been quite the experience. I’ve finally started making time to document some of
