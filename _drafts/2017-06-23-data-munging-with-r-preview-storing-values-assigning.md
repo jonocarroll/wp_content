@@ -2,7 +2,7 @@
 ID: 1046
 post_title: 'Data Munging with R Preview &#8211; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 22:26:59
+post_date: 2017-06-23 22:27:46
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1046
@@ -44,7 +44,9 @@ a spreadsheet can/should.
 ////
 image::tweet.png[width=400, align="center"]
 
++++
 [tweet https://twitter.com/carroll_jono/status/780746085727735808]
++++
 
 Most of the books I've looked at which claim to teach programming begin with
 some strong assumptions about the reader already knowing how to program, and
