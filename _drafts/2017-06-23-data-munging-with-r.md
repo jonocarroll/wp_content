@@ -2,22 +2,13 @@
 ID: 1046
 post_title: Data Munging with R
 author: Jonathan Carroll
-post_date: 2017-06-23 21:00:15
+post_date: 2017-06-23 21:01:35
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1046
 published: false
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.5">
-<title>Storing Values (Assigning)</title>
-<style>
-<style>
+
 /* Jono's stylesheet -- custom icons | MIT License | http://asciidoctor.org */
 /* Remove comment around @import statement below when using as a custom stylesheet */
 /*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
