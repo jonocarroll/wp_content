@@ -2,13 +2,11 @@
 ID: 1046
 post_title: 'Data Munging with R Preview &#8211; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 22:31:44
+post_date: 2017-06-23 22:33:56
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1046
 published: false
-wpasciidoc_checkbox:
-  - 'a:1:{i:0;s:1:"1";}'
 ---
 :experimental:
 :source-highlighter: pygments
@@ -19,7 +17,7 @@ wpasciidoc_checkbox:
 :table-caption: Table {chapter}. 
 :example-caption: Example {chapter}.
 
-# title
+# Data Munging with R Preview - Storing Values (Assigning)
 
 Since about October last year, I've been writing an introduction to R book. It's
 been quite the experience. I've finally started making time to document some of
