@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R &#8212; Preview'
 author: Jonathan Carroll
-post_date: 2017-06-23 23:45:03
+post_date: 2017-06-23 23:47:12
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -251,8 +251,8 @@ that you can’t create a variable with one of those names.</p>
 <div class="admonitionblock caution">
 <table>
 <tbody><tr>
-<td class="icon">
-<div class="title">Caution</div>
+<td class="icon" style="vertical-align:middle;">
+<i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
 <div class="title">On overwriting names</div>
@@ -368,8 +368,8 @@ reasons beyond the scope of this book.<sup class="footnote">[<a id="_footnoteref
 <div class="admonitionblock important">
 <table>
 <tbody><tr>
-<td class="icon">
-<div class="title">Important</div>
+<td class="icon" style="vertical-align:middle;">
+<i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
 <div class="title">Naming things</div>
@@ -486,8 +486,8 @@ that as creating a new variable <code>object</code> or <code>indent.str</code> w
 <div class="admonitionblock warning">
 <table>
 <tbody><tr>
-<td class="icon">
-<div class="title">Warning</div>
+<td class="icon" style="vertical-align:middle;">
+<i class="fa icon-warning" title="Example"></i>
 </td>
 <td class="content">
 <div class="title">Assigning to variables.</div>
@@ -556,8 +556,8 @@ many is too many is up to you).</p>
 <div class="admonitionblock caution">
 <table>
 <tbody><tr>
-<td class="icon">
-<div class="title">Caution</div>
+<td class="icon" style="vertical-align:middle;">
+<i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
 <div class="paragraph">
