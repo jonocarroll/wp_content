@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 23:52:46
+post_date: 2017-06-23 23:54:07
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -383,7 +383,7 @@ to? Tomorrow, will you remember that <code>newdata</code> was updated twice?</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="unchanging-data"><a class="anchor" href="#unchanging-data"></a>1.2. Unchanging Data</h3>
+<h3 id="unchanging-data"><a class="anchor" href="#unchanging-data"></a>2.2. Unchanging Data</h3>
 <div class="paragraph">
 <p>If you’re familiar with working with data in a spreadsheet program (such as
 Excel), you may expect your variables to behave in a way that they
@@ -445,7 +445,7 @@ its current overall <em>state</em>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="assigmnent-operators-code-code-vs-code-code"><a class="anchor" href="#assigmnent-operators-code-code-vs-code-code"></a>1.3. Assigmnent Operators (<code>&lt;-</code> vs <code>=</code>)</h3>
+<h3 id="assigmnent-operators-code-code-vs-code-code"><a class="anchor" href="#assigmnent-operators-code-code-vs-code-code"></a>2.3. Assigmnent Operators (<code>&lt;-</code> vs <code>=</code>)</h3>
 <div class="paragraph">
 <p>If you’ve read some <code>R</code> code already, you’ve possibly seen that both <code>&lt;-</code> and
 <code>=</code> are used to assign values to objects, and this tends to cause some
