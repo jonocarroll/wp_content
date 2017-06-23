@@ -2,13 +2,11 @@
 ID: 1046
 post_title: 'Data Munging with R Preview &#8211; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 22:21:55
+post_date: 2017-06-23 22:25:12
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1046
 published: false
-wpasciidoc_checkbox:
-  - 'a:1:{i:0;s:1:"1";}'
 ---
 :experimental:
 :idprefix:
@@ -43,6 +41,9 @@ a spreadsheet can/should.
 +++
 ////
 image::tweet.png[width=400, align="center"]
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;m writing an R book for real beginners (ppl with 0 code XP) via <a href="https://twitter.com/ManningBooks">@ManningBooks</a>! What tripped you up most when you first learned R? Pls RT!</p>&mdash; Jonathan Carroll (@carroll_jono) <a href="https://twitter.com/carroll_jono/status/780746085727735808">September 27, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Most of the books I've looked at which claim to teach programming begin with
 some strong assumptions about the reader already knowing how to program, and
