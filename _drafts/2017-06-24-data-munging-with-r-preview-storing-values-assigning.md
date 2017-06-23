@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-24 00:23:43
+post_date: 2017-06-24 00:24:20
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -105,7 +105,7 @@ recommend you use <code>\&lt;-</code> for this for reasons that will become clea
 <code>x</code> under <code>*Values*</code> and shows the number 4 next to it, as shown in <a href="#fig-x_eq_4">[fig-x_eq_4]</a></p>
 <div id="fig-x_eq_4" class="imageblock" style="text-align: center">
 <div class="content">
-<img src="https://jcarroll.com.au/wp-content/uploads/2017/06/fig-x_eq_4-300x137.png">
+<img src="https://jcarroll.com.au/wp-content/uploads/2017/06/fig-x_eq_4.png", width="450">
 </div>
 <div class="title">Figure 2. 1. The <em>variable</em> <code>x</code> has been assigned the <em>value</em> <code>4</code>.</div>
 </div>
