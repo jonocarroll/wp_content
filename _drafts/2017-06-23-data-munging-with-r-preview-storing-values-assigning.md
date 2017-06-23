@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 23:49:32
+post_date: 2017-06-23 23:52:46
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -61,7 +61,7 @@ behind.</p>
 an excerpt from chapter 2:</p>
 </div>
 <div class="sect1">
-<h2 id="storing-values-assigning"><a class="anchor" href="#storing-values-assigning"></a>1. Storing Values (Assigning)</h2>
+<h2 id="storing-values-assigning"><a class="anchor" href="#storing-values-assigning"></a>2. Storing Values (Assigning)</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>In order to do something with our data, we will need to tell <code>R</code> what to call
@@ -72,7 +72,7 @@ haven’t told <code>R</code> to store any of them yet. Next, we’ll create som
 to store our data <em>values</em>.</p>
 </div>
 <div class="sect2">
-<h3 id="data-variables"><a class="anchor" href="#data-variables"></a>1.1. Data (Variables)</h3>
+<h3 id="data-variables"><a class="anchor" href="#data-variables"></a>2.1. Data (Variables)</h3>
 <div class="paragraph">
 <p>If we have the values <code>4</code> and <code>8</code> and we want to do something with them, we can
 use the values literally (say, add them together as <code>4 + 8</code>). You may be
