@@ -2,7 +2,7 @@
 ID: 1046
 post_title: Data Munging with R
 author: Jonathan Carroll
-post_date: 2017-06-23 20:59:47
+post_date: 2017-06-23 21:00:15
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1046
