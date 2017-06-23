@@ -2,14 +2,14 @@
 ID: 1068
 post_title: 'Data Munging With R &#8212; Preview'
 author: Jonathan Carroll
-post_date: 2017-06-23 23:40:01
+post_date: 2017-06-23 23:41:49
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
 published: false
 ---
 <style>
-tbody{
+.tbody{
   vertical-align: "middle"
 }
 </style>
