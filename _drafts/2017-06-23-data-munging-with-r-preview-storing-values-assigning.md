@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 23:57:20
+post_date: 2017-06-23 23:59:32
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -96,7 +96,7 @@ typing <code>x &lt;- 4</code> into the <code>R</code> <code><strong>Console</str
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="variable_value.png" alt="Variable" width="150" height="150">
+image::https://jcarroll.com.au/wp-content/uploads/2017/06/variable_value-150x150.png[width="150", height="150", link="https://jcarroll.com.au/wp-content/uploads/2017/06/variable_value.png", align="none"]
 </div>
 </div>
 <div class="paragraph">
