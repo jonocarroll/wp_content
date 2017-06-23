@@ -2,7 +2,7 @@
 ID: 1046
 post_title: 'Data Munging with R Preview &#8211; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 22:34:12
+post_date: 2017-06-23 22:40:00
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1046
@@ -18,6 +18,17 @@ wpasciidoc_checkbox:
 :figure-caption: Figure {chapter}. 
 :table-caption: Table {chapter}. 
 :example-caption: Example {chapter}.
+
++++
+<style>
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note:before{content:"\f19c";color:#19407c}
+.admonitionblock td.icon .icon-tip:before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning:before{content:"\f11c";color:#00b200}
+.admonitionblock td.icon .icon-caution:before{content:"\f134";color:#bf3400}
+.admonitionblock td.icon .icon-important:before{content:"\f071";color:#bf0000}
+</style>
++++
 
 # Data Munging with R Preview - Storing Values (Assigning)
 
