@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 23:54:07
+post_date: 2017-06-23 23:55:39
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -599,7 +599,7 @@ data to a different type? That’s an article for another day.</p>
 <p>If you’re interested in seeing more, and hopefully providing feedback on what
 you do/don’t like about it, then use the discount code <code>mlcarroll</code> here
 <a href="https://www.manning.com/books/data-munging-with-r?a_aid=datamungingwithr&amp;a_bid=1dc44480" class="bare">https://www.manning.com/books/data-munging-with-r?a_aid=datamungingwithr&amp;a_bid=1dc44480</a>
-for 50% off and get reading!&lt;/ss-math,basic&gt;&lt;/ss-scope,scope&gt;&lt;/fig-assign&gt;&lt;/fig-x_eq_4&gt;</p>
+for 50% off and get reading!</p>
 </div>
 </div>
 </div>
