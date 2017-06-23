@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-24 00:22:30
+post_date: 2017-06-24 00:23:43
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -612,4 +612,4 @@ for 50% off and get reading!</p>
 </div>
 </div></div>
 
-The code for this post is available: [wpghs]
+[wpghs]
