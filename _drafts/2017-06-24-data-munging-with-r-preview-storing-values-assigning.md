@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-24 00:13:37
+post_date: 2017-06-24 00:14:43
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -94,13 +94,15 @@ values to variables takes the following form</p>
 the right hand side into the name/thing on the left hand side. For example, try
 typing <code>x &lt;- 4</code> into the <code>R</code> <code><strong>Console</strong></code> then press <kbd>Enter</kbd>:</p>
 </div>
-<div class="imageblock" style="text-align: center">
+<div id="fig-x_eq_4" class="imageblock" style="text-align: center">
 <div class="content">
-<p>You could just as easily use the equals sign to achieve this; <code>x = 4</code> but I
+<img src="https://jcarroll.com.au/wp-content/uploads/2017/06/fig-x_eq_4-300x137.png">
+</div>
+<div class="title">Figure 2. 1. The <em>variable</em> <code>x</code> has been assigned the <em>value</em> <code>4</code>.</div>
+</div><p>You could just as easily use the equals sign to achieve this; <code>x = 4</code> but I
 recommend you use <code>\&lt;-</code> for this for reasons that will become clear later.</p>
 <p>You&#8217;ll notice that the <code>*Environment*</code> tab of the <code>*Workspace*</code> pane now lists
 <code>x</code> under <code>*Values*</code> and shows the number 4 next to it, as shown in <a href="#fig-x_eq_4">[fig-x_eq_4]</a></p>
-</div>
 <div id="fig-x_eq_4" class="imageblock" style="text-align: center">
 <div class="content">
 <img src="https://jcarroll.com.au/wp-content/uploads/2017/06/fig-x_eq_4-300x137.png">
