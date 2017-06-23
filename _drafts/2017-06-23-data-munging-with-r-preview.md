@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R &#8212; Preview'
 author: Jonathan Carroll
-post_date: 2017-06-23 23:32:46
+post_date: 2017-06-23 23:35:58
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -136,7 +136,7 @@ memory efficient since it doesn’t create a copy of anything it doesn’t need 
 <div class="admonitionblock caution">
 <table>
 <tbody><tr>
-<td class="icon">
+<td class="icon" vertical-align=>
 <i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
