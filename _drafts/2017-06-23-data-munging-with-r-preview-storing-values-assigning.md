@@ -2,7 +2,7 @@
 ID: 1046
 post_title: 'Data Munging with R Preview &#8211; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 22:30:36
+post_date: 2017-06-23 22:31:44
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1046
@@ -19,6 +19,8 @@ wpasciidoc_checkbox:
 :table-caption: Table {chapter}. 
 :example-caption: Example {chapter}.
 
+# title
+
 Since about October last year, I've been writing an introduction to R book. It's
 been quite the experience. I've finally started making time to document some of
 the interesting things I've learned (about R, about writing, about about how to
@@ -27,13 +29,6 @@ bring those two together) along the way.
 The book is aimed at proper beginners; people with absolutely no formal coding
 experience. This tends to mean people coming from Excel who need to do more than
 a spreadsheet can/should.
-
-////
-+++
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;m writing an R book for real beginners (ppl with 0 code XP) via <a href="https://twitter.com/ManningBooks">@ManningBooks</a>! What tripped you up most when you first learned R? Pls RT!</p>&mdash; Jonathan Carroll (@carroll_jono) <a href="https://twitter.com/carroll_jono/status/780746085727735808">September 27, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-+++
-////
-image::tweet.png[width=400, align="center"]
 
 +++
 [tweet https://twitter.com/carroll_jono/status/780746085727735808]
