@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R &#8212; Preview'
 author: Jonathan Carroll
-post_date: 2017-06-23 23:29:35
+post_date: 2017-06-23 23:31:48
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -137,7 +137,7 @@ memory efficient since it doesn’t create a copy of anything it doesn’t need 
 <table>
 <tbody><tr>
 <td class="icon">
-<div class="title">Caution</div>
+<img src=""></img>
 </td>
 <td class="content">
 <div class="title">On <em>"hidden"</em> variables</div>
