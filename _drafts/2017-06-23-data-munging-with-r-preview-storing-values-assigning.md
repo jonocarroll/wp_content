@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 23:55:39
+post_date: 2017-06-23 23:57:20
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -47,9 +47,9 @@ user for not knowing something (a different answer for not searching, perhaps),
 but I can help make the resource they need.</p>
 </div>
 <div class="paragraph">
-<p>To show that I really want people to contribute, here’s a discount code to
-sweeten the deal: use <code>mlcarroll</code> for 50% off here:
-<a href="https://www.manning.com/books/data-munging-with-r?a_aid=datamungingwithr&amp;a_bid=1dc44480" class="bare">https://www.manning.com/books/data-munging-with-r?a_aid=datamungingwithr&amp;a_bid=1dc44480</a></p>
+<p>
+<a href="https://www.manning.com/books/data-munging-with-r?a_aid=datamungingwithr&amp;a_bid=1dc44480" class="bare">To show that I really want people to contribute, here’s a discount code to
+sweeten the deal: use <code>mlcarroll</code> for 50% off here:</a></p>
 </div>
 <div class="paragraph">
 <p>Chapter 1 is a free download, so please check that out too! At the moment the
@@ -596,9 +596,8 @@ tell <code>R</code> that our data should be of a specific type, or we want to co
 data to a different type? That’s an article for another day.</p>
 </div>
 <div class="paragraph">
-<p>If you’re interested in seeing more, and hopefully providing feedback on what
-you do/don’t like about it, then use the discount code <code>mlcarroll</code> here
-<a href="https://www.manning.com/books/data-munging-with-r?a_aid=datamungingwithr&amp;a_bid=1dc44480" class="bare">https://www.manning.com/books/data-munging-with-r?a_aid=datamungingwithr&amp;a_bid=1dc44480</a>
+<p><a href="https://www.manning.com/books/data-munging-with-r?a_aid=datamungingwithr&amp;a_bid=1dc44480" class="bare">If you’re interested in seeing more, and hopefully providing feedback on what
+you do/don’t like about it, then use the discount code <code>mlcarroll</code> here</a>
 for 50% off and get reading!</p>
 </div>
 </div>
