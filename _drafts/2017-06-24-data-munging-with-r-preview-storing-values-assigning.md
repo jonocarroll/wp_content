@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-24 00:29:37
+post_date: 2017-06-24 00:31:57
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -101,7 +101,7 @@ typing <code>x &lt;- 4</code> into the <code>R</code> <code><strong>Console</str
 <div class="title">Figure 2. 1. The <em>variable</em> <code>x</code> has been assigned the <em>value</em> <code>4</code>.</div>
 </div><p>You could just as easily use the equals sign to achieve this; <code>x = 4</code> but I
 recommend you use <code>&lt;-</code> for this for reasons that will become clear later.</p>
-<p>You&#8217;ll notice that the <code>*Environment*</code> tab of the <code>*Workspace*</code> pane now lists
+<p>You&#8217;ll notice that the <code><strong>Environment*</code> tab of the <code>*Workspace*</code> pane now lists
 <code>x</code> under <code>*Values*</code> and shows the number 4 next to it, as shown in <a href="#fig-x_eq_4">[fig-x_eq_4]</a></p>
 <div id="fig-x_eq_4" class="imageblock" style="text-align: center">
 <div class="content">
