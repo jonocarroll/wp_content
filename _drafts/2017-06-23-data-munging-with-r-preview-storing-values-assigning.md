@@ -2,7 +2,7 @@
 ID: 1046
 post_title: 'Data Munging with R Preview &#8211; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-23 21:03:15
+post_date: 2017-06-23 21:05:07
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1046
@@ -491,11 +491,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .listingblock .pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
 .listingblock .pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </style>
-</head>
-<body class="article">
-<div id="header">
-</div>
-<div id="content">
 <div class="paragraph">
 <p>Since about October last year, I&#8217;ve been writing an introduction to R book. It&#8217;s
 been quite the experience. I&#8217;ve finally started making time to document some of
@@ -1109,10 +1104,3 @@ for 50% off and get reading!</p>
 <a href="#_footnoteref_3">3</a>. This syntax is already used within <code>R</code> to denote functions acting on a specific class, such as <code>print.Date()</code>.
 </div>
 </div>
-<div id="footer">
-<div id="footer-text">
-Last updated 2017-06-23 00:02:51 ACST
-</div>
-</div>
-</body>
-</html>
