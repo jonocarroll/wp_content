@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-24 00:09:37
+post_date: 2017-06-24 00:11:37
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -96,7 +96,7 @@ typing <code>x &lt;- 4</code> into the <code>R</code> <code><strong>Console</str
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-image::https://jcarroll.com.au/wp-content/uploads/2017/06/variable_value-300x113.jpg[width="300", height="113", link="https://jcarroll.com.au/wp-content/uploads/2017/06/variable_value.jpg", align="none"]b of the <code><strong>Workspace</strong></code> pane now lists
+b of the <code><strong>Workspace</strong></code> pane now lists
 <code>x</code> under <code><strong>Values</strong></code> and shows the number 4 next to it, as shown in <a href="#fig-x_eq_4">Figure 2. 1.</a></p>
 </div>
 <div id="fig-x_eq_4" class="imageblock" style="text-align: center">
