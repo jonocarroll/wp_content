@@ -2,16 +2,17 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-26 23:07:10
+post_date: 2017-06-26 23:10:03
 post_excerpt: ""
 layout: post
-permalink: https://jcarroll.com.au/?p=1068
-published: false
+permalink: >
+  https://jcarroll.com.au/2017/06/26/data-munging-with-r-preview-storing-values-assigning/
+published: true
 ---
 <div class="asciidoc_entry_display"><div class="paragraph">
 <p>Since about October last year, I’ve been writing an introduction to R book. It’s
 been quite the experience. I’ve finally started making time to document some of
-the interesting things I’ve learned (about R, about writing, about about how to
+the interesting things I’ve learned (about R, about writing, about how to
 bring those two together) along the way.</p>
 </div>
 <!--more-->
@@ -220,8 +221,8 @@ complain if you try to break them. Variables should start with a letter, not a
 number. Trying to create the variable <code>2b</code> will generate an error. Variables can
 also start with a dot (<code>.</code>) as long as it’s not immediately followed by a
 number, although you may wish to avoid doing so. The rest of the variable name
-can consist of letters (upper and lower case) and numbers, but not punctutation
-(except <code>.</code> or <code>_</code>) or other symbols (except the dot, though again, perferrably
+can consist of letters (upper and lower case) and numbers, but not punctuation
+(except <code>.</code> or <code>_</code>) or other symbols (except the dot, though again, preferably
 not).</p>
 </div>
 <div class="paragraph">
@@ -313,7 +314,7 @@ in the same way as we did for our regular numbers</p>
 </div>
 <div class="paragraph">
 <p>which is what we got when we added these numbers explicitly. Note that since our
-expression produces just a number (no assigment), the value is printed. We’ll
+expression produces just a number (no assignment), the value is printed. We’ll
 cover how to add and subtract values in more depth in our section on basic mathematics.</p>
 </div>
 <div class="paragraph">
@@ -444,7 +445,7 @@ its current overall <em>state</em>.</p>
 <p>If you’ve read some <code>R</code> code already, you’ve possibly seen that both <code>&lt;-</code> and
 <code>=</code> are used to assign values to objects, and this tends to cause some
 confusion. Technically, <code>R</code> will accept either when assigning variables, so in
-that respect it comes down to a matter of style (I still highly reccomend
+that respect it comes down to a matter of style (I still highly recommend
 assigning with <code>&lt;-</code>). The big difference comes when using functions that take
 <em>arguments</em> — there you should only use <code>=</code> to specify what the <em>value</em> of the
 <em>argument</em>. For example, when we inspected the <code>mtcars</code> data, we could
