@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-26 11:35:12
+post_date: 2017-06-26 11:36:28
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
