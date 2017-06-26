@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-26 11:21:01
+post_date: 2017-06-26 11:23:15
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -140,12 +140,8 @@ memory efficient since it doesn’t create a copy of anything it doesn’t need 
 <div class="title">On <em>"hidden"</em> variables</div>
 <div class="paragraph">
 <p>Variables which begin with a period (e.g. <code>.length</code>) are considered
-<em>hidden</em> and do not appear in the <code><strong>Environment</strong></code> tab of the
-<code><strong>Workspace</strong></code>. They otherwise behave exactly as any other variable; they can be
-printed and manipulated. An example of one of these is the <code>.Last.value</code>
-variable, which exists from the moment you load up <code>R</code> (with the value <code>TRUE</code>) — this contains the output value of the last statement executed (handy if you
-forgot to assign it to something). There are very few reasons you’ll want to use
-this feature (dot-prefixed hidden variables) on purpose at the moment, so for
+<em>hidden</em> and do not appear in the <code><strong>Environment</strong></code> tab of the <code><strong>Workspace</strong></code>. They otherwise behave exactly as any other variable; they can be printed and manipulated. An example of one of these is the <code>.Last.value</code> variable, which exists from the moment you load up <code>R</code> (with the value <code>TRUE</code>) — this contains the output value of the last statement executed (handy if you forgot to assign it to something). 
+There are very few reasons you’ll want to use this feature (dot-prefixed hidden variables) on purpose at the moment, so for
 now, avoid creating variable names with this pattern. The exception to the
 <em>hidden</em> nature of these is again the <code>.Last.value</code> variable which you can
 request to be visible in the <code><strong>Environment</strong></code> tab via
