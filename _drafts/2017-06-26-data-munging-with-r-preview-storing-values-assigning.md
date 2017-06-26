@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-26 11:36:28
+post_date: 2017-06-26 23:07:10
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -290,7 +290,7 @@ base::pi <b class="conum">(2)</b></code></pre>
 <div class="paragraph">
 <p>This is also an issue for functions, with the same solution; specify the package
 in which it is defined to use that definition. We’ll return to this in
-<a href="#ss-scope">scope</a>.</p>
+a section on 'scope'.</p>
 </div>
 </td>
 </tr>
@@ -314,7 +314,7 @@ in the same way as we did for our regular numbers</p>
 <div class="paragraph">
 <p>which is what we got when we added these numbers explicitly. Note that since our
 expression produces just a number (no assigment), the value is printed. We’ll
-cover how to add and subtract values in more depth in <a href="#ss-math">basic mathematics</a>.</p>
+cover how to add and subtract values in more depth in our section on basic mathematics.</p>
 </div>
 <div class="paragraph">
 <p><code>R</code> has no problems with overwriting these values, and it doesn’t mind what data
