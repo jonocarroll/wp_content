@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-26 11:30:41
+post_date: 2017-06-26 11:35:12
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -14,6 +14,7 @@ been quite the experience. I’ve finally started making time to document some o
 the interesting things I’ve learned (about R, about writing, about about how to
 bring those two together) along the way.</p>
 </div>
+<!--more-->
 <div class="paragraph">
 <p>The book is aimed at proper beginners; people with absolutely no formal coding
 experience. This tends to mean people coming from Excel who need to do more than
