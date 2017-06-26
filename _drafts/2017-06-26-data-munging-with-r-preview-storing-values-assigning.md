@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-24 00:33:40
+post_date: 2017-06-26 11:11:07
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -49,7 +49,7 @@ but I can help make the resource they need.</p>
 <div class="paragraph">
 <p>
 <a href="https://www.manning.com/books/data-munging-with-r?a_aid=datamungingwithr&amp;a_bid=1dc44480" class="bare">To show that I really want people to contribute, here’s a discount code to
-sweeten the deal: use <code>mlcarroll</code> for 50% off here:</a></p>
+sweeten the deal: use <code>mlcarroll</code> for 50% off here.</a></p>
 </div>
 <div class="paragraph">
 <p>Chapter 1 is a free download, so please check that out too! At the moment the
