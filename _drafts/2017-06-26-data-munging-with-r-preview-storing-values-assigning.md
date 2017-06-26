@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-26 11:30:28
+post_date: 2017-06-26 11:30:41
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -107,7 +107,7 @@ recommend you use <code>&lt;-</code> for this for reasons that will become clear
 <div class="content">
 <img src="https://jcarroll.com.au/wp-content/uploads/2017/06/fig-x_eq_4.png", width="450">
 </div>
-<div class="title">Figure 2. 1. The <em>variable</em> <code>x</code> has been assigned the <em>value</em> <code>4</code>.</div>
+<div class="title">Figure 2. 2. The <em>variable</em> <code>x</code> has been assigned the <em>value</em> <code>4</code>.</div>
 </div>
 <div class="paragraph">
 <p>What happened behind the scenes was that when we pressed <kbd>Enter</kbd>, <code>R</code> took
@@ -123,7 +123,7 @@ this process is shown in <a href="#fig-assign">[fig-assign]</a> Nothing else app
 <div class="content">
 <img src="https://jcarroll.com.au/wp-content/uploads/2017/06/assign.png", width="450">
 </div>
-<div class="title">Figure 2. 2. Assigning a value to a variable. The value entered is converted to binary, then stored in memory, the reference to which is labelled by the variable.</div>
+<div class="title">Figure 2. 3. Assigning a value to a variable. The value entered is converted to binary, then stored in memory, the reference to which is labelled by the variable.</div>
 </div>
 <div class="paragraph">
 <p>This is overly simplified, of course. Technically speaking, in <code>R</code>, names have
