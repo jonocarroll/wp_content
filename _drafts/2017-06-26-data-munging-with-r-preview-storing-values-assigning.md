@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-26 11:25:40
+post_date: 2017-06-26 11:27:39
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -61,7 +61,7 @@ behind.</p>
 an excerpt from chapter 2:</p>
 </div>
 <div class="sect1">
-<h2 id="storing-values-assigning"><a class="anchor" href="#storing-values-assigning"></a>2. Storing Values (Assigning)</h2>
+<h2 id="storing-values-assigning"><a class="anchor" href="#storing-values-assigning"></a>2.2. Storing Values (Assigning)</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>In order to do something with our data, we will need to tell <code>R</code> what to call
@@ -72,7 +72,7 @@ haven’t told <code>R</code> to store any of them yet. Next, we’ll create som
 to store our data <em>values</em>.</p>
 </div>
 <div class="sect2">
-<h3 id="data-variables"><a class="anchor" href="#data-variables"></a>2.1. Data (Variables)</h3>
+<h3 id="data-variables"><a class="anchor" href="#data-variables"></a>2.2.1. Data (Variables)</h3>
 <div class="paragraph">
 <p>If we have the values <code>4</code> and <code>8</code> and we want to do something with them, we can
 use the values literally (say, add them together as <code>4 + 8</code>). You may be
@@ -368,8 +368,7 @@ reasons beyond the scope of this book.<sup class="footnote">[<a id="_footnoteref
 <div class="title">Naming things</div>
 <div class="paragraph">
 <p>Be careful when naming your variables. Make them meaningful and
-concise. In six months from now, will you remember what <code>data_17</code> corresponds
-to? Tomorrow, will you remember that <code>newdata</code> was updated twice?</p>
+concise. In six months from now, will you remember what <code>data_17</code> corresponds to? Tomorrow, will you remember that <code>newdata</code> was updated twice?</p>
 </div>
 </td>
 </tr>
@@ -377,7 +376,7 @@ to? Tomorrow, will you remember that <code>newdata</code> was updated twice?</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="unchanging-data"><a class="anchor" href="#unchanging-data"></a>2.2. Unchanging Data</h3>
+<h3 id="unchanging-data"><a class="anchor" href="#unchanging-data"></a>2.2.2. Unchanging Data</h3>
 <div class="paragraph">
 <p>If you’re familiar with working with data in a spreadsheet program (such as
 Excel), you may expect your variables to behave in a way that they
@@ -439,7 +438,7 @@ its current overall <em>state</em>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="assigmnent-operators-code-code-vs-code-code"><a class="anchor" href="#assigmnent-operators-code-code-vs-code-code"></a>2.3. Assigmnent Operators (<code>&lt;-</code> vs <code>=</code>)</h3>
+<h3 id="assigmnent-operators-code-code-vs-code-code"><a class="anchor" href="#assigmnent-operators-code-code-vs-code-code"></a>2.2.3. Assigmnent Operators (<code>&lt;-</code> vs <code>=</code>)</h3>
 <div class="paragraph">
 <p>If you’ve read some <code>R</code> code already, you’ve possibly seen that both <code>&lt;-</code> and
 <code>=</code> are used to assign values to objects, and this tends to cause some
