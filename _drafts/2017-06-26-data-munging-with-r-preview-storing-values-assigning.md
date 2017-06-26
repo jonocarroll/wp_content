@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-26 11:28:04
+post_date: 2017-06-26 11:30:28
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -123,7 +123,7 @@ this process is shown in <a href="#fig-assign">[fig-assign]</a> Nothing else app
 <div class="content">
 <img src="https://jcarroll.com.au/wp-content/uploads/2017/06/assign.png", width="450">
 </div>
-<div class="title">Assigning a value to a variable. The value entered is converted to binary, then stored in memory, the reference to which is labelled by the variable.</div>
+<div class="title">Figure 2. 2. Assigning a value to a variable. The value entered is converted to binary, then stored in memory, the reference to which is labelled by the variable.</div>
 </div>
 <div class="paragraph">
 <p>This is overly simplified, of course. Technically speaking, in <code>R</code>, names have
