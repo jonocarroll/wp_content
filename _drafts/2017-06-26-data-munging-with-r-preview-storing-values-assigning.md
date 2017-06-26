@@ -2,7 +2,7 @@
 ID: 1068
 post_title: 'Data Munging With R Preview &#8212; Storing Values (Assigning)'
 author: Jonathan Carroll
-post_date: 2017-06-26 11:11:07
+post_date: 2017-06-26 11:17:15
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1068
@@ -119,6 +119,14 @@ this process is shown in <a href="#fig-assign">[fig-assign]</a> Nothing else app
 <code><strong>Console</strong></code> because the action of assigning a value doesn’t <em>return</em> anything
 (we’ll cover this more in our section on functions).</p>
 </div>
+
+<div id="fig-assign" class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://jcarroll.com.au/wp-content/uploads/2017/06/fig-x_eq_4.png", width="450">
+</div>
+<div class="title">Figure 2. 1. The <em>variable</em> <code>x</code> has been assigned the <em>value</em> <code>4</code>.</div>
+</div>
+
 <div class="paragraph">
 <div class="title">Assigning a value to a variable. The value entered is converted to binary, then stored in memory, the reference to which is labelled by the variable.</div>
 <p>![figures/assigning.png]</p>
