@@ -1,8 +1,10 @@
 ---
 ID: 1106
-post_title: An integer by any other name
+post_title: >
+  Thou shalt not compare numeric values
+  (except when it works)
 author: Jonathan Carroll
-post_date: 2017-09-04 14:41:11
+post_date: 2017-09-04 14:43:11
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -156,4 +158,4 @@ dataB2eps[/code]
 map_lgl(0:4, ~ as.integer(.x) == as.integer(.x) + .Machine$double.eps)[/code]
 [code language="r"]## [1] FALSE FALSE  TRUE  TRUE  TRUE[/code]
 <p>And there we have it. Some sort of relative difference tolerance I suspect. In any case, the general rule to live by is to <em>never</em> compare floats. Add this to the list of reasons why.</p>
-<p>For what it's worth, I'm sure this is hardly a surprising detail to the <code>dplyr</c
+<p>For what it's worth, I'm sure this is hardly a surprising detail to the <code>dplyr</code> team. They've dealt with <a href="https://github.com/tidyverse/dplyr/issues/228">things like this for a long time</a> and I'm sure it was much worse before those changes.</p>
