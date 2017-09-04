@@ -4,7 +4,7 @@ post_title: >
   Thou shalt not compare numeric values
   (except when it works)
 author: Jonathan Carroll
-post_date: 2017-09-04 14:54:59
+post_date: 2017-09-04 14:59:16
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -158,9 +158,9 @@ dataB2eps[/code]
 ## 6 1.000000e+00    NA  1001
 ## 7 2.000000e+00    NA  1002
 ## 8 3.000000e+00    NA  1003[/code]
-<p>That’s what I’d expect. So, what’s going on? Why does <code>R</code> think those numbers are the same. Let’s check with a minimal example: For each of the values <code>0:4</code>, let’s compare that integer with the same offset by <code>.Machine$double.eps</code></p>
+<p>That’s what I’d expect. So, what’s going on? Why does <code>R</code> think those numbers are the same? Let’s check with a minimal example: For each of the values <code>0:4</code>, let’s compare that integer with the same offset by <code>.Machine$double.eps</code></p>
 [code language="r"]suppressPackageStartupMessages(library(purrr)) ## for the 'thou shalt not for-loop' crowd
 map_lgl(0:4, ~ as.integer(.x) == as.integer(.x) + .Machine$double.eps)[/code]
 [code language="r"]## [1] FALSE FALSE  TRUE  TRUE  TRUE[/code]
-<p>And there we have it. Some sort of relative difference tolerance I suspect. In any case, the general rule to live by is to <em>never</em> compare floats. Add this to the list of reasons why.</p>
+<p>And there we have it. Some sort of relative difference tolerance maybe? In any case, the general rule to live by is to <em>never</em> compare floats. Add this to the list of reasons why.</p>
 <p>For what it's worth, I'm sure this is hardly a surprising detail to the <code>dplyr</code> team. They've dealt with <a href="https://github.com/tidyverse/dplyr/issues/228">things like this for a long time</a> and I'm sure it was much worse before those changes.</p>
