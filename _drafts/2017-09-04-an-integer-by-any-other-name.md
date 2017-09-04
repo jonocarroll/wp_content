@@ -2,7 +2,7 @@
 ID: 1106
 post_title: An integer by any other name
 author: Jonathan Carroll
-post_date: 2017-09-04 14:26:18
+post_date: 2017-09-04 14:29:06
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -16,7 +16,7 @@ suppressPackageStartupMessages(library(dplyr))[/code]
 
 <p>My example involved joining together two <code>tibble</code>s containing text values. Nothing too surprising. I wondered though; do numbers behave the way I expect?</p>
 <p>If I had a <code>tibble</code> where the column I would use to <code>join</code> had integers</p>
-[code language="r"]dataA &amp;lt;- tribble(
+[code language="r"]dataA &lt;- tribble(
     ~X, ~Y,
     0L, 100L,
     1L, 101L,
@@ -26,13 +26,13 @@ suppressPackageStartupMessages(library(dplyr))[/code]
 dataA[/code]
 [code language="r"]## # A tibble: 4 x 2
 ##       X     Y
-##   &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
+##   &lt;int&gt; &lt;int&gt;
 ## 1     0   100
 ## 2     1   101
 ## 3     2   102
 ## 4     3   103[/code]
 <p>and another <code>tibble</code> with <code>numeric</code> in that column</p>
-[code language="r"]dataB &amp;lt;- tribble(
+[code language="r"]dataB &lt;- tribble(
     ~X, ~Z,
     0, 1000L,
     1, 1001L,
@@ -42,17 +42,17 @@ dataA[/code]
 dataB[/code]
 [code language="r"]## # A tibble: 4 x 2
 ##       X     Z
-##   &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;
+##   &lt;dbl&gt; &lt;int&gt;
 ## 1     0  1000
 ## 2     1  1001
 ## 3     2  1002
 ## 4     3  1003[/code]
 <p>would they still <code>join</code>?</p>
 [code language="r"]full_join(dataA, dataB)[/code]
-[code language="r"]## Joining, by = &amp;quot;X&amp;quot;[/code]
+[code language="r"]## Joining, by = &quot;X&quot;[/code]
 [code language="r"]## # A tibble: 4 x 3
 ##       X     Y     Z
-##   &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
+##   &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
 ## 1     0   100  1000
 ## 2     1   101  1001
 ## 3     2   102  1002
@@ -68,35 +68,35 @@ dataB[/code]
 [code language="r"]2L == 2[/code]
 [code language="r"]## [1] TRUE[/code]
 <p>([code language="r"]==[/code] coerces types before comparing). Well, what if one of these just ‘looks like’ the other value (can be coerced to the same?)</p>
-[code language="r"]dataC &amp;lt;- tribble(
+[code language="r"]dataC &lt;- tribble(
     ~X, ~Z,
-    &amp;quot;0&amp;quot;, 100L,
-    &amp;quot;1&amp;quot;, 101L,
-    &amp;quot;2&amp;quot;, 102L,
-    &amp;quot;3&amp;quot;, 103L
+    &quot;0&quot;, 100L,
+    &quot;1&quot;, 101L,
+    &quot;2&quot;, 102L,
+    &quot;3&quot;, 103L
 )
 dataC[/code]
 [code language="r"]## # A tibble: 4 x 2
 ##       X     Z
-##   &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt;
+##   &lt;chr&gt; &lt;int&gt;
 ## 1     0   100
 ## 2     1   101
 ## 3     2   102
 ## 4     3   103[/code]
 [code language="r"]full_join(dataA, dataC) [/code]
-[code language="r"]## Joining, by = &amp;quot;X&amp;quot;[/code]
+[code language="r"]## Joining, by = &quot;X&quot;[/code]
 [code language="r"]## Error in full_join_impl(x, y, by$x, by$y, suffix$x, suffix$y, check_na_matches(na_matches)): Can't join on 'X' x 'X' because of incompatible types (character / integer)[/code]
 <p>That’s probably wise. Of course, <code>R</code> is perfectly happy with things like</p>
-[code language="r"]&amp;quot;2&amp;quot;:&amp;quot;5&amp;quot;[/code]
+[code language="r"]&quot;2&quot;:&quot;5&quot;[/code]
 [code language="r"]## [1] 2 3 4 5[/code]
 <p>and <code>==</code> thinks that’s fine</p>
-[code language="r"]&amp;quot;0&amp;quot; == 0L[/code]
+[code language="r"]&quot;0&quot; == 0L[/code]
 [code language="r"]## [1] TRUE[/code]
-[code language="r"]&amp;quot;2&amp;quot; == 2L[/code]
+[code language="r"]&quot;2&quot; == 2L[/code]
 [code language="r"]## [1] TRUE[/code]
 <p>but who am I to argue?</p>
 <p>Anyway, how far apart can those integers and numerics be before they aren’t able to be joined? What if we shift the ‘numeric in name only’ values away from the integers just a teensy bit? <code>.Machine$double.eps</code> is the built-in value for ‘the tiniest number you can produce’. On this system it’s 2.22044610^{-16}.</p>
-[code language="r"]dataBeps &amp;lt;- tribble(
+[code language="r"]dataBeps &lt;- tribble(
     ~X, ~Z,
     0 + .Machine$double.eps, 1000L,
     1 + .Machine$double.eps, 1001L,
@@ -106,16 +106,16 @@ dataC[/code]
 dataBeps[/code]
 [code language="r"]## # A tibble: 4 x 2
 ##              X     Z
-##          &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;
+##          &lt;dbl&gt; &lt;int&gt;
 ## 1 2.220446e-16  1000
 ## 2 1.000000e+00  1001
 ## 3 2.000000e+00  1002
 ## 4 3.000000e+00  1003[/code]
 [code language="r"]full_join(dataA, dataBeps) [/code]
-[code language="r"]## Joining, by = &amp;quot;X&amp;quot;[/code]
+[code language="r"]## Joining, by = &quot;X&quot;[/code]
 [code language="r"]## # A tibble: 6 x 3
 ##              X     Y     Z
-##          &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
+##          &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
 ## 1 0.000000e+00   100    NA
 ## 2 1.000000e+00   101    NA
 ## 3 2.000000e+00   102  1002
@@ -123,7 +123,7 @@ dataBeps[/code]
 ## 5 2.220446e-16    NA  1000
 ## 6 1.000000e+00    NA  1001[/code]
 <p>Well, that’s… weirder. The values offset from <code>2</code> and <code>3</code> joined fine, but the <code>0</code> and <code>1</code> each got multiple copies since <code>R</code> thinks they’re different. What if we offset a little further?</p>
-[code language="r"]dataB2eps &amp;lt;- tribble(
+[code language="r"]dataB2eps &lt;- tribble(
     ~X, ~Z,
     0 + 2*.Machine$double.eps, 1000L,
     1 + 2*.Machine$double.eps, 1001L,
@@ -133,16 +133,16 @@ dataBeps[/code]
 dataB2eps[/code]
 [code language="r"]## # A tibble: 4 x 2
 ##              X     Z
-##          &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;
+##          &lt;dbl&gt; &lt;int&gt;
 ## 1 4.440892e-16  1000
 ## 2 1.000000e+00  1001
 ## 3 2.000000e+00  1002
 ## 4 3.000000e+00  1003[/code]
 [code language="r"]full_join(dataA, dataB2eps)[/code]
-[code language="r"]## Joining, by = &amp;quot;X&amp;quot;[/code]
+[code language="r"]## Joining, by = &quot;X&quot;[/code]
 [code language="r"]## # A tibble: 8 x 3
 ##              X     Y     Z
-##          &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
+##          &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
 ## 1 0.000000e+00   100    NA
 ## 2 1.000000e+00   101    NA
 ## 3 2.000000e+00   102    NA
