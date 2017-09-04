@@ -4,11 +4,12 @@ post_title: >
   Thou shalt not compare numeric values
   (except when it works)
 author: Jonathan Carroll
-post_date: 2017-09-04 15:00:12
+post_date: 2017-09-04 15:02:07
 post_excerpt: ""
 layout: post
-permalink: https://jcarroll.com.au/?p=1106
-published: false
+permalink: >
+  https://jcarroll.com.au/2017/09/04/thou-shalt-not-compare-numeric-values-except-when-it-works/
+published: true
 ---
 <p>This was just going to be a few Tweets but it ended up being a bit of a rollercoaster of learning for me, and I haven’t blogged in far too long, so I’m writing it up quickly as a ‘hey look at that’ example for newcomers.</p><!--more-->
 
