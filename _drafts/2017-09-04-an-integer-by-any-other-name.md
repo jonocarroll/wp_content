@@ -2,7 +2,7 @@
 ID: 1106
 post_title: An integer by any other name
 author: Jonathan Carroll
-post_date: 2017-09-04 14:29:06
+post_date: 2017-09-04 14:30:53
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -67,7 +67,7 @@ dataB[/code]
 [code language="r"]## [1] TRUE[/code]
 [code language="r"]2L == 2[/code]
 [code language="r"]## [1] TRUE[/code]
-<p>([code language="r"]==[/code] coerces types before comparing). Well, what if one of these just ‘looks like’ the other value (can be coerced to the same?)</p>
+<p>(<code>==</code> coerces types before comparing). Well, what if one of these just ‘looks like’ the other value (can be coerced to the same?)</p>
 [code language="r"]dataC &lt;- tribble(
     ~X, ~Z,
     &quot;0&quot;, 100L,
