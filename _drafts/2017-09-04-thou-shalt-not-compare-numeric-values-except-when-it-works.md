@@ -4,7 +4,7 @@ post_title: >
   Thou shalt not compare numeric values
   (except when it works)
 author: Jonathan Carroll
-post_date: 2017-09-04 14:59:16
+post_date: 2017-09-04 15:00:12
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
