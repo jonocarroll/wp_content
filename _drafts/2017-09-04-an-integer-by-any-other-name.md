@@ -2,7 +2,7 @@
 ID: 1106
 post_title: An integer by any other name
 author: Jonathan Carroll
-post_date: 2017-09-04 14:22:05
+post_date: 2017-09-04 14:24:05
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -47,102 +47,102 @@ dataB[/code]
 ## 2     1  1001
 ## 3     2  1002
 ## 4     3  1003[/code]
-<p>would they still <code>join</code>?</p>
-[code language="r"][/code]full_join(dataA, dataB)</code></pre>
-[code language="r"][/code]## Joining, by = &quot;X&quot;</code></pre>
-[code language="r"][/code]## # A tibble: 4 x 3
+<p>would they still [code language="r"]join[/code]?</p>
+[code language="r"]full_join(dataA, dataB)[/code]
+[code language="r"]## Joining, by = &amp;quot;X&amp;quot;[/code]
+[code language="r"]## # A tibble: 4 x 3
 ##       X     Y     Z
-##   &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
+##   &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
 ## 1     0   100  1000
 ## 2     1   101  1001
 ## 3     2   102  1002
-## 4     3   103  1003</code></pre>
+## 4     3   103  1003[/code]
 <p>Okay, sure. <code>R</code> treats these as close enough to join. I mean, maybe it shouldn’t, but we’ll work with what we have. <code>R</code> doesn’t always think these are equal</p>
-[code language="r"][/code]identical(0L, 0)</code></pre>
-[code language="r"][/code]## [1] FALSE</code></pre>
-[code language="r"][/code]identical(2L, 2)</code></pre>
-[code language="r"][/code]## [1] FALSE</code></pre>
+[code language="r"]identical(0L, 0)[/code]
+[code language="r"]## [1] FALSE[/code]
+[code language="r"]identical(2L, 2)[/code]
+[code language="r"]## [1] FALSE[/code]
 <p>though sometimes it does</p>
-[code language="r"][/code]0L == 0</code></pre>
-[code language="r"][/code]## [1] TRUE</code></pre>
-[code language="r"][/code]2L == 2</code></pre>
-[code language="r"][/code]## [1] TRUE</code></pre>
-<p>([code language="r"][/code]==</code> coerces types before comparing). Well, what if one of these just ‘looks like’ the other value (can be coerced to the same?)</p>
-[code language="r"][/code]dataC &lt;- tribble(
+[code language="r"]0L == 0[/code]
+[code language="r"]## [1] TRUE[/code]
+[code language="r"]2L == 2[/code]
+[code language="r"]## [1] TRUE[/code]
+<p>([code language="r"]==&lt;/code&gt; coerces types before comparing). Well, what if one of these just ‘looks like’ the other value (can be coerced to the same?)&lt;/p&gt;
+[code language=&quot;r&quot;]dataC &amp;lt;- tribble(
     ~X, ~Z,
-    &quot;0&quot;, 100L,
-    &quot;1&quot;, 101L,
-    &quot;2&quot;, 102L,
-    &quot;3&quot;, 103L
+    &amp;quot;0&amp;quot;, 100L,
+    &amp;quot;1&amp;quot;, 101L,
+    &amp;quot;2&amp;quot;, 102L,
+    &amp;quot;3&amp;quot;, 103L
 )
-dataC</code></pre>
-[code language="r"][/code]## # A tibble: 4 x 2
+dataC[/code]
+[code language="r"]## # A tibble: 4 x 2
 ##       X     Z
-##   &lt;chr&gt; &lt;int&gt;
+##   &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt;
 ## 1     0   100
 ## 2     1   101
 ## 3     2   102
-## 4     3   103</code></pre>
-[code language="r"][/code]full_join(dataA, dataC) </code></pre>
-[code language="r"][/code]## Joining, by = &quot;X&quot;</code></pre>
-[code language="r"][/code]## Error in full_join_impl(x, y, by$x, by$y, suffix$x, suffix$y, check_na_matches(na_matches)): Can't join on 'X' x 'X' because of incompatible types (character / integer)</code></pre>
+## 4     3   103[/code]
+[code language="r"]full_join(dataA, dataC) [/code]
+[code language="r"]## Joining, by = &amp;quot;X&amp;quot;[/code]
+[code language="r"]## Error in full_join_impl(x, y, by$x, by$y, suffix$x, suffix$y, check_na_matches(na_matches)): Can't join on 'X' x 'X' because of incompatible types (character / integer)[/code]
 <p>That’s probably wise. Of course, <code>R</code> is perfectly happy with things like</p>
-[code language="r"][/code]&quot;2&quot;:&quot;5&quot;</code></pre>
-[code language="r"][/code]## [1] 2 3 4 5</code></pre>
+[code language="r"]&amp;quot;2&amp;quot;:&amp;quot;5&amp;quot;[/code]
+[code language="r"]## [1] 2 3 4 5[/code]
 <p>and <code>==</code> thinks that’s fine</p>
-[code language="r"][/code]&quot;0&quot; == 0L</code></pre>
-[code language="r"][/code]## [1] TRUE</code></pre>
-[code language="r"][/code]&quot;2&quot; == 2L</code></pre>
-[code language="r"][/code]## [1] TRUE</code></pre>
+[code language="r"]&amp;quot;0&amp;quot; == 0L[/code]
+[code language="r"]## [1] TRUE[/code]
+[code language="r"]&amp;quot;2&amp;quot; == 2L[/code]
+[code language="r"]## [1] TRUE[/code]
 <p>but who am I to argue?</p>
 <p>Anyway, how far apart can those integers and numerics be before they aren’t able to be joined? What if we shift the ‘numeric in name only’ values away from the integers just a teensy bit? <code>.Machine$double.eps</code> is the built-in value for ‘the tiniest number you can produce’. On this system it’s 2.22044610^{-16}.</p>
-[code language="r"][/code]dataBeps &lt;- tribble(
+[code language="r"]dataBeps &amp;lt;- tribble(
     ~X, ~Z,
     0 + .Machine$double.eps, 1000L,
     1 + .Machine$double.eps, 1001L,
     2 + .Machine$double.eps, 1002L,
     3 + .Machine$double.eps, 1003L
 )
-dataBeps</code></pre>
-[code language="r"][/code]## # A tibble: 4 x 2
+dataBeps[/code]
+[code language="r"]## # A tibble: 4 x 2
 ##              X     Z
-##          &lt;dbl&gt; &lt;int&gt;
+##          &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;
 ## 1 2.220446e-16  1000
 ## 2 1.000000e+00  1001
 ## 3 2.000000e+00  1002
-## 4 3.000000e+00  1003</code></pre>
-[code language="r"][/code]full_join(dataA, dataBeps) </code></pre>
-[code language="r"][/code]## Joining, by = &quot;X&quot;</code></pre>
-[code language="r"][/code]## # A tibble: 6 x 3
+## 4 3.000000e+00  1003[/code]
+[code language="r"]full_join(dataA, dataBeps) [/code]
+[code language="r"]## Joining, by = &amp;quot;X&amp;quot;[/code]
+[code language="r"]## # A tibble: 6 x 3
 ##              X     Y     Z
-##          &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
+##          &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
 ## 1 0.000000e+00   100    NA
 ## 2 1.000000e+00   101    NA
 ## 3 2.000000e+00   102  1002
 ## 4 3.000000e+00   103  1003
 ## 5 2.220446e-16    NA  1000
-## 6 1.000000e+00    NA  1001</code></pre>
+## 6 1.000000e+00    NA  1001[/code]
 <p>Well, that’s… weirder. The values offset from <code>2</code> and <code>3</code> joined fine, but the <code>0</code> and <code>1</code> each got multiple copies since <code>R</code> thinks they’re different. What if we offset a little further?</p>
-[code language="r"][/code]dataB2eps &lt;- tribble(
+[code language="r"]dataB2eps &amp;lt;- tribble(
     ~X, ~Z,
     0 + 2*.Machine$double.eps, 1000L,
     1 + 2*.Machine$double.eps, 1001L,
     2 + 2*.Machine$double.eps, 1002L,
     3 + 2*.Machine$double.eps, 1003L
 )
-dataB2eps</code></pre>
-[code language="r"][/code]## # A tibble: 4 x 2
+dataB2eps[/code]
+[code language="r"]## # A tibble: 4 x 2
 ##              X     Z
-##          &lt;dbl&gt; &lt;int&gt;
+##          &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;
 ## 1 4.440892e-16  1000
 ## 2 1.000000e+00  1001
 ## 3 2.000000e+00  1002
-## 4 3.000000e+00  1003</code></pre>
-[code language="r"][/code]full_join(dataA, dataB2eps) </code></pre>
-[code language="r"][/code]## Joining, by = &quot;X&quot;</code></pre>
-[code language="r"][/code]## # A tibble: 8 x 3
+## 4 3.000000e+00  1003[/code]
+[code language="r"]full_join(dataA, dataB2eps)[/code]
+[code language="r"]## Joining, by = &amp;quot;X&amp;quot;[/code]
+[code language="r"]## # A tibble: 8 x 3
 ##              X     Y     Z
-##          &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
+##          &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
 ## 1 0.000000e+00   100    NA
 ## 2 1.000000e+00   101    NA
 ## 3 2.000000e+00   102    NA
@@ -150,7 +150,7 @@ dataB2eps</code></pre>
 ## 5 4.440892e-16    NA  1000
 ## 6 1.000000e+00    NA  1001
 ## 7 2.000000e+00    NA  1002
-## 8 3.000000e+00    NA  1003</code></pre>
+## 8 3.000000e+00    NA  1003[/code]
 <p>That’s what I’d expect. So, what’s going on? Why does <code>R</code> think those numbers are the same. Let’s check with a minimal example: For each of the values <code>0:4</code>, let’s compare that integer with the same offset by <code>.Machine$double.eps</code></p>
 [code language="r"][/code]suppressPackageStartupMessages(library(purrr)) ## for the 'thou shalt not for-loop' crowd
 map_lgl(0:4, ~ as.integer(.x) == as.integer(.x) + .Machine$double.eps)</code></pre>
