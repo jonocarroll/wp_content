@@ -2,7 +2,7 @@
 ID: 1106
 post_title: An integer by any other name
 author: Jonathan Carroll
-post_date: 2017-09-04 14:31:57
+post_date: 2017-09-04 14:41:11
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -156,3 +156,4 @@ dataB2eps[/code]
 map_lgl(0:4, ~ as.integer(.x) == as.integer(.x) + .Machine$double.eps)[/code]
 [code language="r"]## [1] FALSE FALSE  TRUE  TRUE  TRUE[/code]
 <p>And there we have it. Some sort of relative difference tolerance I suspect. In any case, the general rule to live by is to <em>never</em> compare floats. Add this to the list of reasons why.</p>
+<p>For what it's worth, I'm sure this is hardly a surprising detail to the <code>dplyr</c
