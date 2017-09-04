@@ -2,7 +2,7 @@
 ID: 1106
 post_title: An integer by any other name
 author: Jonathan Carroll
-post_date: 2017-09-04 14:24:05
+post_date: 2017-09-04 14:24:41
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -67,8 +67,8 @@ dataB[/code]
 [code language="r"]## [1] TRUE[/code]
 [code language="r"]2L == 2[/code]
 [code language="r"]## [1] TRUE[/code]
-<p>([code language="r"]==&lt;/code&gt; coerces types before comparing). Well, what if one of these just ‘looks like’ the other value (can be coerced to the same?)&lt;/p&gt;
-[code language=&quot;r&quot;]dataC &amp;lt;- tribble(
+<p>([code language="r"]==[/code] coerces types before comparing). Well, what if one of these just ‘looks like’ the other value (can be coerced to the same?)</p>
+[code language="r"]dataC &amp;lt;- tribble(
     ~X, ~Z,
     &amp;quot;0&amp;quot;, 100L,
     &amp;quot;1&amp;quot;, 101L,
@@ -152,7 +152,7 @@ dataB2eps[/code]
 ## 7 2.000000e+00    NA  1002
 ## 8 3.000000e+00    NA  1003[/code]
 <p>That’s what I’d expect. So, what’s going on? Why does <code>R</code> think those numbers are the same. Let’s check with a minimal example: For each of the values <code>0:4</code>, let’s compare that integer with the same offset by <code>.Machine$double.eps</code></p>
-[code language="r"][/code]suppressPackageStartupMessages(library(purrr)) ## for the 'thou shalt not for-loop' crowd
-map_lgl(0:4, ~ as.integer(.x) == as.integer(.x) + .Machine$double.eps)</code></pre>
-[code language="r"][/code]## [1] FALSE FALSE  TRUE  TRUE  TRUE</code></pre>
+[code language="r"]suppressPackageStartupMessages(library(purrr)) ## for the 'thou shalt not for-loop' crowd
+map_lgl(0:4, ~ as.integer(.x) == as.integer(.x) + .Machine$double.eps)[/code]
+[code language="r"]## [1] FALSE FALSE  TRUE  TRUE  TRUE[/code]
 <p>And there we have it. Some sort of relative difference tolerance I suspect. In any case, the general rule to live by is to <em>never</em> compare floats. Add this to the list of reasons why.</p>
