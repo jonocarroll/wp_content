@@ -2,7 +2,7 @@
 ID: 1106
 post_title: An integer by any other name
 author: Jonathan Carroll
-post_date: 2017-09-04 14:24:41
+post_date: 2017-09-04 14:25:21
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -47,7 +47,7 @@ dataB[/code]
 ## 2     1  1001
 ## 3     2  1002
 ## 4     3  1003[/code]
-<p>would they still [code language="r"]join[/code]?</p>
+<p>would they still <code>join</code>?</p>
 [code language="r"]full_join(dataA, dataB)[/code]
 [code language="r"]## Joining, by = &amp;quot;X&amp;quot;[/code]
 [code language="r"]## # A tibble: 4 x 3
