@@ -2,7 +2,7 @@
 ID: 1106
 post_title: An integer by any other name
 author: Jonathan Carroll
-post_date: 2017-09-04 14:18:05
+post_date: 2017-09-04 14:20:05
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -11,27 +11,28 @@ published: false
 <p>This was just going to be a few Tweets but it ended up being a bit of a rollercoaster of learning for me, and I haven’t blogged in far too long, so I’m writing it up quickly as a ‘hey look at that’ example for newcomers.</p>
 <p>I’ve been working on the ‘merging data’ part of my book and, as I do when I’m writing this stuff, I had a play around with some examples to see if there was anything funky going on if a reader was to try something slightly different. I’ve been using <code>dplyr</code> for the examples after being thoroughly convinced on Twitter to do so. It’s going well. Mostly.</p>
 
-<pre class="r"><code>## if you haven't already done so, load dplyr
-suppressPackageStartupMessages(library(dplyr))</code></pre>
+[code language="r"]## if you haven't already done so, load dplyr
+suppressPackageStartupMessages(library(dplyr))[/code]
+
 <p>My example involved joining together two <code>tibble</code>s containing text values. Nothing too surprising. I wondered though; do numbers behave the way I expect?</p>
 <p>If I had a <code>tibble</code> where the column I would use to <code>join</code> had integers</p>
-<pre class="r"><code>dataA &lt;- tribble(
+[code language="r"]dataA &amp;lt;- tribble(
     ~X, ~Y,
     0L, 100L,
     1L, 101L,
     2L, 102L,
     3L, 103L
 )
-dataA</code></pre>
-<pre><code>## # A tibble: 4 x 2
+dataA[/code]
+[code language="r"]## # A tibble: 4 x 2
 ##       X     Y
-##   &lt;int&gt; &lt;int&gt;
+##   &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
 ## 1     0   100
 ## 2     1   101
 ## 3     2   102
-## 4     3   103</code></pre>
+## 4     3   103[/code]
 <p>and another <code>tibble</code> with <code>numeric</code> in that column</p>
-<pre class="r"><code>dataB &lt;- tribble(
+[code language="r"][/code]dataB &lt;- tribble(
     ~X, ~Z,
     0, 1000L,
     1, 1001L,
@@ -39,7 +40,7 @@ dataA</code></pre>
     3, 1003L
 )
 dataB</code></pre>
-<pre><code>## # A tibble: 4 x 2
+[code language="r"][/code]## # A tibble: 4 x 2
 ##       X     Z
 ##   &lt;dbl&gt; &lt;int&gt;
 ## 1     0  1000
@@ -47,9 +48,9 @@ dataB</code></pre>
 ## 3     2  1002
 ## 4     3  1003</code></pre>
 <p>would they still <code>join</code>?</p>
-<pre class="r"><code>full_join(dataA, dataB)</code></pre>
-<pre><code>## Joining, by = &quot;X&quot;</code></pre>
-<pre><code>## # A tibble: 4 x 3
+[code language="r"][/code]full_join(dataA, dataB)</code></pre>
+[code language="r"][/code]## Joining, by = &quot;X&quot;</code></pre>
+[code language="r"][/code]## # A tibble: 4 x 3
 ##       X     Y     Z
 ##   &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
 ## 1     0   100  1000
@@ -57,17 +58,17 @@ dataB</code></pre>
 ## 3     2   102  1002
 ## 4     3   103  1003</code></pre>
 <p>Okay, sure. <code>R</code> treats these as close enough to join. I mean, maybe it shouldn’t, but we’ll work with what we have. <code>R</code> doesn’t always think these are equal</p>
-<pre class="r"><code>identical(0L, 0)</code></pre>
-<pre><code>## [1] FALSE</code></pre>
-<pre class="r"><code>identical(2L, 2)</code></pre>
-<pre><code>## [1] FALSE</code></pre>
+[code language="r"][/code]identical(0L, 0)</code></pre>
+[code language="r"][/code]## [1] FALSE</code></pre>
+[code language="r"][/code]identical(2L, 2)</code></pre>
+[code language="r"][/code]## [1] FALSE</code></pre>
 <p>though sometimes it does</p>
-<pre class="r"><code>0L == 0</code></pre>
-<pre><code>## [1] TRUE</code></pre>
-<pre class="r"><code>2L == 2</code></pre>
-<pre><code>## [1] TRUE</code></pre>
-<p>(<code>==</code> coerces types before comparing). Well, what if one of these just ‘looks like’ the other value (can be coerced to the same?)</p>
-<pre class="r"><code>dataC &lt;- tribble(
+[code language="r"][/code]0L == 0</code></pre>
+[code language="r"][/code]## [1] TRUE</code></pre>
+[code language="r"][/code]2L == 2</code></pre>
+[code language="r"][/code]## [1] TRUE</code></pre>
+<p>([code language="r"][/code]==</code> coerces types before comparing). Well, what if one of these just ‘looks like’ the other value (can be coerced to the same?)</p>
+[code language="r"][/code]dataC &lt;- tribble(
     ~X, ~Z,
     &quot;0&quot;, 100L,
     &quot;1&quot;, 101L,
@@ -75,16 +76,16 @@ dataB</code></pre>
     &quot;3&quot;, 103L
 )
 dataC</code></pre>
-<pre><code>## # A tibble: 4 x 2
+[code language="r"][/code]## # A tibble: 4 x 2
 ##       X     Z
 ##   &lt;chr&gt; &lt;int&gt;
 ## 1     0   100
 ## 2     1   101
 ## 3     2   102
 ## 4     3   103</code></pre>
-<pre class="r"><code>full_join(dataA, dataC) </code></pre>
-<pre><code>## Joining, by = &quot;X&quot;</code></pre>
-<pre><code>## Error in full_join_impl(x, y, by$x, by$y, suffix$x, suffix$y, check_na_matches(na_matches)): Can't join on 'X' x 'X' because of incompatible types (character / integer)</code></pre>
+[code language="r"][/code]full_join(dataA, dataC) </code></pre>
+[code language="r"][/code]## Joining, by = &quot;X&quot;</code></pre>
+[code language="r"][/code]## Error in full_join_impl(x, y, by$x, by$y, suffix$x, suffix$y, check_na_matches(na_matches)): Can't join on 'X' x 'X' because of incompatible types (character / integer)</code></pre>
 <p>That’s probably wise. Of course, <code>R</code> is perfectly happy with things like</p>
 <pre class="r"><code>&quot;2&quot;:&quot;5&quot;</code></pre>
 <pre><code>## [1] 2 3 4 5</code></pre>
