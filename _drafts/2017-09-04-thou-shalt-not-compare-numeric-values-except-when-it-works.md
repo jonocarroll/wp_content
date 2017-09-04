@@ -4,7 +4,7 @@ post_title: >
   Thou shalt not compare numeric values
   (except when it works)
 author: Jonathan Carroll
-post_date: 2017-09-04 14:49:35
+post_date: 2017-09-04 14:50:30
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -20,9 +20,7 @@ suppressPackageStartupMessages(library(dplyr))[/code]
 <p>My example involved joining together two <code>tibble</code>s containing text values. Nothing too surprising. I wondered though; do numbers behave the way I expect?</p>
 <p>Now, a big rule in programming 'thou shalt not compare numbers', and it holds especially true when numbers aren't exactly integers. This is because representing non-integers is hard, and what you see on the screen isn't always what the computer sees internally.</p>
 
-image::[width="300", height="188", alt="", link="https://jcarroll.com.au/wp-content/uploads/2017/09/AngryGod.jpg", align="none"]
-
-[caption]<a href="https://jcarroll.com.au/wp-content/uploads/2017/09/AngryGod-300x188.jpg"><img src="https://jcarroll.com.au/wp-content/uploads/2017/09/AngryGod-300x188.jpg" alt="Thou shalt not compare numbers." width="680" height="485" class="size-large" /></a> Thou shalt not compare numbers.[/caption]
+[caption align="alignnone" width="680"]<a href="https://jcarroll.com.au/wp-content/uploads/2017/09/AngryGod-300x188.jpg"><img src="https://jcarroll.com.au/wp-content/uploads/2017/09/AngryGod-300x188.jpg" alt="Thou shalt not compare numbers." width="680" height="485" class="size-large" /></a> Thou shalt not compare numbers.[/caption]
 
 <p>If I had a <code>tibble</code> where the column I would use to <code>join</code> had integers</p>
 [code language="r"]dataA &lt;- tribble(
