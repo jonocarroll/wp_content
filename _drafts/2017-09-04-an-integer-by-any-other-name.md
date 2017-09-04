@@ -2,7 +2,7 @@
 ID: 1106
 post_title: An integer by any other name
 author: Jonathan Carroll
-post_date: 2017-09-04 14:25:21
+post_date: 2017-09-04 14:26:18
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
@@ -31,7 +31,7 @@ dataA[/code]
 ## 2     1   101
 ## 3     2   102
 ## 4     3   103[/code]
-<p>and another [code language="r"]tibble[/code] with [code language="r"]numeric[/code] in that column</p>
+<p>and another <code>tibble</code> with <code>numeric</code> in that column</p>
 [code language="r"]dataB &amp;lt;- tribble(
     ~X, ~Z,
     0, 1000L,
