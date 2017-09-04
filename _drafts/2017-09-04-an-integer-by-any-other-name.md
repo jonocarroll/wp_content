@@ -1,8 +1,8 @@
 ---
 ID: 1106
-post_title: An integer by any other name..
+post_title: An integer by any other name
 author: Jonathan Carroll
-post_date: 2017-09-04 14:15:33
+post_date: 2017-09-04 14:15:53
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
