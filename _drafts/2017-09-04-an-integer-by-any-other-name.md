@@ -2,14 +2,14 @@
 ID: 1106
 post_title: An integer by any other name
 author: Jonathan Carroll
-post_date: 2017-09-04 14:30:53
+post_date: 2017-09-04 14:31:57
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
 published: false
 ---
 <p>This was just going to be a few Tweets but it ended up being a bit of a rollercoaster of learning for me, and I haven’t blogged in far too long, so I’m writing it up quickly as a ‘hey look at that’ example for newcomers.</p>
-<p>I’ve been working on the ‘merging data’ part of my book and, as I do when I’m writing this stuff, I had a play around with some examples to see if there was anything funky going on if a reader was to try something slightly different. I’ve been using <code>dplyr</code> for the examples after being thoroughly convinced on Twitter to do so. It’s going well. Mostly.</p>
+<p>I’ve been working on the ‘merging data’ part of <a href="https://www.manning.com/books/data-munging-with-r" target="_blank">my book</a> and, as I do when I’m writing this stuff, I had a play around with some examples to see if there was anything funky going on if a reader was to try something slightly different. I’ve been using <code>dplyr</code> for the examples after being thoroughly convinced on Twitter to do so. It’s going well. Mostly.</p>
 
 [code language="r"]## if you haven't already done so, load dplyr
 suppressPackageStartupMessages(library(dplyr))[/code]
