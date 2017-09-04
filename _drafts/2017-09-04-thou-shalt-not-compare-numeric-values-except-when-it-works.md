@@ -4,13 +4,14 @@ post_title: >
   Thou shalt not compare numeric values
   (except when it works)
 author: Jonathan Carroll
-post_date: 2017-09-04 14:46:05
+post_date: 2017-09-04 14:48:15
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1106
 published: false
 ---
-<p>This was just going to be a few Tweets but it ended up being a bit of a rollercoaster of learning for me, and I haven’t blogged in far too long, so I’m writing it up quickly as a ‘hey look at that’ example for newcomers.</p>
+<p>This was just going to be a few Tweets but it ended up being a bit of a rollercoaster of learning for me, and I haven’t blogged in far too long, so I’m writing it up quickly as a ‘hey look at that’ example for newcomers.</p><!--more-->
+
 <p>I’ve been working on the ‘merging data’ part of <a href="https://www.manning.com/books/data-munging-with-r" target="_blank">my book</a> and, as I do when I’m writing this stuff, I had a play around with some examples to see if there was anything funky going on if a reader was to try something slightly different. I’ve been using <code>dplyr</code> for the examples after being thoroughly convinced on Twitter to do so. It’s going well. Mostly.</p>
 
 [code language="r"]## if you haven't already done so, load dplyr
@@ -19,7 +20,9 @@ suppressPackageStartupMessages(library(dplyr))[/code]
 <p>My example involved joining together two <code>tibble</code>s containing text values. Nothing too surprising. I wondered though; do numbers behave the way I expect?</p>
 <p>Now, a big rule in programming 'thou shalt not compare numbers', and it holds especially true when numbers aren't exactly integers. This is because representing non-integers is hard, and what you see on the screen isn't always what the computer sees internally.</p>
 
-image::https://jcarroll.com.au/wp-content/uploads/2017/09/AngryGod-300x188.jpg[width="300", height="188", alt="Thou shalt not compare numbers", link="https://jcarroll.com.au/wp-content/uploads/2017/09/AngryGod.jpg", align="none"]
+image::[width="300", height="188", alt="Thou shalt not compare numbers", link="https://jcarroll.com.au/wp-content/uploads/2017/09/AngryGod.jpg", align="none"]
+
+[caption id="attachment_939" align="alignnone" width="680"]<a href="https://jcarroll.com.au/wp-content/uploads/2016/06/GDP.png"><img src="https://jcarroll.com.au/wp-content/uploads/2016/06/GDP-1024x731.png" alt="GDP per capita with flags for x-axis labels. This is harder to make than it seemed." width="680" height="485" class="size-large wp-image-939" /></a> GDP per capita with flags for x-axis labels. This was harder to make than it seemed, but I've since added a little more flexibility to it.[/caption]
 
 <p>If I had a <code>tibble</code> where the column I would use to <code>join</code> had integers</p>
 [code language="r"]dataA &lt;- tribble(
