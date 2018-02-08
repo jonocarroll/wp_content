@@ -2,7 +2,7 @@
 ID: 1127
 post_title: JC and the Vignettes
 author: Jonathan Carroll
-post_date: 2018-02-08 21:19:29
+post_date: 2018-02-08 21:21:24
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1127
