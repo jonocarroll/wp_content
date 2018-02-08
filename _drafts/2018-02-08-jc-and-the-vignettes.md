@@ -2,7 +2,7 @@
 ID: 1127
 post_title: JC and the Vignettes
 author: Jonathan Carroll
-post_date: 2018-02-08 21:12:15
+post_date: 2018-02-08 21:13:28
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1127
@@ -16,4 +16,4 @@ At the start of the year I set out my 'goals for 2018' just like many of us do; 
 
 My original plan for the increased interaction was to pick a package a month. I'd pick a package which didn't already have a vignette; write it, submit it as a PR, and blog about the experience. This seemed straightforward enough. People have long complained about the lack of vignettes in R packages (LINK; Twitter?). I looked through my backlog of interesting packages I meant to look at more closely and checked to see if they already had vignettes... all of them did.
 
-For those
+For those not familiar, vignettes in R packages are long-form documentation. Not just a listing of each function, but a good solid walkthrough of a use-case, examples, motivations, pitfalls, comparisons, performance metrics,
