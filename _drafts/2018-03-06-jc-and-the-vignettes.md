@@ -2,7 +2,7 @@
 ID: 1127
 post_title: JC and the Vignettes
 author: Jonathan Carroll
-post_date: 2018-03-06 15:49:22
+post_date: 2018-03-06 15:51:29
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1127
@@ -33,3 +33,7 @@ Thus began the 'Volunteer Vignettes' program. I got to work on the first one alm
 If you're new to vignettes, at this point you may be asking "How does one go about making one? What tools are required? How do I include one in my package?", and I'm glad you asked. Over the next few months I'll be blogging about vignettes; how they're currently used, how they might be more useful, and how we might be able to get people to use them more. I'm also scheduled to present the eventual conclusion of this project at <a href="https://user2018.r-project.org/">userR 2018</a>, so I'd better get it done!
 
 For now, stay tuned!
+
+P.S. for those interested in a very old-school jam:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/425GpjTSlS4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
