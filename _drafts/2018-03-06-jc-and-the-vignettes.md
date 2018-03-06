@@ -2,7 +2,7 @@
 ID: 1127
 post_title: JC and the Vignettes
 author: Jonathan Carroll
-post_date: 2018-03-06 15:27:33
+post_date: 2018-03-06 15:28:52
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1127
@@ -12,7 +12,7 @@ If that's not a great 1930's band name then I don't know what is (hint: I don't 
 
 <!--more-->
 
-At the start of the year I set out my 'goals for 2018' just like many of us do; an overly ambitious list of things we'd like to do to better ourselves. My list includes improving my French to better interact with a colleague I cohabitate and work with while onsite (my 48 day streak on Duolingo was interrupted by travel... c'est un bon début); reading more books (two a month, so far so good); writing more blog posts (one a month, this one included); and interacting more with the R community. 
+At the start of the year I set out my 'goals for 2018' just like many of us do; an overly ambitious list of things we'd like to do to better ourselves. My list includes using a bullimproving my French to better interact with a colleague I cohabitate and work with while onsite (my 48 day streak on Duolingo was interrupted by travel... c'est un bon début); reading more books (two a month, so far so good); writing more blog posts (one a month, this one included); and interacting more with the R community. 
 
 My original plan for the increased interaction was to pick an R package a month. I'd pick a package which didn't already have a vignette, learn the package, write a vignette, submit it as a PR, and blog about the experience. This seemed straightforward enough. There's a long-standing feeling that R too many R packages lack vignettes (note: <a href="https://juliasilge.com/blog/mining-cran-description/">https://juliasilge.com/blog/mining-cran-description/</a> -- an analysis I intend to reproduce/update). I looked through my backlog of interesting packages I meant to look at more closely and checked to see if they already had vignettes... all of them did (womp womp).
 
