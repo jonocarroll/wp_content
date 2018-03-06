@@ -2,13 +2,13 @@
 ID: 1127
 post_title: JC and the Vignettes
 author: Jonathan Carroll
-post_date: 2018-03-06 15:36:34
+post_date: 2018-03-06 15:39:35
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1127
 published: false
 ---
-If that's not a great 1930's band name then I don't know what is (hint: I don't know what is).
+If that's not a great 1960's band name then I don't know what is (hint: I don't know what is).
 
 <!--more-->
 
