@@ -2,7 +2,7 @@
 ID: 1127
 post_title: JC and the Vignettes
 author: Jonathan Carroll
-post_date: 2018-03-06 15:25:48
+post_date: 2018-03-06 15:27:33
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1127
@@ -26,8 +26,8 @@ Rather than admit defeat and throw another resolution on the ever-growing pile o
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So, my offer: point me towards a new(ish) package on GitHub that (a) does something cool, and (b) doesn&#39;t have a vignette. I&#39;ll learn the package inside-out, write a vignette, submit it as a PR, and blog about it. Your package, someone else&#39;s which you use, I don&#39;t mind...</p>&mdash; Jonathan Carroll (@carroll_jono) <a href="https://twitter.com/carroll_jono/status/961139533701054464?ref_src=twsrc%5Etfw">February 7, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Thus began the 'Volunteer Vignettes' program. I got to work on the first one almost immediately, and it's already uncovered bugs, inconsitencies, and insights to the author (I do plan to get in touch with original authors before beginning any actual work). I'll be writing each one up once I'm 'done' with it, sharing the insights discovered along the way, plus some new ideas about how vignettes might evolve.
+Thus began the 'Volunteer Vignettes' program. I got to work on the first one almost immediately, and doing so has already uncovered bugs, inconsistencies, and insights to the author (I do plan to start a conversation with original authors before beginning any actual work). I'll be writing each one up once I'm 'done' with it, sharing the insights discovered along the way, plus some new ideas about how vignettes might evolve.
 
-If you're new to vignettes, at this point you may be asking "How does one go about it? What tools are required? How do I include that in a package?", and I'm glad you asked. Over the next few months I'll be blogging about vignettes; how they're currently used, how they might be more useful, and how we might be able to get people to use them more. I'm also scheduled to present the eventual conclusion of this project at <a href="https://user2018.r-project.org/">userR 2018</a>, so I'd better get it done!
+If you're new to vignettes, at this point you may be asking "How does one go about making one? What tools are required? How do I include one in my package?", and I'm glad you asked. Over the next few months I'll be blogging about vignettes; how they're currently used, how they might be more useful, and how we might be able to get people to use them more. I'm also scheduled to present the eventual conclusion of this project at <a href="https://user2018.r-project.org/">userR 2018</a>, so I'd better get it done!
 
 For now, stay tuned!
