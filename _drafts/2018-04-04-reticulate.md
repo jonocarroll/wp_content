@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 22:55:59
+post_date: 2018-04-04 22:57:59
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -22,7 +22,7 @@ That algorithm is pretty clever about how it goes about the search, starting in 
 
 from a terminal to compile it into <code>boyermore.so</code>. This could then be loaded into R with <code>dyn.load("boyermore.so")</code> and in theory called with <code>.C("boyer_moore", <something>, <something>)</code>. I tried a <code><something></code> (which wasn't a pointer) and promptly crashed RStudio.
 
-The python implementation is also listed on Wikipedia, so I figured that's another route to try. I <a href="https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-boyermoor-py">saved the text</a> to a new <code>boyermoor.py</code> file and s[tarted about loading the functions from R. This is actually much simpler than for C:
+The python implementation is also listed on Wikipedia, so I figured that's another route to try. I <a href="https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-boyermoor-py">saved the text</a> to a new <code>boyermoor.py</code> file (also embedded below) and started about loading the functions from R. This is actually much simpler than for C:
 
 [code brush="r" language=","]
 library(reticulate)
@@ -33,4 +33,6 @@ This executes the python file and creates a new named list with each exported py
 
 The next steps were actually the most work: the implementation assumes that both the 'needle' and the 'haystack' are text, not numbers. To solve this, I converted my numbers (in the range 0 to 12) to letters using the built-in <code>LETTERS</code> vector. After testing that it worked as expected, a benchmark test showed that it was nowhere near as fast as my R approach. I can't say this is due to the algorithm itself, which should be fairly fast, but probably has more to do with the fact that I'm using two different languages.
 
-<script src="https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d.js"></script>
+The entire call from R looks pretty neat and tid
+
+[gist https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d file="testbmpy-r" /]
