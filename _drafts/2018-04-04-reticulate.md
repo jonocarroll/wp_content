@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 22:41:27
+post_date: 2018-04-04 22:42:52
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -22,6 +22,8 @@ I wasn't about to write one of those myself in R, so naturally people think of C
 R CMD SHLIB boyermoore.c 
 </code>
 
-from a terminal to compile it into <code>boyermore.so</code>. This could then be loaded into R with <code>dyn.load("boyermore.so")</code> and in theory called with <code>.C("boyer_moore(<something>, <something>))</code>. I tried a <code><something></code> (which wasn't a pointer) and promptly crashed RStudio.
+from a terminal to compile it into <code>boyermore.so</code>. This could then be loaded into R with <code>dyn.load("boyermore.so")</code> and in theory called with <code>.C("boyer_moore", <something>, <something>)</code>. I tried a <code><something></code> (which wasn't a pointer) and promptly crashed RStudio.
+
+The python implementation is also listed on Wikipedia, so I figured that's another route to try. I <a href="https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-boyermoor-py">saved the text</a> to a new <code>boyermoor.py</code> file and 
 
 https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-testbmpy-r
