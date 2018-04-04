@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:11:22
+post_date: 2018-04-04 23:13:37
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -25,7 +25,7 @@ That algorithm is pretty clever about how it goes about the search, starting in 
 
 <code>R CMD SHLIB boyermoore.c</code>
 
-from a terminal to compile it into <code>boyermore.so</code>. This could then be loaded into R with <code>dyn.load("boyermore.so")</code> and in theory called with <code>.C("boyer_moore", &#lt;something&#gt;, &#lt;something&#gt;)</code>. I tried a couple of <code>&#lt;something&#gt;</code>s (which wasn't a pointer) and promptly crashed RStudio.
+from a terminal to compile it into <code>boyermore.so</code>. This could then be loaded into R with <code>dyn.load("boyermore.so")</code> and in theory called with <code>.C("boyer_moore", &lt;something&gt;, &lt;something&gt;)</code>. I tried a couple of <code>&lt;something&gt;</code>s (which wasn't a pointer) and promptly crashed RStudio.
 
 The python implementation is also listed on Wikipedia, so I figured that's another route to try. I <a href="https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-boyermoor-py">saved the text</a> to a new <code>boyermoor.py</code> file (also embedded below) and started about loading the functions from R. This is actually much simpler than for C:
 
