@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:23:03
+post_date: 2018-04-04 23:23:58
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -47,5 +47,3 @@ despite a lot of python code in the background
 https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-boyermoor-py
 
 I'd certainly recommend having <code>reticulate</code> functions in your arsenal next time you need to attack a problem.
-
-image::https://jcarroll.com.au/wp-content/uploads/2018/04/reticulate-300x209.png[width="300", height="209", link="https://jcarroll.com.au/wp-content/uploads/2018/04/reticulate.png", align="none"]
