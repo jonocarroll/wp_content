@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:13:37
+post_date: 2018-04-04 23:14:07
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -40,11 +40,11 @@ The next steps were actually the most work: the implementation assumes that both
 
 The entire call from R looks pretty neat and tidy
 
-[gist https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d file="testbmpy-r" /]
+https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-testbmpy-r
 
 despite a lot of python code in the background
 
-[gist https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d file="boyermoore.py" /]
+https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-boyermoor-py
 
 I'd certainly recommend having <code>reticulate</code> functions in your arsenal next time you need to attack a problem.
 
