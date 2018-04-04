@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:02:00
+post_date: 2018-04-04 23:03:04
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -13,13 +13,13 @@ I've been using the <a href="https://github.com/rstudio/reticulate" rel="noopene
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">reticulate: R interface to Python <a href="https://t.co/qVWmwoMQAP">https://t.co/qVWmwoMQAP</a>. Comprehensive set of interoperability tools including R Markdown Python engine <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/pydata?src=hash&amp;ref_src=twsrc%5Etfw">#pydata</a> <a href="https://t.co/SuWM6Y3Pk0">pic.twitter.com/SuWM6Y3Pk0</a></p>&mdash; RStudio (@rstudio) <a href="https://twitter.com/rstudio/status/978293244390985728?ref_src=twsrc%5Etfw">March 26, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-It's a brilliant piece of work, allowing python and R to coexist in the same workflow. 
-
 <!--more-->
 
-Another opportunity came up today to use it so I thought it might be nice to do a very quick blog post to show just how easy it is to take external python code and have it callable directly from R. In this case, @coolbutuseless posed a challenge on Twitter to write a fast 'needle in a haystack' search of a small vector inside a larger one. I looked over the existing candidates and figured some sort of <a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes" rel="noopener" target="_blank">Sieve of Eratosthenes</a>-esque algorithm might have a chance (though the name eluded me entirely at the time). 
+It's a brilliant piece of work, allowing python and R to coexist in the same workflow. 
 
-My proposal was to search for the first digit using <code>which()</code>, and use this reduced vector of possible-matches in additional tests on the remaining parts of the 'needle'. @coolbutuseless refactored my attempt allowing for arbitrary length needles and found it to do quite well against the current offerings. What he still wanted though was a <a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm" rel="noopener" target="_blank">Boyer–Moore string search algorithm</a> implementation. This is apparently what <a href="https://lists.freebsd.org/pipermail/freebsd-current/2010-August/019310.html" rel="noopener" target="_blank">GNU <code>grep</code> uses</a>, so it's probably pretty okay.
+Another opportunity came up today to use it so I thought it might be nice to do a very quick blog post to show just how easy it is to take external python code and have it callable directly from R. In this case, <a href="https://twitter.com/coolbutuseless" rel="noopener" target="_blank">@coolbutuseless</a> posed a challenge on Twitter to write a fast 'needle in a haystack' search of a small vector inside a larger one. I looked over the existing candidates and figured some sort of <a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes" rel="noopener" target="_blank">Sieve of Eratosthenes</a>-esque algorithm might have a chance (though the name eluded me entirely at the time). 
+
+My proposal was to search for the first digit using <code>which()</code>, and use this reduced vector of possible-matches in additional tests on the remaining parts of the 'needle'. <a href="https://twitter.com/coolbutuseless" rel="noopener" target="_blank">@coolbutuseless</a> refactored my attempt allowing for arbitrary length needles and found it to do quite well against the current offerings. What he still wanted though was a <a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm" rel="noopener" target="_blank">Boyer–Moore string search algorithm</a> implementation. This is apparently what <a href="https://lists.freebsd.org/pipermail/freebsd-current/2010-August/019310.html" rel="noopener" target="_blank">GNU <code>grep</code> uses</a>, so it's probably pretty okay.
 
 That algorithm is pretty clever about how it goes about the search, starting in a similar way to what I did (the sieve approach was apparently the leading string match method prior to Boyer-Moore). It's much more complicated though, so I wasn't about to write one of those myself in R. Nowadays, people think of C/C++ when there's functionality they want to grab from elsewhere. There's a C implementation on the Wikipedia site, so that seems like a nice place to start. I <a href="https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-boyermoore-c">saved the text</a> to a new <code>boyermoore.c</code> file and ran 
 
