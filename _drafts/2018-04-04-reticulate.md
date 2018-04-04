@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:33:21
+post_date: 2018-04-04 23:33:35
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -50,6 +50,6 @@ despite a lot of python code in the background
 
 https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-boyermoor-py
 
-I'd certainly recommend having <code>reticulate</code> functions in your arsenal next time you need to attack a problem using python from within R. There's a whole heap of useful ways to interact between R and python with this including import python modules, call python scripts, etc...
+I'd certainly recommend having <code>reticulate</code> functions in your arsenal next time you need to attack a problem using python from within R. There's a whole heap of useful ways to interact between R and python with this including importing python modules and calling python scripts, etc...
 
 As a side-note: keep an eye on the <a href="https://github.com/rstats-go" rel="noopener" target="_blank">ergo project</a> to connect the go language in just as easily.
