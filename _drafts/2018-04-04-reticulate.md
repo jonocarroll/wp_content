@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:29:13
+post_date: 2018-04-04 23:29:32
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -40,7 +40,7 @@ This executes the python file and creates a new named list with each exported py
 bm$string_search(needle, haystack)
 [/code]
 
-Not quite that easy of course. ..The implementation assumes that both the 'needle' and the 'haystack' are text, not numbers. To solve this, I converted my numbers (in the range 0 to 12) to letters using the built-in <code>LETTERS</code> vector. After testing that it worked as expected, a benchmark test showed that it was nowhere near as fast as my R approach. I can't say this is due to the algorithm itself, which should be fairly fast, but probably has more to do with the fact that I'm using two different languages.
+Not <em>quite</em> that easy of course... The implementation assumes that both the 'needle' and the 'haystack' are text, not numbers. To solve this, I converted my numbers (in the range 0 to 12) to letters using the built-in <code>LETTERS</code> vector. After testing that it worked as expected, a benchmark test showed that it was nowhere near as fast as my R approach. I can't say this is due to the algorithm itself, which should be fairly fast, but probably has more to do with the fact that I'm using two different languages.
 
 The entire call from R looks pretty neat and tidy
 
