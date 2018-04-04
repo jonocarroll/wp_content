@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:34:58
+post_date: 2018-04-04 23:36:16
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
