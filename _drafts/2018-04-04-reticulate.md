@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 22:53:22
+post_date: 2018-04-04 22:54:43
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -33,4 +33,4 @@ This executes the python file and creates a new named list with each exported py
 
 The next steps were actually the most work: the implementation assumes that both the 'needle' and the 'haystack' are text, not numbers. To solve this, I converted my numbers (in the range 0 to 12) to letters using the built-in <code>LETTERS</code> vector. After testing that it worked as expected, a benchmark test showed that it was nowhere near as fast as my R approach. I can't say this is due to the algorithm itself, which should be fairly fast, but probably has more to do with the fact that I'm using two different languages.
 
-[gist]https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-testbmpy-r[/gist]
+[gist]d658b5ccf33aaef150b6b36f055d2d6d[/gist]
