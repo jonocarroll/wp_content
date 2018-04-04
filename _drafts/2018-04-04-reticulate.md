@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 22:37:12
+post_date: 2018-04-04 22:39:26
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -19,8 +19,9 @@ My proposal was to search for the first digit using <code>which()</code>, and us
 I wasn't about to write one of those myself in R, so naturally people think of C. There's a C implementation on the Wikipedia site, so that seems like a nice place to start. I saved the text to a new <code>boyermoore.c</code> file and ran 
 
 <code>
-
+R CMD SHLIB boyermoore.c 
 </code>
 
+from a terminal to compile it into <code>boyermore.so</code>. This could then be loaded into R with <code>dyn.load("boyermore.so")</code> and in theory called with .C(boyer_moore(<somethin
 
 https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-testbmpy-r
