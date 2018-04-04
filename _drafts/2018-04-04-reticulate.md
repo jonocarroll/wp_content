@@ -2,13 +2,18 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:00:00
+post_date: 2018-04-04 23:02:00
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
 published: false
 ---
-I've been using the <a href="https://github.com/rstudio/reticulate" rel="noopener" target="_blank">reticulate</a> package occasionally for a while now, so I was surprised to see that it had only just been officially released. It's a brilliant piece of work, allowing python and R to coexist in the same workflow. 
+I've been using the <a href="https://github.com/rstudio/reticulate" rel="noopener" target="_blank">reticulate</a> package occasionally for a while now, so I was surprised to see that it had only just been officially released. 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">reticulate: R interface to Python <a href="https://t.co/qVWmwoMQAP">https://t.co/qVWmwoMQAP</a>. Comprehensive set of interoperability tools including R Markdown Python engine <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/pydata?src=hash&amp;ref_src=twsrc%5Etfw">#pydata</a> <a href="https://t.co/SuWM6Y3Pk0">pic.twitter.com/SuWM6Y3Pk0</a></p>&mdash; RStudio (@rstudio) <a href="https://twitter.com/rstudio/status/978293244390985728?ref_src=twsrc%5Etfw">March 26, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+It's a brilliant piece of work, allowing python and R to coexist in the same workflow. 
 
 <!--more-->
 
@@ -42,3 +47,5 @@ despite a lot of python code in the background
 [gist https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d file="boyermoore.py" /]
 
 I'd certainly recommend having <code>reticulate</code> functions in your arsenal next time you need to attack a problem.
+
+image::https://jcarroll.com.au/wp-content/uploads/2018/04/reticulate-300x209.png[width="300", height="209", link="https://jcarroll.com.au/wp-content/uploads/2018/04/reticulate.png", align="none"]
