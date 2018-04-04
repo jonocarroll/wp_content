@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 22:36:12
+post_date: 2018-04-04 22:37:12
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -16,7 +16,11 @@ Another opportunity came up today to use it so I thought it might be nice to do 
 
 My proposal was to search for the first digit using <code>which()</code>, and use this reduced vector of possible-matches in additional tests on the remaining parts of the 'needle'. @coolbutuseless refactored my attempt allowing for arbitrary length needles and found it to do quite well against the current offerings. What he still wanted though was a <a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm" rel="noopener" target="_blank">Boyer–Moore string search algorithm</a> implementation. This is apparently what <a href="https://lists.freebsd.org/pipermail/freebsd-current/2010-August/019310.html" rel="noopener" target="_blank">GNU <code>grep</code> uses</a>, so it's probably pretty okay.
 
-I wasn't about to write one of those myself in R, so naturally people think of C. There's a C implementation on the Wikipedia site, so that seems like a nice place to start. I saved the text to a new boyermoor
+I wasn't about to write one of those myself in R, so naturally people think of C. There's a C implementation on the Wikipedia site, so that seems like a nice place to start. I saved the text to a new <code>boyermoore.c</code> file and ran 
+
+<code>
+
+</code>
 
 
 https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-testbmpy-r
