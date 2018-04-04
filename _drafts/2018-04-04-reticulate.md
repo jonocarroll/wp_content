@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:21:41
+post_date: 2018-04-04 23:23:03
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -40,7 +40,7 @@ The next steps were actually the most work: the implementation assumes that both
 
 The entire call from R looks pretty neat and tidy
 
-https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-testbmpy-r
+[gist id="d658b5ccf33aaef150b6b36f055d2d6d" file="testBMpy.R"]
 
 despite a lot of python code in the background
 
