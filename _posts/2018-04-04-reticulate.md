@@ -2,11 +2,12 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:36:16
+post_date: 2018-04-04 23:38:05
 post_excerpt: ""
 layout: post
-permalink: https://jcarroll.com.au/?p=1142
-published: false
+permalink: >
+  https://jcarroll.com.au/2018/04/04/reticulate/
+published: true
 ---
 I've been using the <a href="https://github.com/rstudio/reticulate" rel="noopener" target="_blank">reticulate</a> package occasionally for a while now, so I was surprised to see that it had only just been officially released. 
 
