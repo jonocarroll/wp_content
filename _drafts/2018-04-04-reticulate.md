@@ -2,7 +2,7 @@
 ID: 1142
 post_title: Constricted development with reticulate
 author: Jonathan Carroll
-post_date: 2018-04-04 23:08:48
+post_date: 2018-04-04 23:10:14
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1142
@@ -29,7 +29,7 @@ from a terminal to compile it into <code>boyermore.so</code>. This could then be
 
 The python implementation is also listed on Wikipedia, so I figured that's another route to try. I <a href="https://gist.github.com/jonocarroll/d658b5ccf33aaef150b6b36f055d2d6d#file-boyermoor-py">saved the text</a> to a new <code>boyermoor.py</code> file (also embedded below) and started about loading the functions from R. This is actually much simpler than for C:
 
-[code brush="r" language=","]
+[code language="r"]
 library(reticulate)
 bm &lt;- py_run_file(&quot;boyermoor.py&quot;)
 [/code]
