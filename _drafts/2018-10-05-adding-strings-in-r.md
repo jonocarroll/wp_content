@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:46:08
+post_date: 2018-10-05 21:48:08
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -138,7 +138,30 @@ So, that's one option for string addition in R. Is it the right one? The idea of
 #&gt; Error in &quot;a&quot; + &quot;b&quot; : non-numeric argument to binary operator
 [/code]
 
-It seems to fail. What went wrong? What if 
+It seems to fail. What went wrong? Is dispatch not working? We want to dispatch on "character" -- is that what we have?
+
+[code language="r"]
+class(&quot;a&quot;)
+#&gt; [1] &quot;character&quot;
+[/code]
+
+
+structure("a", class = "character") + 2
+#> "a2
+2 + structure("a", class = "character")
+#> "2a"
+
+What if we explicitly create a 
+What if we try to dispatch on some new class?
+
+[code language="r"]
+`+.character` &lt;- function(e1, e2) {
+  paste0(e1, e2)
+}
+&quot;a&quot; + &quot;b&quot;
+#&gt; Error in &quot;a&quot; + &quot;b&quot; : non-numeric argument to binary operator
+[/code]
+
 
 In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
 
