@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 22:19:18
+post_date: 2018-10-05 22:22:18
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -222,4 +222,4 @@ setMethod(&quot;+&quot;, c(&quot;character&quot;, &quot;character&quot;), functi
 #&gt;   the method for function ‘+’ and signature e1=&quot;character&quot;, e2=&quot;character&quot; is sealed and cannot be re-defined
 [/code]
 
-so no luck there. Brodie also links to <a href="https://stackoverflow.com/questions/1319698/why-doesnt-operate-on-characters-in-r/1321491#1321491">a Stack Overflow discussion</a> on this very topic where it is pointed out by Martin MMartin Mächler that
+so no luck there. Brodie also links to <a href="https://stackoverflow.com/questions/1319698/why-doesnt-operate-on-characters-in-r/1321491#1321491">a Stack Overflow discussion</a> on this very topic where it is pointed out by Martin Mächler that this has been discussed on <a href="https://stat.ethz.ch/pipermail/r-devel/2006-August/038991.html">r-devel</a> --
