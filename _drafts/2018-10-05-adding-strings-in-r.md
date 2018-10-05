@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:36:45
+post_date: 2018-10-05 21:38:48
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -76,19 +76,26 @@ so a first attempt might be
 This checks to see if the left or right side of the operator is a character-classed object, and if either is, it pastes the two together. Otherwise it just uses the 'regular' addition operator between the two arguments. This works for simple cases, e.g.
 
 [code language="r"]
-&gt; &quot;a&quot; + &quot;b&quot;
+&quot;a&quot; + &quot;b&quot;
 [1] &quot;ab&quot;
-&gt; &quot;a&quot; + 2
+&quot;a&quot; + 2
 [1] &quot;a2&quot;
-&gt; 2 + 2
+2 + 2
 [1] 4
-&gt; 2 + &quot;a&quot;
+2 + &quot;a&quot;
 [1] &quot;2a&quot;
-}[/code]
+[/code]
 
 But we hit an important snag if we try to add to character-represented numbers
 
+[code language="r"]
+&quot;200&quot; + &quot;200&quot;
+#&gt; &quot;200200&quot;
+[/code]
 
+That's probably going to be an issue if we read in unformatted data (e.g. from a CSV) as characters and try to treat it like numbers. Normally this would throw the above error about not being numeric, but now we get a silent weird number-character. That's no good.
+
+An extension to this checks whether or not we have the nucharacter 
 
 In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
 
