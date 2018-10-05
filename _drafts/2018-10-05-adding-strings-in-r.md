@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:25:06
+post_date: 2018-10-05 21:27:06
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -46,4 +46,12 @@ func main() {
 &gt; &quot;go adds strings&quot;
 [/code]
 
-but this is not something natively available in R. There, addition is limited to particular classes of objects, defined by the Ops groups.
+but this is not something natively available in R. 
+
+[code language="r"]
+&quot;this doesn't&quot; + &quot;work&quot;
+#&gt; Error in &quot;this doesn't&quot; + &quot;work&quot; : 
+#&gt;  non-numeric argument to binary operator
+[/code]
+
+In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe
