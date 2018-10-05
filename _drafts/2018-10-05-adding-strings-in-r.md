@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 22:41:40
+post_date: 2018-10-05 22:42:55
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -245,3 +245,7 @@ but when we try to do this with strings... not so much
 This doesn't particularly bother me, because I'm okay with this not actually being 'mathematical addition'. The fun turn this then took was the suggestion from <a href="https://twitter.com/JorisMeys">Joris Meys</a> that <a href="https://docs.julialang.org/en/stable/manual/mathematical-operations/#Operator-Precedence-and-Associativity-1">Julia's non-associative operators</a> is a strength of the language. There the way that <a href="https://docs.julialang.org/en/stable/manual/mathematical-operations/#footnote-2">you group values matters</a>
 
 <blockquote>a + b + c is parsed as +(a, b, c) not +(+(a, b), c).</blockquote>
+
+<img src="https://jcarroll.com.au/wp-content/uploads/2018/10/wack.gif" width="250", height="188"></img>
+
+I'll eventually get around to learning more Julia, but this is already hurting my brain.
