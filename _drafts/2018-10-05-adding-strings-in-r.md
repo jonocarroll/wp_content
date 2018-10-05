@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 22:29:27
+post_date: 2018-10-05 22:31:38
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -224,4 +224,4 @@ setMethod(&quot;+&quot;, c(&quot;character&quot;, &quot;character&quot;), functi
 
 so no luck there. Brodie also links to <a href="https://stackoverflow.com/questions/1319698/why-doesnt-operate-on-characters-in-r/1321491#1321491">a Stack Overflow discussion</a> on this very topic where it is pointed out by Martin Mächler that this has been discussed on <a href="https://stat.ethz.ch/pipermail/r-devel/2006-August/038991.html">r-devel</a> -- that makes for some interesting historical weigh-ins on why this isn't a thing in R. Incidentally, the small-world effect comes into play regarding that Stack Overflow post as one of the three answers happens to be a former work colleague of mine.
 
-So, in the end, it seems the best we can do is the rather long-winded overwrite of <code>+</code> which checks if the arguments really are characters. I don't mind this, and would probably use it if it was in a package.
+So, in the end, it seems the best we can do is the rather long-winded overwrite of <code>+</code> which checks if the arguments really are characters. I don't mind this, and would probably use it if it was in a package. The biggest issue that people seem to have with this is that it 'looks like' addition, but it's not commutative. If that word is new to you, it just means that <code>x + y</code> should give the same answer as <code>y + x</code>. For numbers, the regular </code>+</code>
