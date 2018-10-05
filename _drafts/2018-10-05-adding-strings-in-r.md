@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:38:02
+post_date: 2018-10-05 23:42:04
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -140,7 +140,11 @@ So, that's one option for string addition in R. Is it the right one? The idea of
 #&gt; Error in &quot;a&quot; + &quot;b&quot; : non-numeric argument to binary operator
 [/code]
 
-It seems to fail. What went wrong? Is dispatch not working? We want to dispatch on "character" -- is that what we have?
+It seems to fail. What went wrong? Is dispatch not working? 
+
+<iframe src="https://giphy.com/embed/dbtDDSvWErdf2" width="480" height="261" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/richard-ayoade-it-crowd-maurice-moss-dbtDDSvWErdf2">via GIPHY</a></p>
+
+We want to dispatch on "character" -- is that what we have?
 
 [code language="r" light="true"]
 class(&quot;a&quot;)
