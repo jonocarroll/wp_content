@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:22:18
+post_date: 2018-10-05 23:25:27
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -130,7 +130,7 @@ An extension to this checks whether or not we have the number-as-a-character sit
 #&gt; [1] &quot;2edgy4me&quot;
 [/code]
 
-So, that's one option for string addition in R. Is it the right one? The idea of actually dispatching on a character class is inviting. Can we just add a '+.character' method (since there doesn't seem to already be one)? Normally when we have S3 dispatch we need a generic function, which calls <code>UseMethod("class")</code>, but we don't have that in this case. <code>+</code> is an internal generic, which is probably the first sign that we're going to have trouble. If we try to define the method
+So, that's one option for string addition in R. Is it the right one? The idea of actually dispatching on a character class is inviting. Can we just add a <code>+.character</code> method (since there doesn't seem to already be one)? Normally when we have S3 dispatch we need a generic function, which calls <code>UseMethod("class")</code>, but we don't have that in this case. <code>+</code> is an internal generic, which is probably the first sign that we're going to have trouble. If we try to define the method
 
 [code language="r" light="true"]
 `+.character` &lt;- function(e1, e2) {
