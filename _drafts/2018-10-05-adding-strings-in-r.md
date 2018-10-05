@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:07:05
+post_date: 2018-10-05 23:09:05
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -10,7 +10,7 @@ published: false
 ---
 This started out as a "hey, I wonder" sort of thing, but as usual, they tend to end up as interesting voyages into the deepest depths of code. Shoutout to <a href="https://twitter.com/coolbutuseless">@coolbutuseless</a> for proving that a little curiosity can go a long way and inspiring me to keep digging into interesting topics.
 
-
+image::https://jcarroll.com.au/wp-content/uploads/2018/10/stringeastereggs.jpg[width="680", height="451", alt="This is what you get if you &quot;glue&quot; &quot;strings&quot;. Photo: https://craftwhack.com/cool-craft-string-easter-eggs/", link="https://jcarroll.com.au/wp-content/uploads/2018/10/stringeastereggs.jpg", align="none"]
 
 <!--more-->
 
