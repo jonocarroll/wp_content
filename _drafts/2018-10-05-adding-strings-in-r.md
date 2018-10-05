@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:18:41
+post_date: 2018-10-05 21:20:41
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -29,6 +29,12 @@ This might be familiar if you use python
 or javascript
 
 [code language="javascript"]
-&gt;&gt;&gt; &quot;python &quot; + &quot;adds &quot; + &quot;strings&quot;
-'python adds strings'
+&quot;javascript &quot; + &quot;also adds &quot; + &quot;strings&quot;
+&quot;javascript also adds strings&quot;
+[/code] 
+
+or perhaps go
+
+[code language="go"]
+
 [/code]
