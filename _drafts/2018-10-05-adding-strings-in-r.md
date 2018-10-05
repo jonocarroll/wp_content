@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:55:26
+post_date: 2018-10-05 23:57:26
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -219,7 +219,19 @@ as.roman(&quot;2000&quot;) + as.roman(&quot;18&quot;)
 
 <img src='https://jcarroll.com.au/wp-content/uploads/2018/10/groove_small.gif' width="500" />
 
-Since the operations need to be defined for all the members of the Ops group, we would also need to define what to do with, say, <code>*</code> between strings. When  
+Since the operations need to be defined for all the members of the Ops group, we would also need to define what to do with, say, <code>*</code> between strings. When one side is a string and the other is a number, a reasonable approach might be that which was taken in the original post (using a new infix <code>%s*%</code>)
+
+[code language="r" light="true"]
+my_a %s*% 3
+#&gt; [1] &quot;aaa&quot; 
+[/code]
+
+There is of course a way to do this already
+
+[code language="r" light="true"]
+&quot;a&quot; %s*% 3
+#&gt; [1] &quot;aaa&quot; 
+[/code]
 
 The problem with where this is heading is that we aren't allowed to create the method for an atomic class, as <a href="https://twitter.com/JorisMeys">Joris Meys</a> and <a href="https://twitter.com/BrodieGaslam">Brodie Gaslam</a> point out on Twitter
 
