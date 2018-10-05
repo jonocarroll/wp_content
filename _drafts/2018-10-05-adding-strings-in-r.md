@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 22:02:13
+post_date: 2018-10-05 22:04:20
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -14,28 +14,28 @@ This started out as a "hey, I wonder" sort of thing, but as usual, they tend to 
 
 <a href="http://www.happylittlescripts.com/2018/09/make-your-r-code-nicer-with-roperators.html">This post</a> came across my feed last week, referring to the <a href="https://cran.r-project.org/package=roperators">roperators package on CRAN</a>. In that post, the author introduces an infix operator from that package which 'adds' (concatenates) strings
 
-[code language="r"]
+[code language="r" light="true"]
 &quot;using infix (%) operators&quot; %+% &quot;R can do simple string addition&quot;
 #&gt; [1] &quot;using infix (%) operators R can do simple string addition&quot;
 [/code]
 
 This might be familiar if you use python
 
-[code language="python"]
+[code language="python" light="true"]
 &gt;&gt;&gt; &quot;python &quot; + &quot;adds &quot; + &quot;strings&quot;
 'python adds strings'
 [/code] 
 
 or javascript
 
-[code language="javascript"]
+[code language="javascript" light="true"]
 &quot;javascript &quot; + &quot;also adds &quot; + &quot;strings&quot;
 &quot;javascript also adds strings&quot;
 [/code] 
 
 or perhaps even go
 
-[code]
+[code light="true"]
 package main
 
 import &quot;fmt&quot;
@@ -48,7 +48,7 @@ func main() {
 
 but this is not something natively available in R. 
 
-[code language="r"]
+[code language="r" light="true"]
 &quot;this doesn't&quot; + &quot;work&quot;
 #&gt; Error in &quot;this doesn't&quot; + &quot;work&quot; : 
 #&gt;  non-numeric argument to binary operator
@@ -63,7 +63,7 @@ Could it be, though? That got me wondering. My first guess was to just create a 
 
 so a first attempt might be
 
-[code language="r"]
+[code language="r" light="true"]
 `+` &lt;- function(e1, e2) {
   if (is.character(e1) | is.character(e2)) {
     paste0(e1, e2)
@@ -75,7 +75,7 @@ so a first attempt might be
 
 This checks to see if the left or right side of the operator is a character-classed object, and if either is, it pastes the two together. Otherwise it just uses the 'regular' addition operator between the two arguments. This works for simple cases, e.g.
 
-[code language="r"]
+[code language="r" light="true"]
 &quot;a&quot; + &quot;b&quot;
 #&gt; [1] &quot;ab&quot;
 &quot;a&quot; + 2
@@ -88,7 +88,7 @@ This checks to see if the left or right side of the operator is a character-clas
 
 But we hit an important snag if we try to add to character-represented numbers
 
-[code language="r"]
+[code language="r" light="true"]
 &quot;200&quot; + &quot;200&quot;
 #&gt; [1] &quot;200200&quot;
 [/code]
@@ -97,7 +97,7 @@ That's probably going to be an issue if we read in unformatted data (e.g. from a
 
 An extension to this checks whether or not we have the number-as-a-character situation and falls back to the correct interpretation in that case
 
-[code language="r"]
+[code language="r" light="true"]
 `+` &lt;- function(e1, e2) {
   ## unary
   if (missing(e2)) return(e1)
@@ -130,7 +130,7 @@ An extension to this checks whether or not we have the number-as-a-character sit
 
 So, that's one option for string addition in R. Is it the right one? The idea of actually dispatching on a character class is inviting. Can we just add a '+.character' method (since there doesn't seem to already be one)? Normally when we have S3 dispatch we need a generic function, which calls <code>UseMethod("class")</code>, but we don't have that in this case. <code>+</code> is an internal generic, which is probably the first sign that we're going to have trouble. If we try to define the method
 
-[code language="r"]
+[code language="r" light="true"]
 `+.character` &lt;- function(e1, e2) {
   paste0(e1, e2)
 }
@@ -140,14 +140,14 @@ So, that's one option for string addition in R. Is it the right one? The idea of
 
 It seems to fail. What went wrong? Is dispatch not working? We want to dispatch on "character" -- is that what we have?
 
-[code language="r"]
+[code language="r" light="true"]
 class(&quot;a&quot;)
 #&gt; [1] &quot;character&quot;
 [/code]
 
 What if we explicitly create an object with that class?
 
-[code language="r"]
+[code language="r" light="true"]
 structure(&quot;a&quot;, class = &quot;character&quot;) + 2
 #&gt; [1] &quot;a2
 2 + structure(&quot;a&quot;, class = &quot;character&quot;)
@@ -156,7 +156,7 @@ structure(&quot;a&quot;, class = &quot;character&quot;) + 2
 
 What if we try to dispatch on some new class?
 
-[code language="r"]
+[code language="r" light="true"]
 `+.foo` &lt;- function(e1, e2) {
   paste0(e1, e2)
 }
@@ -176,7 +176,7 @@ In R, addition is limited to particular classes of objects, defined by the Ops g
 
 These methods are:
 
-[code language="r"]
+[code language="r" light="true"]
 methods(&quot;Ops&quot;)
  [1] Ops,array,array-method              
  [2] Ops,array,structure-method          
@@ -203,7 +203,7 @@ methods(&quot;Ops&quot;)
 
 What's missing from this list, in order for us to be able to just use "string" + "string" is a character method. What's perhaps even more surprising is that there <i>is</i> a [code]roman[/code] method! Whaaaat?
 
-[code language="r"]
+[code language="r" light="true"]
 as.roman(&quot;1&quot;) + as.roman(&quot;5&quot;)
 #&gt; [1] VI
 as.roman(&quot;2000&quot;) + as.roman(&quot;18&quot;)
