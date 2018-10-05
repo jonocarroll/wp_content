@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:19:58
+post_date: 2018-10-05 23:21:24
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -251,3 +251,5 @@ This doesn't particularly bother me, because I'm okay with this not actually bei
 <img src="https://jcarroll.com.au/wp-content/uploads/2018/10/wack.gif" width="250", height="188"></img>
 
 I'll eventually get around to learning more Julia, but this is already hurting my brain.
+
+So, what's the conclusion of all of this? I've learned (and re-learned) a heap more about how the Ops group works, I've played a lot with dispatch, and I've thought deeply about edge-cases for adding strings. I've also been exposed to a bit more Julia. All in all, a worthwhile dive into something potentially silly, but a lot of fun.
