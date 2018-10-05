@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:50:08
+post_date: 2018-10-05 21:52:08
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -164,6 +164,7 @@ structure(&quot;a&quot;, class = &quot;foo&quot;) + 2
 #&gt; [1] &quot;a2
 [/code]
 
+but no dice for just a regular atomic character object. Time to revisit the help pages.
 
 In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
 
@@ -190,4 +191,4 @@ methods(&quot;Ops&quot;)
 [21] Ops.unit*   
 [/code]
 
-What's missing from this list, in order for us to be able to just use "string" + "string" is a character method.
+What's missing from this list, in order for us to be able to just use "string" + "string" is a character method. What's perhaps even more surprising is that there <i>is</i> a [code]roman[/code] method! Whaa
