@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 22:10:27
+post_date: 2018-10-05 22:11:10
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -209,4 +209,4 @@ as.roman(&quot;2000&quot;) + as.roman(&quot;18&quot;)
 #&gt; [1] MMXVIII
 [/code]
 
-<img src='https://jcarroll.com.au/wp-content/uploads/2018/10/groove_small.gif' width="315", height="135"></img>
+<img src='https://jcarroll.com.au/wp-content/uploads/2018/10/groove_small.gif' width="500"></img>
