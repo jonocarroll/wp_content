@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:49:59
+post_date: 2018-10-05 23:51:50
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -58,7 +58,7 @@ but this is not something natively available in R
 
 <img src="https://jcarroll.com.au/wp-content/uploads/2018/10/nazi-240x300.jpg" width="240" height="300" />
 
-Could it be, though? That got me wondering. My first guess was to just create a new <code>+</code> function which <i>does</i> allow for this. The problem there is that it doesn't seem to work. The normal addition operator is
+Could we make it work, though? That got me wondering. My first guess was to just create a new <code>+</code> function which <i>does</i> allow for this. The normal addition operator is
 
 [code language="r" light="true"]
 `+`
