@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:55:46
+post_date: 2018-10-05 21:57:03
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -168,27 +168,37 @@ but no dice for just a regular atomic character object. Time to revisit the help
 
 In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
 
+<code> 
 "+", "-", "*", "/", "^", "%%", "%/%"
-
 "&", "|", "!"
-
 "==", "!=", "<", "<=", ">=", ">"
+</code> 
 
 These methods are:
 
 [code language="r"]
 methods(&quot;Ops&quot;)
- [1] Ops,array,array-method               Ops,array,structure-method          
- [3] Ops,nonStructure,nonStructure-method Ops,nonStructure,vector-method      
- [5] Ops,structure,array-method           Ops,structure,structure-method      
- [7] Ops,structure,vector-method          Ops,vector,nonStructure-method      
- [9] Ops,vector,structure-method          Ops.data.frame                      
-[11] Ops.data.table*                      Ops.Date                            
-[13] Ops.difftime                         Ops.factor                          
-[15] Ops.numeric_version                  Ops.ordered                         
-[17] Ops.POSIXt                           Ops.raster*                         
-[19] Ops.roman*                           Ops.ts*                             
-[21] Ops.unit*   
+ [1] Ops,array,array-method              
+ [2] Ops,array,structure-method          
+ [3] Ops,nonStructure,nonStructure-method
+ [4] Ops,nonStructure,vector-method      
+ [5] Ops,structure,array-method          
+ [6] Ops,structure,structure-method      
+ [7] Ops,structure,vector-method         
+ [8] Ops,vector,nonStructure-method      
+ [9] Ops,vector,structure-method         
+[10] Ops.data.frame                      
+[11] Ops.data.table*                     
+[12] Ops.Date                            
+[13] Ops.difftime                        
+[14] Ops.factor                          
+[15] Ops.numeric_version                 
+[16] Ops.ordered                         
+[17] Ops.POSIXt                          
+[18] Ops.raster*                         
+[19] Ops.roman*                          
+[20] Ops.ts*                             
+[21] Ops.unit*             
 [/code]
 
 What's missing from this list, in order for us to be able to just use "string" + "string" is a character method. What's perhaps even more surprising is that there <i>is</i> a [code]roman[/code] method! Whaaaat?
