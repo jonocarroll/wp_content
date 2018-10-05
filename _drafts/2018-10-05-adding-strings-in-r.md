@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:20:41
+post_date: 2018-10-05 21:23:06
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -36,5 +36,12 @@ or javascript
 or perhaps go
 
 [code language="go"]
+package main
+
+import &quot;fmt&quot;
+
+func main() {
+  fmt.Println(&quot;go &quot; + &quot;adds &quot; + &quot;strings&quot;)
+}
 
 [/code]
