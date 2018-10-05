@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:32:45
+post_date: 2018-10-05 21:34:45
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -64,10 +64,19 @@ Could it be, though? That got me wondering. My first guess was to just create a 
 so a first attempt might be
 
 [code language="r"]
-`+`
-#&gt; function (e1, e2)  .Primitive(&quot;+&quot;)
-[/code]
+`+` &lt;- function(e1, e2) {
+  if (is.character(e1) | is.character(e2)) {
+    paste0(e1, e2)
+  } else {
+    base::`+`(e1, e2)
+  }
+}[/code]
 
+This checks to see if the left or right side of the operator is a character-classed object, and if either is, it pastes the two together. Otherwise it just uses the 'regular' addition operator between the two arguments. This works for simple cases, e.g.
+
+[code language="r"]
+
+}[/code]
 
 In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
 
