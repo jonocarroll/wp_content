@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:42:04
+post_date: 2018-10-05 23:45:13
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -55,6 +55,8 @@ but this is not something natively available in R
 #&gt; Error in &quot;this doesn't&quot; + &quot;work&quot; : 
 #&gt;  non-numeric argument to binary operator
 [/code]
+
+
 
 Could it be, though? That got me wondering. My first guess was to just create a new <code>+</code> function which <i>does</i> allow for this. The problem there is that it doesn't seem to work. The normal addition operator is
 
