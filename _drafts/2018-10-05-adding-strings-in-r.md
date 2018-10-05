@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:16:29
+post_date: 2018-10-05 21:17:31
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -19,4 +19,9 @@ This started out as a "hey, I wonder" sort of thing, but as usual, they tend to 
 #&gt; &quot;using infix (%) operators R can do simple string addition&quot;
 [/code]
 
-This might be familiar
+This might be familiar if you use python
+
+[code language="python"]
+&gt;&gt;&gt; &quot;python &quot; + &quot;adds &quot; + &quot;strings&quot;
+'python adds strings'
+[/code]
