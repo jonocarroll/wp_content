@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:53:35
+post_date: 2018-10-05 21:55:46
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -54,7 +54,7 @@ but this is not something natively available in R.
 #&gt;  non-numeric argument to binary operator
 [/code]
 
-Could it be, though? That got me wondering. My first guess was to just create a new [code]+[/code] function which <i>does</i> allow for this. The problem there is that it doesn't seem to work. The normal addition operator is
+Could it be, though? That got me wondering. My first guess was to just create a new <code>+</code> function which <i>does</i> allow for this. The problem there is that it doesn't seem to work. The normal addition operator is
 
 [code language="r"]
 `+`
@@ -128,7 +128,7 @@ An extension to this checks whether or not we have the number-as-a-character sit
 #&gt; [1] &quot;2edgy4me&quot;
 [/code]
 
-So, that's one option for string addition in R. Is it the right one? The idea of actually dispatching on a character class is inviting. Can we just add a '+.character' method (since there doesn't seem to already be one)? Normally when we have S3 dispatch we need a generic function, which calls [code]UseMethod(&quot;class&quot;)[/code], but we don't have that in this case. [code]+[/code] is an internal generic, which is probably the first sign that we're going to have trouble. If we try to define the method
+So, that's one option for string addition in R. Is it the right one? The idea of actually dispatching on a character class is inviting. Can we just add a '+.character' method (since there doesn't seem to already be one)? Normally when we have S3 dispatch we need a generic function, which calls <code>UseMethod("class")</code>, but we don't have that in this case. <code>+</code> is an internal generic, which is probably the first sign that we're going to have trouble. If we try to define the method
 
 [code language="r"]
 `+.character` &lt;- function(e1, e2) {
