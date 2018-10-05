@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:35:36
+post_date: 2018-10-05 23:37:36
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -252,6 +252,11 @@ This doesn't particularly bother me, because I'm okay with this not actually bei
 
 I'll eventually get around to learning more Julia, but this is already hurting my brain.
 
-That distinction may be of interest, however, whose concern was more about repeated o
+That distinction may be of interest, however, to <a href="https://twitter.com/MilesMcBain/">Miles McBain</a>, whose concern was more about repeated applications of <code>+</code> being a bottleneck
 
-So, what's the conclusion of all of this? I've learned (and re-learned) a heap more about how the Ops group works, I've played a lot with dispatch, and I've thought deeply about edge-cases for adding strings. I've also been exposed to a bit more Julia. All in all, a worthwhile dive into something potentially silly, but a lot of fun.
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I hate + for string concatenation. &quot;a&quot; + &quot;b&quot; + &quot;c&quot; is paste(&quot;a&quot;, paste(&quot;b&quot;,&quot;c&quot;)). So you end up copying the data in &quot;b&quot; and &quot;c&quot; twice due to the data being immutable. That can really add up fast with more +&#39;s if you are careless. Like I was in my first programming job.</p>&mdash; Miles McBain (@MilesMcBain) <a href="https://twitter.com/MilesMcBain/status/1047743465562431489?ref_src=twsrc%5Etfw">October 4, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+In that case, parsing as <code>+("a", "b", "c")</code> is exactly what would be desired.
+
+So, what's the conclusion of all of this? I've learned (and re-learned) a heap more about how the Ops group works, I've played a lot with dispatch, and I've thought deeply about edge-cases for adding strings. I've also been exposed to a bit more Julia. All in all, a worthwhile dive into something potentially silly, but a lot of fun. If
