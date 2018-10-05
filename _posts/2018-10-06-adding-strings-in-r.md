@@ -2,11 +2,12 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-06 00:07:58
+post_date: 2018-10-06 00:09:15
 post_excerpt: ""
 layout: post
-permalink: https://jcarroll.com.au/?p=1165
-published: false
+permalink: >
+  https://jcarroll.com.au/2018/10/06/adding-strings-in-r/
+published: true
 ---
 This started out as a <i>"hey, I wonder..."</i> sort of thing, but as usual, they tend to end up as interesting voyages into the deepest depths of code, so I thought I'd write it up and share. Shoutout to <a href="https://twitter.com/coolbutuseless">@coolbutuseless</a> for proving that a little curiosity can go a long way and inspiring me to keep digging into interesting topics.
 
