@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:29:06
+post_date: 2018-10-05 21:29:36
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -79,4 +79,4 @@ methods(&quot;Ops&quot;)
 [21] Ops.unit*   
 [/code]
 
-what's inter
+What's missing from this list, in order for us to be able to just use "string" + "string" is a character method.
