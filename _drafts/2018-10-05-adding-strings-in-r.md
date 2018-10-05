@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:23:06
+post_date: 2018-10-05 21:25:06
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -33,7 +33,7 @@ or javascript
 &quot;javascript also adds strings&quot;
 [/code] 
 
-or perhaps go
+or perhaps even go
 
 [code language="go"]
 package main
@@ -43,5 +43,7 @@ import &quot;fmt&quot;
 func main() {
   fmt.Println(&quot;go &quot; + &quot;adds &quot; + &quot;strings&quot;)
 }
-
+&gt; &quot;go adds strings&quot;
 [/code]
+
+but this is not something natively available in R. There, addition is limited to particular classes of objects, defined by the Ops groups.
