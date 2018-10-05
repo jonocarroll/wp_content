@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 22:14:23
+post_date: 2018-10-05 22:16:23
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -217,8 +217,9 @@ The problem with where this is heading is that we aren't allowed to create the m
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [code language="r" light="true"]
-as.roman(&quot;1&quot;) + as.roman(&quot;5&quot;)
-#&gt; [1] VI
-as.roman(&quot;2000&quot;) + as.roman(&quot;18&quot;)
-#&gt; [1] MMXVIII
+setMethod(&quot;+&quot;, c(&quot;character&quot;, &quot;character&quot;), function(e1, e2) paste0(e1, e2))
+#&gt; Error in setMethod(&quot;+&quot;, c(&quot;character&quot;, &quot;character&quot;), function(e1, e2) paste0(e1,  : 
+#&gt;   the method for function ‘+’ and signature e1=&quot;character&quot;, e2=&quot;character&quot; is sealed and cannot be re-defined
 [/code]
+
+so no luck there.
