@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 22:35:38
+post_date: 2018-10-05 22:37:39
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -211,7 +211,7 @@ as.roman(&quot;2000&quot;) + as.roman(&quot;18&quot;)
 
 <img src='https://jcarroll.com.au/wp-content/uploads/2018/10/groove_small.gif' width="500"></img>
 
-The problem with where this is heading is that we aren't allowed to create the method for an atomic class, as Brodie Gaslam points out on Twitter
+The problem with where this is heading is that we aren't allowed to create the method for an atomic class, as <a href="https://twitter.com/BrodieGaslam">Brodie Gaslam</a> points out on Twitter
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Yes, you&#39;re right.  Below is what I remembered, which suggested that if it were not sealed, it could be defined, but that isn&#39;t true b/c `do_arith` only dispatches on objects (as you point out), although in theory it could dispatch on atomics, but probably doesn&#39;t for speed. <a href="https://t.co/UXk6Tdm3lW">pic.twitter.com/UXk6Tdm3lW</a></p>&mdash; BrodieG (@BrodieGaslam) <a href="https://twitter.com/BrodieGaslam/status/1047838113052155904?ref_src=twsrc%5Etfw">October 4, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -242,4 +242,4 @@ but when we try to do this with strings... not so much
 #&gt; [1] &quot;ba&quot;
 [/code]
 
-This doesn't particularly bother me, because I'm okay with this not actually being 'mathematical addition'. The fun turn this then took was the suggestion from Joris Meys that Julia
+This doesn't particularly bother me, because I'm okay with this not actually being 'mathematical addition'. The fun turn this then took was the suggestion from <a href="https://twitter.com/JorisMeys">Joris Meys</a> that <a href="https://docs.julialang.org/en/stable/manual/mathematical-operations/#Operator-Precedence-and-Associativity-1">Julia's non-associative operators</a> is a strength of the language.
