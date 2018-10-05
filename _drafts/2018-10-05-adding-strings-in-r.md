@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:45:13
+post_date: 2018-10-05 23:46:14
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -56,7 +56,7 @@ but this is not something natively available in R
 #&gt;  non-numeric argument to binary operator
 [/code]
 
-
+<img src="https://jcarroll.com.au/wp-content/uploads/2018/10/nazi-240x300.jpg" width="240" height="300" />
 
 Could it be, though? That got me wondering. My first guess was to just create a new <code>+</code> function which <i>does</i> allow for this. The problem there is that it doesn't seem to work. The normal addition operator is
 
@@ -217,7 +217,7 @@ as.roman(&quot;2000&quot;) + as.roman(&quot;18&quot;)
 #&gt; [1] MMXVIII
 [/code]
 
-<img src='https://jcarroll.com.au/wp-content/uploads/2018/10/groove_small.gif' width="500"></img>
+<img src='https://jcarroll.com.au/wp-content/uploads/2018/10/groove_small.gif' width="500" />
 
 The problem with where this is heading is that we aren't allowed to create the method for an atomic class, as <a href="https://twitter.com/JorisMeys">Joris Meys</a> and <a href="https://twitter.com/BrodieGaslam">Brodie Gaslam</a> point out on Twitter
 
@@ -254,7 +254,7 @@ This doesn't particularly bother me, because I'm okay with this not actually bei
 
 <blockquote>a + b + c is parsed as +(a, b, c) not +(+(a, b), c).</blockquote>
 
-<img src="https://jcarroll.com.au/wp-content/uploads/2018/10/wack.gif" width="250", height="188"></img>
+<img src="https://jcarroll.com.au/wp-content/uploads/2018/10/wack.gif" width="250", height="188" />
 
 I'll eventually get around to learning more Julia, but this is already hurting my brain.
 
