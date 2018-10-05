@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:30:45
+post_date: 2018-10-05 21:32:45
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -41,9 +41,9 @@ package main
 import &quot;fmt&quot;
 
 func main() {
-  fmt.Println(&quot;go &quot; + &quot;adds &quot; + &quot;strings&quot;)
+  fmt.Println(&quot;go &quot; + &quot;even adds &quot; + &quot;strings&quot;)
 }
-&gt; &quot;go adds strings&quot;
+&gt; &quot;go even adds strings&quot;
 [/code]
 
 but this is not something natively available in R. 
@@ -54,7 +54,20 @@ but this is not something natively available in R.
 #&gt;  non-numeric argument to binary operator
 [/code]
 
-Could it be, though? That got me wondering. My first guess was to just create a new [code]+[/code] function which _does_ allow for 
+Could it be, though? That got me wondering. My first guess was to just create a new [code]+[/code] function which <i>does</i> allow for this. The problem there is that it doesn't seem to work. The normal addition operator is
+
+[code language="r"]
+`+`
+#&gt; function (e1, e2)  .Primitive(&quot;+&quot;)
+[/code]
+
+so a first attempt might be
+
+[code language="r"]
+`+`
+#&gt; function (e1, e2)  .Primitive(&quot;+&quot;)
+[/code]
+
 
 In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
 
