@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:17:31
+post_date: 2018-10-05 21:18:41
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -16,12 +16,19 @@ This started out as a "hey, I wonder" sort of thing, but as usual, they tend to 
 
 [code language="r"]
 &quot;using infix (%) operators&quot; %+% &quot;R can do simple string addition&quot;
-#&gt; &quot;using infix (%) operators R can do simple string addition&quot;
+#&gt; [1] &quot;using infix (%) operators R can do simple string addition&quot;
 [/code]
 
 This might be familiar if you use python
 
 [code language="python"]
+&gt;&gt;&gt; &quot;python &quot; + &quot;adds &quot; + &quot;strings&quot;
+'python adds strings'
+[/code] 
+
+or javascript
+
+[code language="javascript"]
 &gt;&gt;&gt; &quot;python &quot; + &quot;adds &quot; + &quot;strings&quot;
 'python adds strings'
 [/code]
