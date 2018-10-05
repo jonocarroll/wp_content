@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:57:37
+post_date: 2018-10-05 22:02:13
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -35,7 +35,7 @@ or javascript
 
 or perhaps even go
 
-[code language="go"]
+[code]
 package main
 
 import &quot;fmt&quot;
@@ -56,7 +56,7 @@ but this is not something natively available in R.
 
 Could it be, though? That got me wondering. My first guess was to just create a new <code>+</code> function which <i>does</i> allow for this. The problem there is that it doesn't seem to work. The normal addition operator is
 
-[code language="r"]
+[code language="r" light="true"]
 `+`
 #&gt; function (e1, e2)  .Primitive(&quot;+&quot;)
 [/code]
