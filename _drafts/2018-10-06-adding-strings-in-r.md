@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-06 00:07:22
+post_date: 2018-10-06 00:07:58
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -123,14 +123,19 @@ An extension to this checks whether or not we have the number-as-a-character sit
 
 &quot;a&quot; + &quot;b&quot;
 #&gt; [1] &quot;ab&quot;
+
 &quot;a&quot; + 2
 #&gt; [1] &quot;a2&quot;
+
 2 + 2
 #&gt; [1] 4
+
 2 + &quot;a&quot;
 #&gt; [1] &quot;2a&quot;
+
 &quot;2&quot; + &quot;2&quot;
 #&gt; [1] 4
+
 2 + &quot;edgy&quot; + 4 + &quot;me&quot;
 #&gt; [1] &quot;2edgy4me&quot;
 [/code]
