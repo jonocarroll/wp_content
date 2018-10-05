@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 22:33:38
+post_date: 2018-10-05 22:35:38
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -238,6 +238,8 @@ but when we try to do this with strings... not so much
 [code language="r" light="true"]
 &quot;a&quot; + &quot;b&quot;
 #&gt; [1] &quot;ab&quot;
-&gt; &quot;b&quot; + &quot;a&quot;
-[1] &quot;ba&quot;
+&quot;b&quot; + &quot;a&quot;
+#&gt; [1] &quot;ba&quot;
 [/code]
+
+This doesn't particularly bother me, because I'm okay with this not actually being 'mathematical addition'. The fun turn this then took was the suggestion from Joris Meys that Julia
