@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:30:53
+post_date: 2018-10-05 23:33:03
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -168,7 +168,7 @@ structure(&quot;a&quot;, class = &quot;foo&quot;) + 2
 
 but no dice for just a regular atomic character object. Time to revisit the help pages.
 
-In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
+In R, addition is limited to particular classes of objects, defined by the Ops group (there are also Math, Summary, and Complex groups). The methods for the Ops group members describe which classes can be involved in operations involving any of the Ops group members:
 <code> 
 "+", "-", "*", "/", "^", "%%", "%/%"
 "&", "|", "!"
