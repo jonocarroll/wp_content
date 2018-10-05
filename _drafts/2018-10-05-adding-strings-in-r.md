@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:28:42
+post_date: 2018-10-05 23:30:53
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -48,7 +48,7 @@ func main() {
 &gt; &quot;go even adds strings&quot;
 [/code]
 
-but this is not something natively available in R. 
+but this is not something natively available in R
 
 [code language="r" light="true"]
 &quot;this doesn't&quot; + &quot;work&quot;
