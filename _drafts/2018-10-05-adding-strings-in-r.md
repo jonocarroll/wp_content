@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:40:58
+post_date: 2018-10-05 21:42:08
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -124,11 +124,11 @@ An extension to this checks whether or not we have the number-as-a-character sit
 #&gt; [1] &quot;2a&quot;
   &quot;2&quot; + &quot;2&quot;
 #&gt; [1] 4
-&quot;butter&quot; + &quot;fly&quot;
-#&gt; [1] &quot;butterfly&quot;
 2 + &quot;edgy&quot; + 4 + &quot;me&quot;
 #&gt; [1] &quot;2edgy4me&quot;
-[/code] 
+[/code]
+
+So, that's one option for string addition in R. Is it the right one? The idea of actually dispatching on a character class in
 
 In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
 
