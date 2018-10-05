@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:27:06
+post_date: 2018-10-05 21:29:06
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -54,4 +54,29 @@ but this is not something natively available in R.
 #&gt;  non-numeric argument to binary operator
 [/code]
 
-In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe
+In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
+
+"+", "-", "*", "/", "^", "%%", "%/%"
+
+"&", "|", "!"
+
+"==", "!=", "<", "<=", ">=", ">"
+
+These methods are:
+
+[code language="r"]
+methods(&quot;Ops&quot;)
+ [1] Ops,array,array-method               Ops,array,structure-method          
+ [3] Ops,nonStructure,nonStructure-method Ops,nonStructure,vector-method      
+ [5] Ops,structure,array-method           Ops,structure,structure-method      
+ [7] Ops,structure,vector-method          Ops,vector,nonStructure-method      
+ [9] Ops,vector,structure-method          Ops.data.frame                      
+[11] Ops.data.table*                      Ops.Date                            
+[13] Ops.difftime                         Ops.factor                          
+[15] Ops.numeric_version                  Ops.ordered                         
+[17] Ops.POSIXt                           Ops.raster*                         
+[19] Ops.roman*                           Ops.ts*                             
+[21] Ops.unit*   
+[/code]
+
+what's inter
