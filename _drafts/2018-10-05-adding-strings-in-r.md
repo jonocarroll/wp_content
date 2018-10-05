@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:48:08
+post_date: 2018-10-05 21:50:08
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -90,7 +90,7 @@ But we hit an important snag if we try to add to character-represented numbers
 
 [code language="r"]
 &quot;200&quot; + &quot;200&quot;
-#&gt; &quot;200200&quot;
+#&gt; [1] &quot;200200&quot;
 [/code]
 
 That's probably going to be an issue if we read in unformatted data (e.g. from a CSV) as characters and try to treat it like numbers. Normally this would throw the above error about not being numeric, but now we get a silent weird number-character. That's no good.
@@ -118,11 +118,11 @@ An extension to this checks whether or not we have the number-as-a-character sit
 #&gt; [1] &quot;ab&quot;
 &quot;a&quot; + 2
 #&gt; [1] &quot;a2&quot;
-  2 + 2
+2 + 2
 #&gt; [1] 4
-  2 + &quot;a&quot;
+2 + &quot;a&quot;
 #&gt; [1] &quot;2a&quot;
-  &quot;2&quot; + &quot;2&quot;
+&quot;2&quot; + &quot;2&quot;
 #&gt; [1] 4
 2 + &quot;edgy&quot; + 4 + &quot;me&quot;
 #&gt; [1] &quot;2edgy4me&quot;
@@ -145,21 +145,23 @@ class(&quot;a&quot;)
 #&gt; [1] &quot;character&quot;
 [/code]
 
+What if we explicitly create an object with that class?
 
-structure("a", class = "character") + 2
-#> "a2
-2 + structure("a", class = "character")
-#> "2a"
+[code language="r"]
+structure(&quot;a&quot;, class = &quot;character&quot;) + 2
+#&gt; [1] &quot;a2
+2 + structure(&quot;a&quot;, class = &quot;character&quot;)
+#&gt; [1] &quot;2a&quot;
+[/code]
 
-What if we explicitly create a 
 What if we try to dispatch on some new class?
 
 [code language="r"]
-`+.character` &lt;- function(e1, e2) {
+`+.foo` &lt;- function(e1, e2) {
   paste0(e1, e2)
 }
-&quot;a&quot; + &quot;b&quot;
-#&gt; Error in &quot;a&quot; + &quot;b&quot; : non-numeric argument to binary operator
+structure(&quot;a&quot;, class = &quot;foo&quot;) + 2
+#&gt; [1] &quot;a2
 [/code]
 
 
