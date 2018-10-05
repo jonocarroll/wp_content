@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 23:46:14
+post_date: 2018-10-05 23:49:59
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -265,4 +265,4 @@ That distinction may be of interest, however, to <a href="https://twitter.com/Mi
 
 In that case, parsing as <code>+("a", "b", "c")</code> is exactly what would be desired.
 
-So, what's the conclusion of all of this? I've learned (and re-learned) a heap more about how the Ops group works, I've played a lot with dispatch, and I've thought deeply about edge-cases for adding strings. I've also been exposed to a bit more Julia. All in all, a worthwhile dive into something potentially silly, but a lot of fun. If you have some thoughts on the matter, leave a comment or reply on Twitter -- I'd love to hear about another angle to this story.
+So, what's the conclusion of all of this? I've learned (and re-learned) a heap more about how the Ops group works, I've played a lot with dispatch, and I've thought deeply about edge-cases for adding strings. I've also been exposed to a bit more Julia. All in all, a worthwhile dive into something potentially silly, but a lot of fun. If you have some thoughts on the matter, leave a comment here or reply on Twitter -- I'd love to hear about another angle to this story.
