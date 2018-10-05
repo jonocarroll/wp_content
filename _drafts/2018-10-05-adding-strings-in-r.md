@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:38:48
+post_date: 2018-10-05 21:40:48
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -77,13 +77,13 @@ This checks to see if the left or right side of the operator is a character-clas
 
 [code language="r"]
 &quot;a&quot; + &quot;b&quot;
-[1] &quot;ab&quot;
+#&gt; [1] &quot;ab&quot;
 &quot;a&quot; + 2
-[1] &quot;a2&quot;
+#&gt; [1] &quot;a2&quot;
 2 + 2
-[1] 4
+#&gt; [1] 4
 2 + &quot;a&quot;
-[1] &quot;2a&quot;
+#&gt; [1] &quot;2a&quot;
 [/code]
 
 But we hit an important snag if we try to add to character-represented numbers
@@ -95,7 +95,40 @@ But we hit an important snag if we try to add to character-represented numbers
 
 That's probably going to be an issue if we read in unformatted data (e.g. from a CSV) as characters and try to treat it like numbers. Normally this would throw the above error about not being numeric, but now we get a silent weird number-character. That's no good.
 
-An extension to this checks whether or not we have the nucharacter 
+An extension to this checks whether or not we have the number-as-a-character situation and falls back to the correct interpretation in that case
+
+[code language="r"]
+`+` &lt;- function(e1, e2) {
+  ## unary
+  if (missing(e2)) return(e1)
+  if (!is.na(suppressWarnings(as.numeric(e1))) &amp; !is.na(suppressWarnings(as.numeric(e2)))) {
+    ## both arguments numeric-like but characters
+    return(base::`+`(as.numeric(e1), as.numeric(e2)))
+  } else if ((is.character(e1) &amp; is.na(suppressWarnings(as.numeric(e1)))) | 
+             (is.character(e2) &amp; is.na(suppressWarnings(as.numeric(e2))))) {
+    ## at least one true character 
+    return(paste0(e1, e2))
+  } else {
+    ## both numeric
+    return(base::`+`(e1, e2))
+  }
+}
+
+&quot;a&quot; + &quot;b&quot;
+#&gt; [1] &quot;ab&quot;
+&quot;a&quot; + 2
+#&gt; [1] &quot;a2&quot;
+  2 + 2
+#&gt; [1] 4
+  2 + &quot;a&quot;
+#&gt; [1] &quot;2a&quot;
+  &quot;2&quot; + &quot;2&quot;
+#&gt; [1] 4
+&quot;butter&quot; + &quot;fly&quot;
+#&gt; [1] &quot;butterfly&quot;
+2 + &quot;edgy&quot; + 4 + &quot;me&quot;
+#&gt; [1] &quot;2edgy4me&quot;
+[/code] 
 
 In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
 
