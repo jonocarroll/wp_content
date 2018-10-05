@@ -2,7 +2,7 @@
 ID: 1165
 post_title: Adding strings in R
 author: Jonathan Carroll
-post_date: 2018-10-05 21:42:08
+post_date: 2018-10-05 21:44:08
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1165
@@ -128,7 +128,7 @@ An extension to this checks whether or not we have the number-as-a-character sit
 #&gt; [1] &quot;2edgy4me&quot;
 [/code]
 
-So, that's one option for string addition in R. Is it the right one? The idea of actually dispatching on a character class in
+So, that's one option for string addition in R. Is it the right one? The idea of actually dispatching on a character class is inviting. Can we just add a '+.character' method (since there doesn't seem to already be one)? Normally when we have S3 dispatch we need a generic function, which calls  [code]+[/code] is an internal generic, 
 
 In R, addition is limited to particular classes of objects, defined by the Ops groups. The methods for the Ops groups describe which classes can be involved in operations involving any of the Ops group members:
 
