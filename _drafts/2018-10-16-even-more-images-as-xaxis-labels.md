@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:22:33
+post_date: 2018-10-16 22:26:21
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -14,7 +14,7 @@ This is the last update to this strange saga... I hope.
 
 Easily two of the most popular posts on my blog are <a href="https://jcarroll.com.au/2016/06/02/images-as-x-axis-labels/">this one</a> and <a href="https://jcarroll.com.au/2016/06/03/images-as-x-axis-labels-updated/">this one</a> describing a couple of ways in which I managed to hack together using an image as a category label in a ggplot. There are likely many people who believe one should _never_ do such a thing, but given the popularity, it seems a lot of people aren't listening to that. Good on you.
 
-One of these posts was recently shared again by the amazing #rstats amplifier Mara Averick (if you're not following her on Twitter, you're missing out) and @baptiste_auguie (the saviour of the previous implementation) mentioned that he had seen a 'hack' to get chemical symbols as a categorical axis label using tikzDevice. That package leverages $\LaTeX$ (of which I am _very_ familiar, having written my PhD thesis entirely in $$\LaTeX$$ many moons ago) to treat all of the text in an image into rendered output, assuming that it contains valid $$\LaTeX$$ commands.
+One of these posts was recently shared again by the amazing #rstats amplifier Mara Averick (if you're not following her on Twitter, you're missing out) and @baptiste_auguie (the saviour of the previous implementation) mentioned that he had seen a 'hack' to get chemical symbols as a categorical axis label using tikzDevice. That package leverages [latex]\LaTeX[/latex] (of which I am _very_ familiar, having written my PhD thesis entirely in [latex]\LaTeX[/latex]many moons ago) to treat all of the text in an image into rendered output, assuming that it contains valid [latex]\LaTeX[/latex] commands.
 
 This got me curious, though -- if it can process $\LaTeX$, could it process a <code>\\includegraphics</code> call?
 
@@ -35,8 +35,8 @@ Producing nearly the same end result.
 
 There are a few differences with the previous version(s):
 
- - I had a request for rotating the additional text, which I actually <a href="https://gist.github.com/jonocarroll/2f9490f1f5e7c82ef8b791a4b91fc9ca#file-images_as_xaxis_labels_updated-r">also updated recently</a>, and it seemed to fit better, so I rotated the labels within the $$\LaTeX$$ command.
- - Since all of the text has been rendered via $$\LaTeX$$, the fonts are a bit different.
+ - I had a request for rotating the additional text, which I actually <a href="https://gist.github.com/jonocarroll/2f9490f1f5e7c82ef8b791a4b91fc9ca#file-images_as_xaxis_labels_updated-r">also updated recently</a>, and it seemed to fit better, so I rotated the labels within the [latex]\LaTeX[/latex]command.
+ - Since all of the text has been rendered via [latex]\LaTeX[/latex], the fonts are a bit different.
  - The rankings have since changed, so I've added an 11th to keep Australia in the list.
 
-The $$\LaTeX$$ component of this also meant that a few changes were necessary in the other labels, such as the dollar sign in the y-axis label, and the underscores throughout (these are considered special characters in $$\LaTeX$$). Lastly, the result of running the <code>tikz</code> command is that a <code>.tex</code> ($$\LaTeX$$ source code) file is produced. This isn't quite the plot image file we want. It _does_ however have the commands to generate one. The last steps in the above gist are to process this <code>.tex</code> file with $$\LaTeX$$ (here I used the <code>tools::texi2dvi</code> function, but one _could_ also use a <code>system</code> command to their $$\LaTeX$$ installation.
+The [latex]\LaTeX[/latex] component of this also meant that a few changes were necessary in the other labels, such as the dollar sign in the y-axis label, and the underscores throughout (these are considered special characters in [latex]\LaTeX[/latex]. Lastly, the result of running the <code>tikz</code> command is that a <code>.tex</code> ([latex]\LaTeX[/latex]source code) file is produced. This isn't quite the plot image file we want. It _does_ however have the commands to generate one. The last steps in the above gist are to process this <code>.tex</code> file with [latex]\LaTeX[/latex] (here I used the <code>tools::texi2dvi</code> function, but one _could_ also use a <code>system</code> command to their [latex]\LaTeX[/latex] installation.
