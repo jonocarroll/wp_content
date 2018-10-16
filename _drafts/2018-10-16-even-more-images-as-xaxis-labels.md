@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 23:03:03
+post_date: 2018-10-16 23:05:03
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -16,7 +16,7 @@ This is the last update to this strange saga... I hope.
 
 Easily two of the most popular posts on my blog are <a href="https://jcarroll.com.au/2016/06/02/images-as-x-axis-labels/">this one</a> and <a href="https://jcarroll.com.au/2016/06/03/images-as-x-axis-labels-updated/">this one</a> describing a couple of ways in which I managed to hack together using an image as a category label in a ggplot. 
 
-There are likely many people who believe one should _never_ do such a thing, but given the popularity, it seems a lot of people aren't listening to that. Good on you.
+There are likely many people who believe one should <em>never</em> do such a thing, but given the popularity, it seems a lot of people aren't listening to that. Good on you.
 
 <div style="width:100%;height:0;padding-bottom:54%;position:relative;"><iframe src="https://giphy.com/embed/bqalUGFYfyHzW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/good-hang-breastfeeding-bqalUGFYfyHzW">via GIPHY</a></p>
 
@@ -66,11 +66,11 @@ Producing nearly the same end result.
 
 There are a few differences compared to the previous version(s):
 
- - I had a request for rotating the additional text, which I actually <a href="https://gist.github.com/jonocarroll/2f9490f1f5e7c82ef8b791a4b91fc9ca#file-images_as_xaxis_labels_updated-r">also updated recently</a>, and it seemed to fit better, so I rotated the labels within the [latex]\LaTeX[/latex]command.
+ - I had a request for rotating the additional text, which I actually <a href="https://gist.github.com/jonocarroll/2f9490f1f5e7c82ef8b791a4b91fc9ca#file-images_as_xaxis_labels_updated-r">also updated recently</a>, and it seemed to fit better, so I rotated the labels within the [latex]\LaTeX[/latex] command.
  - Since all of the text has been rendered via [latex]\LaTeX[/latex], the fonts are a bit different.
  - The rankings have since changed, so I've added an 11th to keep Australia in the list.
 
-The [latex]\LaTeX[/latex] component of this also meant that a few changes were necessary in the other labels, such as the dollar sign in the y-axis label, and the underscores throughout (these are considered special characters in [latex]\LaTeX[/latex]. Lastly, the result of running the <code>tikz</code> command is that a <code>.tex</code> ([latex]\LaTeX[/latex]source code) file is produced. This isn't quite the plot image file we want. It _does_ however have the commands to generate one. The last steps in the above gist are to process this <code>.tex</code> file with [latex]\LaTeX[/latex] (here I used the <code>tools::texi2dvi</code> function, but one _could_ also use a <code>system</code> command to their [latex]\LaTeX[/latex] installation.
+The [latex]\LaTeX[/latex] component of this also meant that a few changes were necessary in the other labels, such as the dollar sign in the y-axis label, and the underscores throughout (these are considered special characters in [latex]\LaTeX[/latex]). Lastly, the result of running the <code>tikz</code> command is that a <code>.tex</code> ([latex]\LaTeX[/latex]source code) file is produced. This isn't quite the plot image file we want. It <i>does</i> however have the commands to generate one. The last steps in the above gist are to process this <code>.tex</code> file with [latex]\LaTeX[/latex] (here I used the <code>tools::texi2dvi</code> function, but one <i>could</i> also use a <code>system</code> command to their [latex]\LaTeX[/latex] installation.
 
 That still only produced a PDF. The last step was to use the <code>magick</code> package to convert this into an image.
 
