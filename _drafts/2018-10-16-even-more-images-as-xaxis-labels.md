@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 23:05:03
+post_date: 2018-10-16 23:06:12
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -74,4 +74,4 @@ The [latex]\LaTeX[/latex] component of this also meant that a few changes were n
 
 That still only produced a PDF. The last step was to use the <code>magick</code> package to convert this into an image.
 
-Overall, this is a nice proof of concept, but I don't think it's a particularly tidy way of achieving the goal of image axis labels.
+Overall, this is a nice proof of concept, but I don't think it's a particularly tidy way of achieving the goal of image axis labels. It does however lay the groundwork for anyone else who decides this might be a useful route to take. Plus I learned a bit more about how <code>tikzDevice</code> works and got to revisit my [latex]\LaTeX[/latex] knowledge.
