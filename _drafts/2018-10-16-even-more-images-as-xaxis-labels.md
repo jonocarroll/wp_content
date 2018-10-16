@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:01:16
+post_date: 2018-10-16 22:02:19
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -27,7 +27,7 @@ A quick test showed that it was indeed possible, which only leaves re-implementi
 
 I've done so, and the code isn't particularly shorter than the other method.
 
-[gist id="08a1ccff36be628430d768e5b9426e54]
+[gist id="08a1ccff36be628430d768e5b9426e54"]
 
 Producing nearly the same end result.
 
