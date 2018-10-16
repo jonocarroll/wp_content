@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 23:06:12
+post_date: 2018-10-16 23:08:22
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -20,7 +20,7 @@ There are likely many people who believe one should <em>never</em> do such a thi
 
 <div style="width:100%;height:0;padding-bottom:54%;position:relative;"><iframe src="https://giphy.com/embed/bqalUGFYfyHzW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/good-hang-breastfeeding-bqalUGFYfyHzW">via GIPHY</a></p>
 
-One of these posts was recently shared again by the amazing <a href="https://twitter.com/dataandme">#rstats amplifier Mara Averick</a> (if you're not following her on Twitter, you're missing out) and <a href="https://twitter.com/baptiste_auguie">@baptiste_auguie</a> (the saviour of the previous implementation) mentioned that he had seen a 'hack' to get chemical symbols as a categorical axis label using <code>tikzDevice</code>. That package leverages [latex]\LaTeX[/latex] (of which I am <i>very</i> familiar, having written my PhD thesis entirely in [latex]\LaTeX[/latex]many moons ago) to treat all of the text in an image into rendered output, assuming that it contains valid [latex]\LaTeX[/latex] commands.
+One of these posts was recently shared again by the amazing <a href="https://twitter.com/dataandme">#rstats amplifier Mara Averick</a> (if you're not following her on Twitter, you're missing out) and <a href="https://twitter.com/baptiste_auguie">@baptiste_auguie</a> (the saviour of the previous implementation) mentioned that he had written a 'hack' to get chemical symbols as a categorical axis label using <code>tikzDevice</code>. That package leverages [latex]\LaTeX[/latex] (of which I am <i>very</i> familiar, having written my PhD thesis entirely in [latex]\LaTeX[/latex] many moons ago) to treat all of the text in an image into rendered output, assuming that it contains valid [latex]\LaTeX[/latex] commands.
 
 The <a href="https://groups.google.com/forum/#!topic/ggplot2/OPhpWtVcwtY">example code</a> is straightforward enough
 
@@ -70,7 +70,7 @@ There are a few differences compared to the previous version(s):
  - Since all of the text has been rendered via [latex]\LaTeX[/latex], the fonts are a bit different.
  - The rankings have since changed, so I've added an 11th to keep Australia in the list.
 
-The [latex]\LaTeX[/latex] component of this also meant that a few changes were necessary in the other labels, such as the dollar sign in the y-axis label, and the underscores throughout (these are considered special characters in [latex]\LaTeX[/latex]). Lastly, the result of running the <code>tikz</code> command is that a <code>.tex</code> ([latex]\LaTeX[/latex]source code) file is produced. This isn't quite the plot image file we want. It <i>does</i> however have the commands to generate one. The last steps in the above gist are to process this <code>.tex</code> file with [latex]\LaTeX[/latex] (here I used the <code>tools::texi2dvi</code> function, but one <i>could</i> also use a <code>system</code> command to their [latex]\LaTeX[/latex] installation.
+The [latex]\LaTeX[/latex] component of this also meant that a few changes were necessary in the other labels, such as the dollar sign in the y-axis label, and the underscores throughout (these are considered special characters in [latex]\LaTeX[/latex]). Lastly, the result of running the <code>tikz</code> command is that a <code>.tex</code> ([latex]\LaTeX[/latex] source code) file is produced. This isn't quite the plot image file we want. It <i>does</i> however have the commands to generate one. The last steps in the above gist are to process this <code>.tex</code> file with [latex]\LaTeX[/latex] (here I used the <code>tools::texi2dvi</code> function, but one <i>could</i> also use a <code>system</code> command to their [latex]\LaTeX[/latex] installation.
 
 That still only produced a PDF. The last step was to use the <code>magick</code> package to convert this into an image.
 
