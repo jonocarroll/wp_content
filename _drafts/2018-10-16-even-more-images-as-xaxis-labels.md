@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:43:30
+post_date: 2018-10-16 22:44:40
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -14,7 +14,9 @@ This is the last update to this strange saga... I hope.
 
 <!--more-->
 
-Easily two of the most popular posts on my blog are <a href="https://jcarroll.com.au/2016/06/02/images-as-x-axis-labels/">this one</a> and <a href="https://jcarroll.com.au/2016/06/03/images-as-x-axis-labels-updated/">this one</a> describing a couple of ways in which I managed to hack together using an image as a category label in a ggplot. There are likely many people who believe one should _never_ do such a thing, but given the popularity, it seems a lot of people aren't listening to that. Good on you.
+Easily two of the most popular posts on my blog are <a href="https://jcarroll.com.au/2016/06/02/images-as-x-axis-labels/">this one</a> and <a href="https://jcarroll.com.au/2016/06/03/images-as-x-axis-labels-updated/">this one</a> describing a couple of ways in which I managed to hack together using an image as a category label in a ggplot. 
+
+There are likely many people who believe one should _never_ do such a thing, but given the popularity, it seems a lot of people aren't listening to that. Good on you.
 
 <div style="width:100%;height:0;padding-bottom:54%;position:relative;"><iframe src="https://giphy.com/embed/bqalUGFYfyHzW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/good-hang-breastfeeding-bqalUGFYfyHzW">via GIPHY</a></p>
 
