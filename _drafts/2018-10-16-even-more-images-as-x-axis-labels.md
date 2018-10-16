@@ -1,8 +1,8 @@
 ---
 ID: 1203
-post_title: Even more images as xaxis labels
+post_title: Even more images as x-axis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 23:16:35
+post_date: 2018-10-16 23:17:31
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
