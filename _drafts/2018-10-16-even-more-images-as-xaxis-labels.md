@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:36:47
+post_date: 2018-10-16 22:38:48
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -10,7 +10,7 @@ published: false
 ---
 This is the last update to this strange saga... I hope.
 
-[caption]<img src="" />Image labels... Photo: http://www.premierpaper.com/shop/custom-labels/[/caption]
+[caption]<img src="https://jcarroll.com.au/wp-content/uploads/2018/10/labels.jpg" />Image labels... Photo: http://www.premierpaper.com/shop/custom-labels/[/caption]
 
 <!--more-->
 
@@ -26,6 +26,8 @@ This got me curious, though -- if it can process $\LaTeX$, could it process a <c
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Yes, as it turns out. 
+
+<div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/XreQmk7ETCak0" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/retro-thumbs-up-XreQmk7ETCak0">via GIPHY</a></p>
 
 A quick test showed that it was indeed possible, which only leaves re-implementing the previous posts' images using this method.
 
