@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:49:35
+post_date: 2018-10-16 22:50:33
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -24,7 +24,7 @@ One of these posts was recently shared again by the amazing <a href="https://twi
 
 The <a href="https://groups.google.com/forum/#!topic/ggplot2/OPhpWtVcwtY">example code</a> is straightforward enough
 
-[code brush="r"]
+[code language="r" light="true"]
 options(tikzLatexPackages = 
 c(getOption('tikzLatexPackages'),&quot;\\usepackage{acide-amine}\n&quot;)) 
 
