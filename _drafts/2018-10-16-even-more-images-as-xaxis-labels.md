@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 23:09:53
+post_date: 2018-10-16 23:11:04
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -45,7 +45,7 @@ and produces this
 
 [caption align="center" width="680"]<img src="https://jcarroll.com.au/wp-content/uploads/2018/10/annotation.png" />annotation.png[/caption]
 
-This got me curious, though -- if it can process $\LaTeX$, could it process a <code>\\includegraphics</code> call?
+This got me curious, though -- if it can process <i>arbitrary</i> [latex]\LaTeX[/latex], could it process a <code>\\includegraphics</code> call?
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Efficient! If it&#39;s arbitrary LaTeX, could the labels just be \includegraphics calls?</p>&mdash; Jonathan Carroll (@carroll_jono) <a href="https://twitter.com/carroll_jono/status/1050535371241476096?ref_src=twsrc%5Etfw">October 11, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
