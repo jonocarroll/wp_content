@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 21:58:52
+post_date: 2018-10-16 21:59:04
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -30,3 +30,5 @@ I've done so, and the code isn't particularly shorter than the other method.
 [gist id="08a1ccff36be628430d768e5b9426e54]
 
 Producing nearly the same end result.
+
+image::https://jcarroll.com.au/wp-content/uploads/2018/10/xaxis-300x300.png[width="300", height="300", link="https://jcarroll.com.au/wp-content/uploads/2018/10/xaxis.png", align="none"]
