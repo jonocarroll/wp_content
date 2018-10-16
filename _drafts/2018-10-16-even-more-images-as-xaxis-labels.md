@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:32:43
+post_date: 2018-10-16 22:36:47
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -10,7 +10,7 @@ published: false
 ---
 This is the last update to this strange saga... I hope.
 
-
+[caption]<img src="" />Image labels... Photo: http://www.premierpaper.com/shop/custom-labels/[/caption]
 
 <!--more-->
 
