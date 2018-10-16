@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:43:07
+post_date: 2018-10-16 22:43:24
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -37,7 +37,7 @@ I've done so, and the code isn't particularly shorter than the other method.
 
 Producing nearly the same end result.
 
-[caption align="center"]<img src="https://jcarroll.com.au/wp-content/uploads/2018/10/xaxis.png" />tikzDevice result[/caption]
+[caption  align="center" width="680"]<img src="https://jcarroll.com.au/wp-content/uploads/2018/10/xaxis.png" />tikzDevice result[/caption]
 
 There are a few differences with the previous version(s):
 
