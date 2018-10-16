@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:44:40
+post_date: 2018-10-16 22:46:41
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -20,7 +20,10 @@ There are likely many people who believe one should _never_ do such a thing, but
 
 <div style="width:100%;height:0;padding-bottom:54%;position:relative;"><iframe src="https://giphy.com/embed/bqalUGFYfyHzW" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/good-hang-breastfeeding-bqalUGFYfyHzW">via GIPHY</a></p>
 
-One of these posts was recently shared again by the amazing <a href="https://twitter.com/dataandme">#rstats amplifier Mara Averick</a> (if you're not following her on Twitter, you're missing out) and <a href="https://twitter.com/baptiste_auguie">@baptiste_auguie</a> (the saviour of the previous implementation) mentioned that he had seen a 'hack' to get chemical symbols as a categorical axis label using tikzDevice. That package leverages [latex]\LaTeX[/latex] (of which I am _very_ familiar, having written my PhD thesis entirely in [latex]\LaTeX[/latex]many moons ago) to treat all of the text in an image into rendered output, assuming that it contains valid [latex]\LaTeX[/latex] commands.
+One of these posts was recently shared again by the amazing <a href="https://twitter.com/dataandme">#rstats amplifier Mara Averick</a> (if you're not following her on Twitter, you're missing out) and <a href="https://twitter.com/baptiste_auguie">@baptiste_auguie</a> (the saviour of the previous implementation) mentioned that he had seen a 'hack' to get chemical symbols as a categorical axis label using <code>tikzDevice</code>. That package leverages [latex]\LaTeX[/latex] (of which I am _very_ familiar, having written my PhD thesis entirely in [latex]\LaTeX[/latex]many moons ago) to treat all of the text in an image into rendered output, assuming that it contains valid [latex]\LaTeX[/latex] commands.
+
+The code is
+
 
 This got me curious, though -- if it can process $\LaTeX$, could it process a <code>\\includegraphics</code> call?
 
@@ -41,7 +44,7 @@ Producing nearly the same end result.
 
 [caption  align="center" width="680"]<img src="https://jcarroll.com.au/wp-content/uploads/2018/10/xaxis.png" />tikzDevice result[/caption]
 
-There are a few differences with the previous version(s):
+There are a few differences compared to the previous version(s):
 
  - I had a request for rotating the additional text, which I actually <a href="https://gist.github.com/jonocarroll/2f9490f1f5e7c82ef8b791a4b91fc9ca#file-images_as_xaxis_labels_updated-r">also updated recently</a>, and it seemed to fit better, so I rotated the labels within the [latex]\LaTeX[/latex]command.
  - Since all of the text has been rendered via [latex]\LaTeX[/latex], the fonts are a bit different.
