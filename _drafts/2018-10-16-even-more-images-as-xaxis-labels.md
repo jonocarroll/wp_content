@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 21:59:04
+post_date: 2018-10-16 22:01:16
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -12,7 +12,7 @@ This is the last update to this strange saga... I hope.
 
 <!--more-->
 
-Easily one of the most popular posts on my blog is this one describing a couple of ways in which I managed to hack together using an image as a category label in a ggplot. There are likely many people who believe one should _never_ do such a thing, but given the popularity, it seems a lot of people aren't listening to that. Good on you.
+Easily two of the most popular posts on my blog are <a href="https://jcarroll.com.au/2016/06/02/images-as-x-axis-labels/">this one</a> and <a href="https://jcarroll.com.au/2016/06/03/images-as-x-axis-labels-updated/">this one</a> describing a couple of ways in which I managed to hack together using an image as a category label in a ggplot. There are likely many people who believe one should _never_ do such a thing, but given the popularity, it seems a lot of people aren't listening to that. Good on you.
 
 One of these posts was recently shared again by the amazing #rstats amplifier Mara Averick (if you're not following her on Twitter, you're missing out) and @baptiste_auguie (the saviour of the previous implementation) mentioned that he had seen a 'hack' to get chemical symbols as a categorical axis label using tikzDevice. That package leverages LaTeX (of which I am _very_ familiar, having written my PhD thesis entirely in LaTeX many moons ago) to treat all of the text in an image into rendered output, assuming that it contains valid LaTeX commands.
 
