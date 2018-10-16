@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:10:17
+post_date: 2018-10-16 22:13:15
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -39,4 +39,4 @@ There are a few differences with the previous version(s):
  - Since all of the text has been rendered via LaTeX, the fonts are a bit different.
  - The rankings have since changed, so I've added an 11th to keep Australia in the list.
 
-The LaTeX component of this also meant that a few changes were necessary in the other labels, such as the dollar sign in the y-axis label, and the underscores throughout (these are considered
+The LaTeX component of this also meant that a few changes were necessary in the other labels, such as the dollar sign in the y-axis label, and the underscores throughout (these are considered special characters in LaTeX). Lastly, the result of running the <code>tikz</code> command is that a <code>.tex</code> (LaTeX source code) file is produced. This isn't
