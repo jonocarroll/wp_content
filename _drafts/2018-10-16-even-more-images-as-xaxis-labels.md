@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 21:56:52
+post_date: 2018-10-16 21:58:52
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -23,4 +23,10 @@ This got me curious, though -- if it can process LaTeX, could it process a <code
 
 Yes, as it turns out. 
 
-A quick test showed that it was indeed possible, which only leaves re-implementing the previous posts' images usign
+A quick test showed that it was indeed possible, which only leaves re-implementing the previous posts' images using this method.
+
+I've done so, and the code isn't particularly shorter than the other method.
+
+[gist id="08a1ccff36be628430d768e5b9426e54]
+
+Producing nearly the same end result.
