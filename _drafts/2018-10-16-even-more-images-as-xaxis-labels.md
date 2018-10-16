@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:48:41
+post_date: 2018-10-16 22:49:35
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -22,7 +22,7 @@ There are likely many people who believe one should _never_ do such a thing, but
 
 One of these posts was recently shared again by the amazing <a href="https://twitter.com/dataandme">#rstats amplifier Mara Averick</a> (if you're not following her on Twitter, you're missing out) and <a href="https://twitter.com/baptiste_auguie">@baptiste_auguie</a> (the saviour of the previous implementation) mentioned that he had seen a 'hack' to get chemical symbols as a categorical axis label using <code>tikzDevice</code>. That package leverages [latex]\LaTeX[/latex] (of which I am _very_ familiar, having written my PhD thesis entirely in [latex]\LaTeX[/latex]many moons ago) to treat all of the text in an image into rendered output, assuming that it contains valid [latex]\LaTeX[/latex] commands.
 
-The example code is straightforward enough
+The <a href="https://groups.google.com/forum/#!topic/ggplot2/OPhpWtVcwtY">example code</a> is straightforward enough
 
 [code brush="r"]
 options(tikzLatexPackages = 
@@ -43,7 +43,7 @@ dev.off()
 
 and produces this
 
-[caption align="center" width="680"]<"https://jcarroll.com.au/wp-content/uploads/2018/10/annotation.png /
+[caption align="center" width="680"]<img src="https://jcarroll.com.au/wp-content/uploads/2018/10/annotation.png" />annotation.png[/caption]
 
 This got me curious, though -- if it can process $\LaTeX$, could it process a <code>\\includegraphics</code> call?
 
