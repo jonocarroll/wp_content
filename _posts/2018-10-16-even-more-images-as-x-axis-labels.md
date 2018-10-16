@@ -2,11 +2,12 @@
 ID: 1203
 post_title: Even more images as x-axis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 23:17:31
+post_date: 2018-10-16 23:18:32
 post_excerpt: ""
 layout: post
-permalink: https://jcarroll.com.au/?p=1203
-published: false
+permalink: >
+  https://jcarroll.com.au/2018/10/16/even-more-images-as-x-axis-labels/
+published: true
 ---
 This is the last update to this strange saga... I hope.
 
