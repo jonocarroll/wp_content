@@ -2,7 +2,7 @@
 ID: 1203
 post_title: Even more images as xaxis labels
 author: Jonathan Carroll
-post_date: 2018-10-16 22:08:17
+post_date: 2018-10-16 22:10:17
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1203
@@ -36,4 +36,7 @@ Producing nearly the same end result.
 There are a few differences with the previous version(s):
 
  - I had a request for rotating the additional text, which I actually <a href="https://gist.github.com/jonocarroll/2f9490f1f5e7c82ef8b791a4b91fc9ca#file-images_as_xaxis_labels_updated-r">also updated recently</a>, and it seemed to fit better, so I rotated the labels within the LaTeX command.
- - Since all of the text has been rendered via La
+ - Since all of the text has been rendered via LaTeX, the fonts are a bit different.
+ - The rankings have since changed, so I've added an 11th to keep Australia in the list.
+
+The LaTeX component of this also meant that a few changes were necessary in the other labels, such as the dollar sign in the y-axis label, and the underscores throughout (these are considered
