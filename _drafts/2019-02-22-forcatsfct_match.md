@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:54:18
+post_date: 2019-02-22 22:54:29
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -33,7 +33,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data[data$g %in% c("X Y", "Z"), ][/code]</p>
+<p>[code language="r" light="true"]data[data$g %in% c(&quot;X Y&quot;, &quot;Z&quot;), ][/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -41,19 +41,19 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data &lt;- data.frame(a = 1:5, g = c("X_Y", "W", "Z", "Z", "W"))<br>data<br>#>   a   g<br>#> 1 1 X_Y<br>#> 2 2   W<br>#> 3 3   Z<br>#> 4 4   Z<br>#> 5 5   W<br><br>data %>% filter(g %in% c("X Y", "Z"))<br>#>   a g<br>#> 1 3 Z<br>#> 2 4 Z</p>
-<!-- /wp:paragraph -->
+<p>[code language="r" light="true"]data &amp;lt;- data.frame(a = 1:5, g = c(&quot;X_Y&quot;, &quot;W&quot;, &quot;Z&quot;, &quot;Z&quot;, &quot;W&quot;))&lt;br&gt;data&lt;br&gt;#&gt;   a   g&lt;br&gt;#&gt; 1 1 X_Y&lt;br&gt;#&gt; 2 2   W&lt;br&gt;#&gt; 3 3   Z&lt;br&gt;#&gt; 4 4   Z&lt;br&gt;#&gt; 5 5   W&lt;br&gt;&lt;br&gt;data %&gt;% filter(g %in% c(&quot;X Y&quot;, &quot;Z&quot;))&lt;br&gt;#&gt;   a g&lt;br&gt;#&gt; 1 3 Z&lt;br&gt;#&gt; 2 4 Z&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
 
-<!-- wp:paragraph -->
-<p><code>filter</code> isn't at fault here -- the same issue would arise with <code>[</code> -- I have <g class="gr_ gr_5 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="5" data-gr-id="5">mis-specified</g> the values I wish to match, so I am returned only the matching values. <code>%in%</code> is also performing its job - it returns a logical vector; the result of comparing the values in the <g class="gr_ gr_165 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="165" data-gr-id="165">column</g><code>g</code><g class="gr_ gr_165 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" id="165" data-gr-id="165">to</g> the <g class="gr_ gr_205 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="205" data-gr-id="205">vector </g><code>c("X Y", "Z")</code><g class="gr_ gr_205 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="205" data-gr-id="205">.</g> Both of these functions are behaving as they should, but the logic of what I was trying to achieve (subset to only these values) was lost.</p>
-<!-- /wp:paragraph -->
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;code&gt;filter&lt;/code&gt; isn't at fault here -- the same issue would arise with &lt;code&gt;[&lt;/code&gt; -- I have &lt;g class=&quot;gr_ gr_5 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling&quot; id=&quot;5&quot; data-gr-id=&quot;5&quot;&gt;mis-specified&lt;/g&gt; the values I wish to match, so I am returned only the matching values. &lt;code&gt;%in%&lt;/code&gt; is also performing its job - it returns a logical vector; the result of comparing the values in the &lt;g class=&quot;gr_ gr_165 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace&quot; id=&quot;165&quot; data-gr-id=&quot;165&quot;&gt;column&lt;/g&gt;&lt;code&gt;g&lt;/code&gt;&lt;g class=&quot;gr_ gr_165 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace&quot; id=&quot;165&quot; data-gr-id=&quot;165&quot;&gt;to&lt;/g&gt; the &lt;g class=&quot;gr_ gr_205 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace&quot; id=&quot;205&quot; data-gr-id=&quot;205&quot;&gt;vector &lt;/g&gt;&lt;code&gt;c(&quot;X Y&quot;, &quot;Z&quot;)&lt;/code&gt;&lt;g class=&quot;gr_ gr_205 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace&quot; id=&quot;205&quot; data-gr-id=&quot;205&quot;&gt;.&lt;/g&gt; Both of these functions are behaving as they should, but the logic of what I was trying to achieve (subset to only these values) was lost.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
 
-<!-- wp:paragraph -->
-<p>Now, in some instances, that is exactly the behaviour you want -- subset this vector to <em>any</em> of these values... where those values may not be present in the vector <g class="gr_ gr_98 gr-alert gr_gramm gr_inline_cards gr_run_anim Punctuation only-ins replaceWithoutSep" id="98" data-gr-id="98">to</g> begin with</p>
-<!-- /wp:paragraph -->
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Now, in some instances, that is exactly the behaviour you want -- subset this vector to &lt;em&gt;any&lt;/em&gt; of these values... where those values may not be present in the vector &lt;g class=&quot;gr_ gr_98 gr-alert gr_gramm gr_inline_cards gr_run_anim Punctuation only-ins replaceWithoutSep&quot; id=&quot;98&quot; data-gr-id=&quot;98&quot;&gt;to&lt;/g&gt; begin with&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
 
-<!-- wp:paragraph -->
-<p>[code language="r" light="true"]data %>% filter(values %in% known_values)[/code]</p>
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;[code language=&quot;r&quot; light=&quot;true&quot;]data %&gt;% filter(values %in% known_values)[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -61,7 +61,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]simpsons_characters %>% filter(first_name %in% c("Homer", "Marge", "Bert", "Lisa", "Maggie")[/code]</p>
+<p>[code language="r" light="true"]simpsons_characters %&gt;% filter(first_name %in% c(&quot;Homer&quot;, &quot;Marge&quot;, &quot;Bert&quot;, &quot;Lisa&quot;, &quot;Maggie&quot;)[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -69,7 +69,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]grep("Bart", c("Bart", "Bort"), value = TRUE)<br>#> [1] "Bart"<br>grep("(Bart){~1}", c("Bart", "Bort"), value = TRUE)<br>#> [1] "Bart" "Bort"[/code]</p>
+<p>[code language="r" light="true"]grep(&quot;Bart&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE)&lt;br&gt;#&gt; [1] &quot;Bart&quot;&lt;br&gt;grep(&quot;(Bart){~1}&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE)&lt;br&gt;#&gt; [1] &quot;Bart&quot; &quot;Bort&quot;[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -85,7 +85,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data %>% filter(fct_match(g, c("X Y", "Z")))<br>> Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: "X Y".[/code]</p>
+<p>[code language="r" light="true"]data %&gt;% filter(fct_match(g, c(&quot;X Y&quot;, &quot;Z&quot;)))&lt;br&gt;&gt; Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: &quot;X Y&quot;.[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -93,7 +93,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data %>% filter(fct_match(g, c("X_Y", "Z")))<br>#>   a   g<br>#> 1 1 X_Y<br>#> 2 3   Z<br>#> 3 4 Z[/code]</p>
+<p>[code language="r" light="true"]data %&gt;% filter(fct_match(g, c(&quot;X_Y&quot;, &quot;Z&quot;)))&lt;br&gt;#&gt;   a   g&lt;br&gt;#&gt; 1 1 X_Y&lt;br&gt;#&gt; 2 3   Z&lt;br&gt;#&gt; 3 4 Z[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
