@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:27:19
+post_date: 2019-02-22 23:27:34
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -92,7 +92,8 @@ It took a while for the PR to be addressed (the tidyverse crew have plenty of ba
 My original version had a few bells and whistles that the current implementation has put aside. The first was inverting the matching with&nbsp;<code>fct_exclude</code>to make it easier to negate the matching without having to create a new anonymous function, i.e. <code>~!fct_match(.x)</code>. I find this particularly useful since a pipe expects a call/named function, not a lambda/anonymous function, which is actually quite painful to construct
 
 [code language="r" light="true"]
-data$g %&gt;%
+data %&gt;%
+   pull(g) %&gt;%
    (function(x) !fct_match(x, c(&quot;X_Y&quot;, &quot;Z&quot;)))
 [/code]
 
@@ -105,7 +106,8 @@ fct_exclude &lt;- function(f, lvls, ...) !fct_match(f, lvls, ...)
 we can use
 
 [code language="r" light="true"]
-data$g %&gt;%
+data %&gt;%
+   pull(g) %&gt;%
    fct_exclude(c(&quot;X_Y&quot;, &quot;Z&quot;))
 [/code]
 
