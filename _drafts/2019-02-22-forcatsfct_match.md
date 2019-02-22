@@ -2,13 +2,13 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:53:25
+post_date: 2019-02-22 23:54:57
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
 published: false
 ---
-This journey started almost a year ago, but it's finally been sufficiently worked through and merged! Yay, I've officially contributed to the <a href="https://www.tidyverse.org/">tidyverse</a>
+This journey started almost exactly a year ago, but it's finally been sufficiently worked through and merged! Yay, I've officially contributed to the <a href="https://www.tidyverse.org/">tidyverse</a> (minor as it may be)
 
 <div style="display:table-cell; vertical-align:middle; text-align:center"><img src="https://jcarroll.com.au/wp-content/uploads/2019/02/zoidberg_helping.jpeg" alt="" class="wp-image-1243"/></div>
 
