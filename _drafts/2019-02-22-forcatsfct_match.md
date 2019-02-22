@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:43:40
+post_date: 2019-02-22 23:45:13
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -69,7 +69,7 @@ grep(&quot;(Bart){~1}&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;, &quot;Brat&qu
 
 ("Are you matching to me?"... "No, my regex <em>also<em> matches to 'Bort'")
 
-Use the <code>(pattern){~n}</code>to allow up to <code>n</code>substitutions in the pattern matching. Refer <a href="https://twitter.com/klmr/status/1098238987968438273?s=20">here</a> and <a href="https://laurikari.net/tre/documentation/regex-syntax/">here</a>.
+Use <code>(pattern){~n}</code>to allow up to <code>n</code>substitutions in the pattern matching. Refer <a href="https://twitter.com/klmr/status/1098238987968438273?s=20">here</a> and <a href="https://laurikari.net/tre/documentation/regex-syntax/">here</a>.
 
 Back to the original problem -- <code>filter</code>and <code>%in%</code>are doing their jobs, but we aren't getting the result we want because we made a typo, and we aren't told that we've done so.
 
