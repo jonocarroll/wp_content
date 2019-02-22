@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:44:18
+post_date: 2019-02-22 22:46:19
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -105,7 +105,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>My original version had a few bells and whistles that the current implementation has put aside. The first was inverting the matching with <code>fct_exclude</code>to make it easier to negate the matching without having to create a new anonymous function, i.e. <code>~!fct_match(.x)</code>. I find this particularly useful since a pipe expects a call/named function specifying whether or not to include missing levels when considering <g class="gr_ gr_21 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="21" data-gr-id="21"><g class="gr_ gr_15 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del" id="15" data-gr-id="15">if</g> </g><code>lvls</code><g class="gr_ gr_21 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="21" data-gr-id="21"> is</g> a valid value <g class="gr_ gr_22 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="22" data-gr-id="22">in </g><code>f</code><g class="gr_ gr_22 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="22" data-gr-id="22"> since</g> <code>unique(f)</code>and <code>levels(f)</code>can return different answers.</p>
+<p>My original version had a few bells and whistles that the current implementation has put aside. The first was inverting the matching with <code>fct_exclude</code>to make it easier to negate the matching without having to create a new anonymous function, i.e. <code>~!fct_match(.x)</code>. I find this particularly useful since a pipe expects a call/named function, not a lambda/anonymous function. The other was specifying whether or not to include missing levels when considering <g class="gr_ gr_21 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="21" data-gr-id="21"><g class="gr_ gr_15 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del" id="15" data-gr-id="15">if</g> </g><code>lvls</code><g class="gr_ gr_21 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="21" data-gr-id="21"> is</g> a valid value <g class="gr_ gr_22 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="22" data-gr-id="22">in </g><code>f</code><g class="gr_ gr_22 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="22" data-gr-id="22"> since</g> <code>unique(f)</code>and <code>levels(f)</code>can return different answers.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
