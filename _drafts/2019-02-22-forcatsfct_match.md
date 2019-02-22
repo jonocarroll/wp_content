@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:30:09
+post_date: 2019-02-22 23:31:40
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -59,7 +59,7 @@ Technically this is a double-post because I also want to sidenote this with some
 grep(&quot;Bart&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;, &quot;Brat&quot;), value = TRUE)
 #&gt; [1] &quot;Bart&quot;
 
-grep(&quot;(Bart){~1}&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE)
+grep(&quot;(Bart){~1}&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;, &quot;Brat&quot;), value = TRUE)
 #&gt; [1] &quot;Bart&quot; &quot;Bort&quot;
 [/code]
 
