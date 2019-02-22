@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:18:20
+post_date: 2019-02-22 22:19:46
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -57,5 +57,5 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>(</p>
+<p>Technically this is a double-post because I also want to sidenote this with something I am amazed I have not known about yet (I was today years old when I learned about this)... I've used <code>regex</code>matching for a while, and have been surprised at how well I've been able to make it work</p>
 <!-- /wp:paragraph -->
