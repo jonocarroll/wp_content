@@ -2,14 +2,14 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 21:57:26
+post_date: 2019-02-22 21:57:48
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
 published: false
 ---
 <!-- wp:paragraph -->
-<p>This journey started almost a year ago, but it's finally been sufficiently worked through and merged! Yay, I've officially contributed to the tidyverse. </p>
+<p>This journey started almost a year ago, but it's finally been sufficiently worked through and merged! Yay, I've officially contributed to the <a href="https://www.tidyverse.org/">tidyverse</a>. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:more -->
