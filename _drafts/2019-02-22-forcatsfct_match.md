@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:22:48
+post_date: 2019-02-22 22:25:17
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -61,5 +61,9 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]grep(</p>
+<p>[code language="r" light="true"]grep("Bart", c("Bart", "Bort"), value = TRUE)<br>#> [1] "Bart"<br>grep("(Bart){~1}", c("Bart", "Bort"), value = TRUE)<br>#> [1] "Bart" "Bort"[/code]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Use the syntax <code>(pattern){~n}</code> to allow up to <code>n</code>substitutions in the pattern matching. </p>
 <!-- /wp:paragraph -->
