@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:25:24
+post_date: 2019-02-22 23:25:51
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -93,7 +93,7 @@ data$g %&gt;%
 
 whereas if we defined
 
-[code language="r" light="true"]fct_exclude &lt;- function(f, lvls, ...) !fct_match(f, lvls, ...)[/code]]
+[code language="r" light="true"]fct_exclude &lt;- function(f, lvls, ...) !fct_match(f, lvls, ...)[/code]
 
 we can use
 
