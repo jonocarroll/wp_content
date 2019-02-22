@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:35:54
+post_date: 2019-02-22 22:37:19
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -93,13 +93,13 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Yay! We're notified that we've made an error. <code>"X Y"</code>isn't actually in our column <code>g</code>. If we don't make the error, we get the result we actually wanted in the first place</p>
+<p>Yay! We're notified that we've made an error. <code>"X Y"</code>isn't actually in our column <code>g</code>. If we don't make the error, we get the result we actually wanted in the first place. After loading the development version of <code>forcats</code>from <g class="gr_ gr_81 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="81" data-gr-id="81">github</g> we can now use</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data %>% filter(fct_match(g, c("X_Y", "Z")))</p>
+<p>[code language="r" light="true"]data %>% filter(fct_match(g, c("X_Y", "Z")))<br>#>   a   g<br>#> 1 1 X_Y<br>#> 2 3   Z<br>#> 3 4 Z[/code]</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: "X Y".[/code]</p></blockquote>
-<!-- /wp:quote -->
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
