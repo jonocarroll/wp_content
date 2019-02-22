@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:31:40
+post_date: 2019-02-22 23:32:20
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -34,7 +34,8 @@ data
 #&gt; 4 4   Z
 #&gt; 5 5   W
 
-data %&gt;% filter(g %in% c(&quot;X Y&quot;, &quot;Z&quot;))
+data %&gt;% 
+   filter(g %in% c(&quot;X Y&quot;, &quot;Z&quot;))
 #&gt;   a g
 #&gt; 1 3 Z
 #&gt; 2 4 Z
@@ -44,7 +45,10 @@ data %&gt;% filter(g %in% c(&quot;X Y&quot;, &quot;Z&quot;))
 
 Now, in some instances, that is exactly the behaviour you want -- subset this vector to <em>any</em> of these values... where those values may not be present in the vector to begin with
 
-[code language="r" light="true"]data %&gt;% filter(values %in% known_values)[/code]
+[code language="r" light="true"]
+data %&gt;% 
+   filter(values %in% all_known_values)
+[/code]
 
 The problem, for me, is that there isn't a way to say "all of these should be there". The lack of matching happens silently. If you make a typo, you don't get that level, and you aren't told that it's been skipped
 
@@ -80,7 +84,8 @@ data %&gt;%
 Yay! We're notified that we've made an error. <code>"X Y"</code>isn't actually in our column <code>g</code>. If we don't make the error, we get the result we actually wanted in the first place. After loading the development version of <code>forcats</code>from <a href="https://github.com/tidyverse/forcats">github</a> we can now use
 
 [code language="r" light="true"]
-data %&gt;% filter(fct_match(g, c(&quot;X_Y&quot;, &quot;Z&quot;)))
+data %&gt;% 
+   filter(fct_match(g, c(&quot;X_Y&quot;, &quot;Z&quot;)))
 #&gt;   a   g
 #&gt; 1 1 X_Y
 #&gt; 2 3   Z
