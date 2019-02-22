@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:01:19
+post_date: 2019-02-22 23:01:30
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -33,7 +33,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data[data$g %in% c("X Y", "Z"), ][/code]</p>
+<p>[code language="r" light="true"]data[data$g %in% c(&quot;X Y&quot;, &quot;Z&quot;), ][/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -41,19 +41,19 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data &lt;- data.frame(a = 1:5, g = c("X_Y", "W", "Z", "Z", "W"))
+<p>[code language="r" light="true"]data &amp;lt;- data.frame(a = 1:5, g = c(&quot;X_Y&quot;, &quot;W&quot;, &quot;Z&quot;, &quot;Z&quot;, &quot;W&quot;))
 data
-#&gt;   a   g
-#&gt; 1 1 X_Y
-#&gt; 2 2   W
-#&gt; 3 3   Z
-#&gt; 4 4   Z
-#&gt; 5 5   W
+#&amp;gt;   a   g
+#&amp;gt; 1 1 X_Y
+#&amp;gt; 2 2   W
+#&amp;gt; 3 3   Z
+#&amp;gt; 4 4   Z
+#&amp;gt; 5 5   W
 
-data %&gt;% filter(g %in% c("X Y", "Z"))
-#&gt;   a g
-#&gt; 1 3 Z
-#&gt; 2 4 Z[/code]</p>
+data %&amp;gt;% filter(g %in% c(&quot;X Y&quot;, &quot;Z&quot;))
+#&amp;gt;   a g
+#&amp;gt; 1 3 Z
+#&amp;gt; 2 4 Z[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -65,7 +65,7 @@ data %&gt;% filter(g %in% c("X Y", "Z"))
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data %&gt;% filter(values %in% known_values)[/code]</p>
+<p>[code language="r" light="true"]data %&amp;gt;% filter(values %in% known_values)[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -73,7 +73,7 @@ data %&gt;% filter(g %in% c("X Y", "Z"))
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]simpsons_characters %&gt;% filter(first_name %in% c("Homer", "Marge", "Bert", "Lisa", "Maggie")[/code]</p>
+<p>[code language="r" light="true"]simpsons_characters %&amp;gt;% filter(first_name %in% c(&quot;Homer&quot;, &quot;Marge&quot;, &quot;Bert&quot;, &quot;Lisa&quot;, &quot;Maggie&quot;)[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -81,7 +81,7 @@ data %&gt;% filter(g %in% c("X Y", "Z"))
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]grep("Bart", c("Bart", "Bort"), value = TRUE)<br>#&gt; [1] "Bart"<br>grep("(Bart){~1}", c("Bart", "Bort"), value = TRUE)<br>#&gt; [1] "Bart" "Bort"[/code]</p>
+<p>[code language="r" light="true"]grep(&quot;Bart&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE)&lt;br&gt;#&amp;gt; [1] &quot;Bart&quot;&lt;br&gt;grep(&quot;(Bart){~1}&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE)&lt;br&gt;#&amp;gt; [1] &quot;Bart&quot; &quot;Bort&quot;[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -97,7 +97,7 @@ data %&gt;% filter(g %in% c("X Y", "Z"))
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code&nbsp;language="r" light="true"]data %&gt;% filter(fct_match(g, c("X Y", "Z")))<br>&gt; Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: "X Y".[/code]</p>
+<p>[code light="true" language="r"]data %&amp;gt;% filter(fct_match(g, c(&quot;X Y&quot;, &quot;Z&quot;)))&lt;br&gt;&amp;gt; Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: &quot;X Y&quot;.[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -105,7 +105,7 @@ data %&gt;% filter(g %in% c("X Y", "Z"))
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data %&gt;% filter(fct_match(g, c("X_Y", "Z")))<br>#&gt;   a   g<br>#&gt; 1 1 X_Y<br>#&gt; 2 3   Z<br>#&gt; 3 4 Z[/code]</p>
+<p>[code language="r" light="true"]data %&amp;gt;% filter(fct_match(g, c(&quot;X_Y&quot;, &quot;Z&quot;)))&lt;br&gt;#&amp;gt;   a   g&lt;br&gt;#&amp;gt; 1 1 X_Y&lt;br&gt;#&amp;gt; 2 3   Z&lt;br&gt;#&amp;gt; 3 4 Z[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -117,7 +117,7 @@ data %&gt;% filter(g %in% c("X Y", "Z"))
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data$g %&gt;% <br>&nbsp; &nbsp;(function(x) !fct_match(x, c("X_Y", "Z")))[/code]</p>
+<p>[code language="r" light="true"]data$g %&amp;gt;% &lt;br&gt;&amp;nbsp; &amp;nbsp;(function(x) !fct_match(x, c(&quot;X_Y&quot;, &quot;Z&quot;)))[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -125,7 +125,7 @@ data %&gt;% filter(g %in% c("X Y", "Z"))
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]fct_exclude &lt;- function(f, lvls, …) !fct_match(f, lvls, …)[/code]</p>
+<p>[code language="r" light="true"]fct_exclude &amp;lt;- function(f, lvls, …) !fct_match(f, lvls, …)[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -133,7 +133,7 @@ data %&gt;% filter(g %in% c("X Y", "Z"))
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data$g %&gt;% <br>&nbsp; &nbsp;fct_exclude(c("X_Y", "Z"))[/code]</p>
+<p>[code language="r" light="true"]data$g %&amp;gt;% &lt;br&gt;&amp;nbsp; &amp;nbsp;fct_exclude(c(&quot;X_Y&quot;, &quot;Z&quot;))[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
