@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:14:05
+post_date: 2019-02-22 22:15:52
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -41,7 +41,11 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Now, in some instances, that is exactly the behaviour you want -- subset this vector to <em>any</em> of these values... where those values may not be present in the vector to begin with.</p>
+<p>Now, in some instances, that is exactly the behaviour you want -- subset this vector to <em>any</em> of these values... where those values may not be present in the vector <g class="gr_ gr_98 gr-alert gr_gramm gr_inline_cards gr_run_anim Punctuation only-ins replaceWithoutSep" id="98" data-gr-id="98">to</g> begin with</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[code language="r" light="true"]data %>% filter(values %in% known_values)[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
