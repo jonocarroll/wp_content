@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:33:26
+post_date: 2019-02-22 22:35:34
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -89,5 +89,13 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data %>% filter(fct_match(g, c("X Y", "Z")))[/code]</p>
+<p>[code language="r" light="true"]data %>% filter(fct_match(g, c("X Y", "Z")))<br>> Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: "X Y".[/code]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Yay! We're notified that we've made an error. <code>"X Y"</code>isn't actually in our column <code>g</code>. If we don't make the error, we get the result we actually wanted in the first place</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
 <!-- /wp:paragraph -->
