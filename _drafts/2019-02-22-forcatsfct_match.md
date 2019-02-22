@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:24:09
+post_date: 2019-02-22 23:25:24
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -48,9 +48,9 @@ Now, in some instances, that is exactly the behaviour you want -- subset this ve
 
 The problem, for me, is that there isn't a way to say "all of these should be there". The lack of matching happens silently. If you make a typo, you don't get that level, and you aren't told that it's been skipped
 
-[code language="r" light="true"]simpsons_characters %&amp;gt;% filter(first_name %in% c(&quot;Homer&quot;, &quot;Marge&quot;, &quot;Bert&quot;, &quot;Lisa&quot;, &quot;Maggie&quot;)[/code]
+[code language="r" light="true"]simpsons_characters %&gt;% filter(first_name %in% c(&quot;Homer&quot;, &quot;Marge&quot;, &quot;Bert&quot;, &quot;Lisa&quot;, &quot;Maggie&quot;)[/code]
 
-Technically this is a double-post because I also want to sidenote this with something I am amazed I have not known about yet (I was approximately today years old when I learned about this)... I've used <code>regex</code>matching for a while, and have been surprised at <a href="https://twitter.com/carroll_jono/status/908186714350403584">how well I've been able to make it work</a> occasionally. I'm familiar with counting patterns (<code>(A){2}</code>&nbsp;to match two occurrences of <code>A</code>) and ranges of counts (<code>(A){2,4}</code>&nbsp;to match between two and four occurrences of <code>A</code>) but I was not aware that you can specify <g class="gr_ gr_1434 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Grammar multiReplace" id="1434" data-gr-id="1434">a number</g> of <em><strong>mistakes</strong></em> that can be included to still make a match...&nbsp;
+Technically this is a double-post because I also want to sidenote this with something I am amazed I have not known about yet (I was approximately today years old when I learned about this)... I've used <code>regex</code>matching for a while, and have been surprised at <a href="https://twitter.com/carroll_jono/status/908186714350403584">how well I've been able to make it work</a> occasionally. I'm familiar with counting patterns (<code>(A){2}</code>&nbsp;to match two occurrences of <code>A</code>) and ranges of counts (<code>(A){2,4}</code>&nbsp;to match between two and four occurrences of <code>A</code>) but I was not aware that you can specify a number of <em><strong>mistakes</strong></em> that can be included to still make a match...&nbsp;
 
 [code language="r" light="true"]
 grep(&quot;Bart&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE)
@@ -60,7 +60,7 @@ grep(&quot;(Bart){~1}&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE
 #&gt; [1] &quot;Bart&quot; &quot;Bort&quot;
 [/code]
 
-(- "are you matching to me?" - "No, my regex <em>also<em> matches to 'Bort'")
+("Are you matching to me?"... "No, my regex <em>also<em> matches to 'Bort'")
 
 Use the <code>(pattern){~n}</code>to allow up to <code>n</code>substitutions in the pattern matching. Refer <a href="https://twitter.com/klmr/status/1098238987968438273?s=20">here</a> and <a href="https://laurikari.net/tre/documentation/regex-syntax/">here</a>.
 
