@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:05:09
+post_date: 2019-02-22 22:06:29
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -33,5 +33,9 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><code>filter</code>isn't at fault here -- the same issue would arise </p>
+<p><code>filter</code>isn't at fault here -- the same issue would arise with <code>[</code> -- I have mis-specified the values I wish to match, so I am returned only the matching values.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The problem, for me, is that this happens silently.</p>
 <!-- /wp:paragraph -->
