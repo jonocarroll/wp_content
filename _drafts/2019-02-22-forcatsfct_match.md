@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:20:50
+post_date: 2019-02-22 23:21:36
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -18,7 +18,7 @@ It began with <a href="https://twitter.com/carroll_jono/status/97109380309954150
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Source of today&#39;s mild heart-attack: I have categories W, X_Y, and Z in some data. Intending to keep only the second two:<br><br>data %&gt;% filter(g %in% c(&quot;X Y&quot;, &quot;Z&quot;)<br><br>Did you spot that I used a space instead of an underscore? I sure as heck didn&#39;t, and filtered excessively to just Z.&mdash; Jonathan Carroll (@carroll_jono) <a href="https://twitter.com/carroll_jono/status/971093803099541504?ref_src=twsrc%5Etfw">March 6, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-For those of you not so comfortable with pipes `dplyr`, I was trying to subset a <code>data.frame</code> <code>data</code> (with a column <code>g</code> having values <code>"W"</code>, code>"X_Y"</code> and <code>"Z"</code>) to only those rows for which the column <code>g</code> had the value <code>"X_Y"</code> or <code>"Z"</code>. this might simply be
+For those of you not so comfortable with pipes `dplyr`, I was trying to subset a <code>data.frame</code> <code>data</code> (with a column <code>g</code> having values <code>"W"</code>, <code>"X_Y"</code> and <code>"Z"</code>) to only those rows for which the column <code>g</code> had the value <code>"X_Y"</code> or <code>"Z"</code>. this might simply be
 
 [code language="r" light="true"]data[data$g %in% c(&quot;X Y&quot;, &quot;Z&quot;), ][/code]
 
