@@ -2,14 +2,14 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:57:08
+post_date: 2019-02-22 23:01:19
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
 published: false
 ---
 <!-- wp:paragraph -->
-<p>This journey started almost a year ago, but it's finally been sufficiently worked through and merged! Yay, I've officially contributed to the <a href="https://www.tidyverse.org/">tidyverse</a>. </p>
+<p>This journey started almost a year ago, but it's finally been sufficiently worked through and merged! Yay, I've officially contributed to the <a href="https://www.tidyverse.org/">tidyverse</a>.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":1243,"align":"center"} -->
@@ -21,7 +21,7 @@ published: false
 <!-- /wp:more -->
 
 <!-- wp:paragraph -->
-<p>It began with a tweet, recalling a surprise I encountered that day during some routine data processing</p>
+<p>It began with <a href="https://twitter.com/carroll_jono/status/971093803099541504?ref_src=twsrc%5Etfw">a tweet</a>, recalling a surprise I encountered that day during some routine data processing</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -29,7 +29,7 @@ published: false
 <!-- /wp:quote -->
 
 <!-- wp:paragraph -->
-<p> For those of you not so comfortable with pipes/<g class="gr_ gr_8 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="8" data-gr-id="8">dplyr</g>, I was trying to subset a <code>data.frame</code> named <code>data</code> (with a <g class="gr_ gr_291 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="291" data-gr-id="291">column </g><code>g</code><g class="gr_ gr_291 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="291" data-gr-id="291"> having</g> <g class="gr_ gr_294 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="294" data-gr-id="294">values </g><code>"W"</code><g class="gr_ gr_294 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="294" data-gr-id="294"><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239">,</g></g><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239"> </g><code>"X_Y"</code><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239">,</g> and <code>"Z"</code>) to only those rows for which the <g class="gr_ gr_58 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="58" data-gr-id="58">column </g><code>g</code><g class="gr_ gr_58 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="58" data-gr-id="58"> had</g> the value <g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="48" data-gr-id="48">either </g><code>"X_Y"</code><g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="48" data-gr-id="48"> </g><g class="gr_ gr_49 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="49" data-gr-id="49"><g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="48" data-gr-id="48">or</g> </g><code>"Z"</code><g class="gr_ gr_49 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="49" data-gr-id="49">.</g> In base <g class="gr_ gr_126 gr-alert gr_gramm gr_inline_cards gr_run_anim Punctuation only-ins replaceWithoutSep" id="126" data-gr-id="126">code</g> this might simply be</p>
+<p>&nbsp;For those of you not so comfortable with pipes/<g class="gr_ gr_8 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="8" data-gr-id="8">dplyr</g>, I was trying to subset a <code>data.frame</code>&nbsp;named&nbsp;<code>data</code>&nbsp;(with a <g class="gr_ gr_291 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="291" data-gr-id="291">column </g><code>g</code><g class="gr_ gr_291 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="291" data-gr-id="291">&nbsp;having</g>&nbsp;<g class="gr_ gr_294 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="294" data-gr-id="294">values </g><code>"W"</code><g class="gr_ gr_294 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="294" data-gr-id="294"><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239">,</g></g><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239"> </g><code>"X_Y"</code><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239">,</g> and <code>"Z"</code>) to only those rows for which the <g class="gr_ gr_58 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="58" data-gr-id="58">column </g><code>g</code><g class="gr_ gr_58 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="58" data-gr-id="58"> had</g>&nbsp;the value <g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="48" data-gr-id="48">either </g><code>"X_Y"</code><g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="48" data-gr-id="48"> </g><g class="gr_ gr_49 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="49" data-gr-id="49"><g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="48" data-gr-id="48">or</g> </g><code>"Z"</code><g class="gr_ gr_49 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="49" data-gr-id="49">.</g>&nbsp;In base <g class="gr_ gr_126 gr-alert gr_gramm gr_inline_cards gr_run_anim Punctuation only-ins replaceWithoutSep" id="126" data-gr-id="126">code</g> this might simply be</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -41,11 +41,23 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data &lt;- data.frame(a = 1:5, g = c("X_Y", "W", "Z", "Z", "W"))<br>data<br>#>   a   g<br>#> 1 1 X_Y<br>#> 2 2   W<br>#> 3 3   Z<br>#> 4 4   Z<br>#> 5 5   W<br><br>data %>% filter(g %in% c("X Y", "Z"))<br>#>   a g<br>#> 1 3 Z<br>#> 2 4 Z</p>
+<p>[code language="r" light="true"]data &lt;- data.frame(a = 1:5, g = c("X_Y", "W", "Z", "Z", "W"))
+data
+#&gt;   a   g
+#&gt; 1 1 X_Y
+#&gt; 2 2   W
+#&gt; 3 3   Z
+#&gt; 4 4   Z
+#&gt; 5 5   W
+
+data %&gt;% filter(g %in% c("X Y", "Z"))
+#&gt;   a g
+#&gt; 1 3 Z
+#&gt; 2 4 Z[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><code>filter</code> isn't at fault here -- the same issue would arise with <code>[</code> -- I have <g class="gr_ gr_5 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="5" data-gr-id="5">mis-specified</g> the values I wish to match, so I am returned only the matching values. <code>%in%</code> is also performing its job - it returns a logical vector; the result of comparing the values in the <g class="gr_ gr_165 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="165" data-gr-id="165">column</g><code>g</code><g class="gr_ gr_165 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" id="165" data-gr-id="165">to</g> the <g class="gr_ gr_205 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="205" data-gr-id="205">vector </g><code>c("X Y", "Z")</code><g class="gr_ gr_205 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="205" data-gr-id="205">.</g> Both of these functions are behaving as they should, but the logic of what I was trying to achieve (subset to only these values) was lost.</p>
+<p><code>filter</code> isn't at fault here -- the same issue would arise with <code>[</code>&nbsp;-- I have <g class="gr_ gr_5 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="5" data-gr-id="5">mis-specified</g> the values I wish to match, so I am returned only the matching values. <code>%in%</code>&nbsp;is also performing its job - it returns a logical vector; the result of comparing the values in the <g class="gr_ gr_165 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="165" data-gr-id="165">column</g><code>g</code><g class="gr_ gr_165 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" id="165" data-gr-id="165">to</g>&nbsp;the <g class="gr_ gr_205 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="205" data-gr-id="205">vector </g><code>c("X Y", "Z")</code><g class="gr_ gr_205 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="205" data-gr-id="205">.</g>&nbsp;Both of these functions are behaving as they should, but the logic of what I was trying to achieve (subset to only these values) was lost.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -53,7 +65,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data %>% filter(values %in% known_values)[/code]</p>
+<p>[code language="r" light="true"]data %&gt;% filter(values %in% known_values)[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -61,19 +73,19 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]simpsons_characters %>% filter(first_name %in% c("Homer", "Marge", "Bert", "Lisa", "Maggie")[/code]</p>
+<p>[code language="r" light="true"]simpsons_characters %&gt;% filter(first_name %in% c("Homer", "Marge", "Bert", "Lisa", "Maggie")[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Technically this is a double-post because I also want to sidenote this with something I am amazed I have not known about yet (I was approximately today years old when I learned about this)... I've used <code>regex</code>matching for a while, and have been surprised at <a href="https://twitter.com/carroll_jono/status/908186714350403584">how well I've been able to make it work</a> occasionally. I'm familiar with counting patterns (<code>(A){2}</code> to match two occurrences of <code>A</code>) and ranges of counts (<code>(A){2,4}</code> to match between two and four occurrences of <code>A</code>) but I was not aware that you can specify <g class="gr_ gr_1434 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Grammar multiReplace" id="1434" data-gr-id="1434">a number</g> of <em><strong>mistakes</strong></em> that can be included to still make a match... </p>
+<p>Technically this is a double-post because I also want to sidenote this with something I am amazed I have not known about yet (I was approximately today years old when I learned about this)... I've used <code>regex</code>matching for a while, and have been surprised at <a href="https://twitter.com/carroll_jono/status/908186714350403584">how well I've been able to make it work</a> occasionally. I'm familiar with counting patterns (<code>(A){2}</code>&nbsp;to match two occurrences of <code>A</code>) and ranges of counts (<code>(A){2,4}</code>&nbsp;to match between two and four occurrences of <code>A</code>) but I was not aware that you can specify <g class="gr_ gr_1434 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Grammar multiReplace" id="1434" data-gr-id="1434">a number</g> of <em><strong>mistakes</strong></em> that can be included to still make a match...&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]grep("Bart", c("Bart", "Bort"), value = TRUE)<br>#> [1] "Bart"<br>grep("(Bart){~1}", c("Bart", "Bort"), value = TRUE)<br>#> [1] "Bart" "Bort"[/code]</p>
+<p>[code language="r" light="true"]grep("Bart", c("Bart", "Bort"), value = TRUE)<br>#&gt; [1] "Bart"<br>grep("(Bart){~1}", c("Bart", "Bort"), value = TRUE)<br>#&gt; [1] "Bart" "Bort"[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Use the <g class="gr_ gr_4 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="4" data-gr-id="4">syntax </g><code>(pattern){~n}</code><g class="gr_ gr_4 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="4" data-gr-id="4"> to</g> allow up to <code>n</code>substitutions in the pattern matching. Refer <a href="https://twitter.com/klmr/status/1098238987968438273?s=20">here</a> and <a href="https://laurikari.net/tre/documentation/regex-syntax/">here</a>.</p>
+<p>Use the <g class="gr_ gr_4 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="4" data-gr-id="4">syntax </g><code>(pattern){~n}</code><g class="gr_ gr_4 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="4" data-gr-id="4">&nbsp;to</g> allow up to <code>n</code>substitutions in the pattern matching. Refer <a href="https://twitter.com/klmr/status/1098238987968438273?s=20">here</a> and <a href="https://laurikari.net/tre/documentation/regex-syntax/">here</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -85,7 +97,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data %>% filter(fct_match(g, c("X Y", "Z")))<br>> Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: "X Y".[/code]</p>
+<p>[code&nbsp;language="r" light="true"]data %&gt;% filter(fct_match(g, c("X Y", "Z")))<br>&gt; Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: "X Y".[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -93,7 +105,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data %>% filter(fct_match(g, c("X_Y", "Z")))<br>#>   a   g<br>#> 1 1 X_Y<br>#> 2 3   Z<br>#> 3 4 Z[/code]</p>
+<p>[code language="r" light="true"]data %&gt;% filter(fct_match(g, c("X_Y", "Z")))<br>#&gt;   a   g<br>#&gt; 1 1 X_Y<br>#&gt; 2 3   Z<br>#&gt; 3 4 Z[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -101,11 +113,11 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>My original version had a few bells and whistles that the current implementation has put aside. The first was inverting the matching with <code>fct_exclude</code>to make it easier to negate the matching without having to create a new anonymous function, i.e. <code>~!fct_match(.x)</code>. I find this particularly useful since a pipe expects a call/named function, not a lambda/anonymous function, which is actually quite painful to construct</p>
+<p>My original version had a few bells and whistles that the current implementation has put aside. The first was inverting the matching with&nbsp;<code>fct_exclude</code>to make it easier to negate the matching without having to create a new anonymous function, i.e. <code>~!fct_match(.x)</code>. I find this particularly useful since a pipe expects a call/named function, not a lambda/anonymous function, which is actually quite painful to construct</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data$g %>% <br>   (function(x) !fct_match(x, c("X_Y", "Z")))[/code]</p>
+<p>[code language="r" light="true"]data$g %&gt;% <br>&nbsp; &nbsp;(function(x) !fct_match(x, c("X_Y", "Z")))[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -121,11 +133,11 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]</p>
+<p>[code language="r" light="true"]data$g %&gt;% <br>&nbsp; &nbsp;fct_exclude(c("X_Y", "Z"))[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p> The other was specifying whether or not to include missing levels when considering <g class="gr_ gr_21 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="21" data-gr-id="21"><g class="gr_ gr_15 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del" id="15" data-gr-id="15">if</g> </g><code>lvls</code><g class="gr_ gr_21 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="21" data-gr-id="21"> is</g> a valid value <g class="gr_ gr_22 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="22" data-gr-id="22">in </g><code>f</code><g class="gr_ gr_22 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="22" data-gr-id="22"> since</g> <code>unique(f)</code>and <code>levels(f)</code>can return different answers.</p>
+<p> The other was specifying whether or not to include missing levels when considering <g class="gr_ gr_21 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="21" data-gr-id="21"><g class="gr_ gr_15 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del" id="15" data-gr-id="15">if</g> </g><code>lvls</code><g class="gr_ gr_21 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="21" data-gr-id="21">&nbsp;is</g> a valid value <g class="gr_ gr_22 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="22" data-gr-id="22">in </g><code>f</code><g class="gr_ gr_22 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="22" data-gr-id="22">&nbsp;since</g> <code>unique(f)</code>and <code>levels(f)</code>can return different answers.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
