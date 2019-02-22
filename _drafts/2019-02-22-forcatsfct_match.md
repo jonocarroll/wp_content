@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:49:56
+post_date: 2019-02-22 23:53:17
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -100,6 +100,7 @@ My original version had a few bells and whistles that the current implementation
 data %&gt;%
    pull(g) %&gt;%
    (function(x) !fct_match(x, c(&quot;X_Y&quot;, &quot;Z&quot;)))
+#&gt; [1] FALSE  TRUE FALSE FALSE  TRUE
 [/code]
 
 whereas if we defined
@@ -114,6 +115,7 @@ we can use
 data %&gt;%
    pull(g) %&gt;%
    fct_exclude(c(&quot;X_Y&quot;, &quot;Z&quot;))
+#&gt; [1] FALSE  TRUE FALSE FALSE  TRUE
 [/code]
 
 The other was specifying whether or not to include missing levels when considering if <code>lvls</code> is a valid value in <code>f</code> since <code>unique(f)</code> and <code>levels(f)</code> can return different answers.
