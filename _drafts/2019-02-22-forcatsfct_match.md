@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:40:23
+post_date: 2019-02-22 23:40:38
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -118,6 +118,6 @@ data %&gt;%
 
 The other was specifying whether or not to include missing levels when considering if <code>lvls</code> is a valid value in <code>f</code> since <code>unique(f)</code> and <code>levels(f)</code> can return different answers.
 
-The cleanup really made me think abo
+The cleanup really made me think about how much 'fluff' some of my code can have. Sure, it's nice to encapsulate some logic in a function, 
 
 Hopefully this pattern of <code>filter(fct_match(f, lvls))</code> is useful to others. It's certainly going to save me overlooking some typos.
