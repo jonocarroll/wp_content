@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:37:19
+post_date: 2019-02-22 22:40:27
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -85,7 +85,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Enter a new PR to <code>forcats</code>(originally to <code>dplyr</code>, but <code>forcats</code>does make more sense) which implements <code>fct_match(f, lvls)</code>. This checks that all of the values in <code>lvls</code>are actually present in <code>f</code>before returning the logical vector of which entries they correspond to. With this, the pattern becomes</p>
+<p>Enter a <a href="https://github.com/tidyverse/forcats/pull/127">new PR</a> to <code>forcats</code>(originally to <code>dplyr</code>, but <code>forcats</code>does make more sense) which implements <code>fct_match(f, lvls)</code>. This checks that all of the values in <code>lvls</code>are actually present in <code>f</code>before returning the logical vector of which entries they correspond to. With this, the pattern becomes</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -101,5 +101,9 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p></p>
+<p>It took a while for the PR to be addressed (the tidyverse crew have plenty of backlog, no doubt) but after some minor requested changes and a very neat cleanup by Hadley himself, it's been merged.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>My original version had a few bells and whistles that the current implementation has put aside, such as inverting the matching (<code>fct_exclude</code>to make it easier to negate the matching without having to create a new anonymous function, i.e. <code>~!fct_match(.x)</code></p>
 <!-- /wp:paragraph -->
