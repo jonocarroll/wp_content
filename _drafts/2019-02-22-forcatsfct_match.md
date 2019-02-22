@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:45:13
+post_date: 2019-02-22 23:46:29
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -73,7 +73,7 @@ Use <code>(pattern){~n}</code>to allow up to <code>n</code>substitutions in the 
 
 Back to the original problem -- <code>filter</code>and <code>%in%</code>are doing their jobs, but we aren't getting the result we want because we made a typo, and we aren't told that we've done so.
 
-Enter a <a href="https://github.com/tidyverse/forcats/pull/127">new PR</a> to <code>forcats</code>(originally to <code>dplyr</code>, but <code>forcats</code>does make more sense) which implements <code>fct_match(f, lvls)</code>. This checks that all of the values in <code>lvls</code>are actually present in <code>f</code>before returning the logical vector of which entries they correspond to. With this, the pattern becomes
+Enter a <a href="https://github.com/tidyverse/forcats/pull/127">new PR</a> to <code>forcats</code>(originally to <code>dplyr</code>, but <code>forcats</code>does make more sense) which implements <code>fct_match(f, lvls)</code>. This checks that all of the values in <code>lvls</code>are actually present in <code>f</code>before returning the logical vector of which entries they correspond to. With this, the pattern becomes (after loading the development version of <code>forcats</code>from <a href="https://github.com/tidyverse/forcats">github</a>)
 
 [code light="true" language="r"]
 data %&gt;% 
@@ -81,7 +81,7 @@ data %&gt;%
 #&gt; Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: &quot;X Y&quot;.
 [/code]
 
-Yay! We're notified that we've made an error. <code>"X Y"</code>isn't actually in our column <code>g</code>. If we don't make the error, we get the result we actually wanted in the first place. After loading the development version of <code>forcats</code>from <a href="https://github.com/tidyverse/forcats">github</a> we can now use
+Yay! We're notified that we've made an error. <code>"X Y"</code>isn't actually in our column <code>g</code>. If we don't make the error, we get the result we actually wanted in the first place. We can now use this successfully
 
 [code language="r" light="true"]
 data %&gt;% 
