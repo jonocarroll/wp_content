@@ -2,11 +2,12 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:57:11
+post_date: 2019-02-22 23:57:25
 post_excerpt: ""
 layout: post
-permalink: https://jcarroll.com.au/?p=1237
-published: false
+permalink: >
+  https://jcarroll.com.au/2019/02/22/forcatsfct_match/
+published: true
 ---
 This journey started almost exactly a year ago, but it's finally been sufficiently worked through and merged! Yay, I've officially contributed to the <a href="https://www.tidyverse.org/">tidyverse</a> (minor as it may be).
 
