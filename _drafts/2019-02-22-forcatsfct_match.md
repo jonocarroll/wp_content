@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:19:46
+post_date: 2019-02-22 22:20:20
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -57,5 +57,5 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Technically this is a double-post because I also want to sidenote this with something I am amazed I have not known about yet (I was today years old when I learned about this)... I've used <code>regex</code>matching for a while, and have been surprised at how well I've been able to make it work</p>
+<p>Technically this is a double-post because I also want to sidenote this with something I am amazed I have not known about yet (I was today years old when I learned about this)... I've used <code>regex</code>matching for a while, and have been surprised at <a href="https://twitter.com/carroll_jono/status/908186714350403584">how well I've been able to make it work</a> occasionally.</p>
 <!-- /wp:paragraph -->
