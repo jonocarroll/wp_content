@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:31:58
+post_date: 2019-02-22 22:33:26
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -42,6 +42,10 @@ published: false
 
 <!-- wp:paragraph -->
 <p>[code language="r" light="true"]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>data &lt;- data.frame(a = 1:5, g = c("X_Y", "W", "Z", "Z", "W"))<br>data<br>#>   a   g<br>#> 1 1 X_Y<br>#> 2 2   W<br>#> 3 3   Z<br>#> 4 4   Z<br>#> 5 5   W<br><br>data %>% filter(g %in% c("X Y", "Z"))<br>#>   a g<br>#> 1 3 Z<br>#> 2 4 Z</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
