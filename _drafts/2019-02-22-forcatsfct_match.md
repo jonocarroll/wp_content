@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:41:51
+post_date: 2019-02-22 22:42:23
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -105,5 +105,5 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>My original version had a few bells and whistles that the current implementation has put aside, such as inverting the matching with <code>fct_exclude</code>to make it easier to negate the matching without having to create a new anonymous function, i.e. <code>~!fct_match(.x)</code>and specifying whether or not to include missing levels when considering if <code>lvls</code> is a valid value in <code>f</code> since <code>unique(f)</code>and <code>levels(f)</code>give different answers.</p>
+<p>My original version had a few bells and whistles that the current implementation has put aside, such as inverting the matching with <code>fct_exclude</code>to make it easier to negate the matching without having to create a new anonymous function, i.e. <code>~!fct_match(.x)</code>and specifying whether or not to include missing levels when considering if <code>lvls</code> is a valid value in <code>f</code> since <code>unique(f)</code>and <code>levels(f)</code>can return different answers.</p>
 <!-- /wp:paragraph -->
