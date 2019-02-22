@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:21:36
+post_date: 2019-02-22 23:23:34
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -59,6 +59,8 @@ grep(&quot;Bart&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE)
 grep(&quot;(Bart){~1}&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE)
 #&gt; [1] &quot;Bart&quot; &quot;Bort&quot;
 [/code]
+
+(- "are you matching to me?" - "No
 
 Use the <code>(pattern){~n}</code>to allow up to <code>n</code>substitutions in the pattern matching. Refer <a href="https://twitter.com/klmr/status/1098238987968438273?s=20">here</a> and <a href="https://laurikari.net/tre/documentation/regex-syntax/">here</a>.
 
