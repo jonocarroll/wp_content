@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:25:17
+post_date: 2019-02-22 22:26:07
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -65,5 +65,5 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Use the syntax <code>(pattern){~n}</code> to allow up to <code>n</code>substitutions in the pattern matching. </p>
+<p>Use the syntax <code>(pattern){~n}</code> to allow up to <code>n</code>substitutions in the pattern matching. Refer <a href="https://twitter.com/klmr/status/1098238987968438273?s=20">here</a> and here.</p>
 <!-- /wp:paragraph -->
