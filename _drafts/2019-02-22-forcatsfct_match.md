@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:13:15
+post_date: 2019-02-22 22:13:24
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -33,7 +33,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]data[data$g %in% c("X Y", "Z"), ][/code]</p>
+<p>[code language="r" light="true"]data[data$g %in% c(&quot;X Y&quot;, &quot;Z&quot;), ][/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
