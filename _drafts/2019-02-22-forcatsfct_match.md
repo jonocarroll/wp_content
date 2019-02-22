@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:46:19
+post_date: 2019-02-22 22:47:37
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -109,5 +109,5 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p></p>
+<p>Hopefully this pattern of <code>filter(fct_match(f, lvls))</code> is useful to others. It's certainly going to save me overlooking some typos.</p>
 <!-- /wp:paragraph -->
