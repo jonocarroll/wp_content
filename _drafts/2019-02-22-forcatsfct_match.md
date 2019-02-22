@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:06:03
+post_date: 2019-02-22 23:07:12
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -18,25 +18,27 @@ published: false
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Source of today&#39;s mild heart-attack: I have categories W, X_Y, and Z in some data. Intending to keep only the second two:<br><br>data %&gt;% filter(g %in% c(&quot;X Y&quot;, &quot;Z&quot;)<br><br>Did you spot that I used a space instead of an underscore? I sure as heck didn&#39;t, and filtered excessively to just Z.</p>&mdash; Jonathan Carroll (@carroll_jono) <a href="https://twitter.com/carroll_jono/status/971093803099541504?ref_src=twsrc%5Etfw">March 6, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<p>&nbsp;For those of you not so comfortable with pipes/<g class="gr_ gr_8 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="8" data-gr-id="8">dplyr</g>, I was trying to subset a <code>data.frame</code>&nbsp;named&nbsp;<code>data</code>&nbsp;(with a <g class="gr_ gr_291 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="291" data-gr-id="291">column </g><code>g</code><g class="gr_ gr_291 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="291" data-gr-id="291">&nbsp;having</g>&nbsp;<g class="gr_ gr_294 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="294" data-gr-id="294">values </g><code>"W"</code><g class="gr_ gr_294 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="294" data-gr-id="294"><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239">,</g></g><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239"> </g><code>"X_Y"</code><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239">,</g> and <code>"Z"</code>) to only those rows for which the <g class="gr_ gr_58 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="58" data-gr-id="58">column </g><code>g</code><g class="gr_ gr_58 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="58" data-gr-id="58"> had</g>&nbsp;the value <g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="48" data-gr-id="48">either </g><code>"X_Y"</code><g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="48" data-gr-id="48"> </g><g class="gr_ gr_49 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="49" data-gr-id="49"><g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="48" data-gr-id="48">or</g> </g><code>"Z"</code><g class="gr_ gr_49 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="49" data-gr-id="49">.</g>&nbsp;In base <g class="gr_ gr_126 gr-alert gr_gramm gr_inline_cards gr_run_anim Punctuation only-ins replaceWithoutSep" id="126" data-gr-id="126">code</g> this might simply be</p>
+For those of you not so comfortable with pipes `dplyr`, I was trying to subset a <code>data.frame</code>&nbsp;named&nbsp;<code>data</code>&nbsp;(with a <g class="gr_ gr_291 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="291" data-gr-id="291">column </g><code>g</code><g class="gr_ gr_291 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="291" data-gr-id="291">&nbsp;having</g>&nbsp;<g class="gr_ gr_294 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="294" data-gr-id="294">values </g><code>"W"</code><g class="gr_ gr_294 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="294" data-gr-id="294"><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239">,</g></g><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239"> </g><code>"X_Y"</code><g class="gr_ gr_239 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Punctuation only-del replaceWithoutSep" id="239" data-gr-id="239">,</g> and <code>"Z"</code>) to only those rows for which the <g class="gr_ gr_58 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="58" data-gr-id="58">column </g><code>g</code><g class="gr_ gr_58 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="58" data-gr-id="58"> had</g>&nbsp;the value <g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="48" data-gr-id="48">either </g><code>"X_Y"</code><g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="48" data-gr-id="48"> </g><g class="gr_ gr_49 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="49" data-gr-id="49"><g class="gr_ gr_48 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="48" data-gr-id="48">or</g> </g><code>"Z"</code><g class="gr_ gr_49 gr-alert gr_gramm gr_inline_cards gr_disable_anim_appear Style multiReplace" id="49" data-gr-id="49">.</g>&nbsp;In base <g class="gr_ gr_126 gr-alert gr_gramm gr_inline_cards gr_run_anim Punctuation only-ins replaceWithoutSep" id="126" data-gr-id="126">code</g> this might simply be
 
-<p>[code language="r" light="true"]data[data$g %in% c(&quot;X Y&quot;, &quot;Z&quot;), ][/code]</p>
+[code language="r" light="true"]data[data$g %in% c(&quot;X Y&quot;, &quot;Z&quot;), ][/code]
 
-<p>To make that more concrete, let's actually show it in action</p>
+To make that more concrete, let's actually show it in action
 
-<p>[code language="r" light="true"]data &amp;lt;- data.frame(a = 1:5, g = c(&quot;X_Y&quot;, &quot;W&quot;, &quot;Z&quot;, &quot;Z&quot;, &quot;W&quot;))
+[code language="r" light="true"]
+data &lt;- data.frame(a = 1:5, g = c(&quot;X_Y&quot;, &quot;W&quot;, &quot;Z&quot;, &quot;Z&quot;, &quot;W&quot;))
 data
-#&amp;gt;   a   g
-#&amp;gt; 1 1 X_Y
-#&amp;gt; 2 2   W
-#&amp;gt; 3 3   Z
-#&amp;gt; 4 4   Z
-#&amp;gt; 5 5   W
+#&gt;   a   g
+#&gt; 1 1 X_Y
+#&gt; 2 2   W
+#&gt; 3 3   Z
+#&gt; 4 4   Z
+#&gt; 5 5   W
 
-data %&amp;gt;% filter(g %in% c(&quot;X Y&quot;, &quot;Z&quot;))
-#&amp;gt;   a g
-#&amp;gt; 1 3 Z
-#&amp;gt; 2 4 Z[/code]</p>
+data %&gt;% filter(g %in% c(&quot;X Y&quot;, &quot;Z&quot;))
+#&gt;   a g
+#&gt; 1 3 Z
+#&gt; 2 4 Z
+[/code]
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
