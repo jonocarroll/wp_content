@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:25:51
+post_date: 2019-02-22 23:27:19
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -48,7 +48,10 @@ Now, in some instances, that is exactly the behaviour you want -- subset this ve
 
 The problem, for me, is that there isn't a way to say "all of these should be there". The lack of matching happens silently. If you make a typo, you don't get that level, and you aren't told that it's been skipped
 
-[code language="r" light="true"]simpsons_characters %&gt;% filter(first_name %in% c(&quot;Homer&quot;, &quot;Marge&quot;, &quot;Bert&quot;, &quot;Lisa&quot;, &quot;Maggie&quot;)[/code]
+[code language="r" light="true"]
+simpsons_characters %&gt;% 
+   filter(first_name %in% c(&quot;Homer&quot;, &quot;Marge&quot;, &quot;Bert&quot;, &quot;Lisa&quot;, &quot;Maggie&quot;)
+[/code]
 
 Technically this is a double-post because I also want to sidenote this with something I am amazed I have not known about yet (I was approximately today years old when I learned about this)... I've used <code>regex</code>matching for a while, and have been surprised at <a href="https://twitter.com/carroll_jono/status/908186714350403584">how well I've been able to make it work</a> occasionally. I'm familiar with counting patterns (<code>(A){2}</code>&nbsp;to match two occurrences of <code>A</code>) and ranges of counts (<code>(A){2,4}</code>&nbsp;to match between two and four occurrences of <code>A</code>) but I was not aware that you can specify a number of <em><strong>mistakes</strong></em> that can be included to still make a match...&nbsp;
 
@@ -68,7 +71,9 @@ Back to the original problem -- <code>filter</code>and <code>%in%</code>are doin
 
 Enter a <a href="https://github.com/tidyverse/forcats/pull/127">new PR</a> to <code>forcats</code>(originally to <code>dplyr</code>, but <code>forcats</code>does make more sense) which implements <code>fct_match(f, lvls)</code>. This checks that all of the values in <code>lvls</code>are actually present in <code>f</code>before returning the logical vector of which entries they correspond to. With this, the pattern becomes
 
-[code light="true" language="r"]data %&gt;% filter(fct_match(g, c(&quot;X Y&quot;, &quot;Z&quot;)))
+[code light="true" language="r"]
+data %&gt;% 
+   filter(fct_match(g, c(&quot;X Y&quot;, &quot;Z&quot;)))
 #&gt; Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: &quot;X Y&quot;.
 [/code]
 
@@ -93,7 +98,9 @@ data$g %&gt;%
 
 whereas if we defined
 
-[code language="r" light="true"]fct_exclude &lt;- function(f, lvls, ...) !fct_match(f, lvls, ...)[/code]
+[code language="r" light="true"]
+fct_exclude &lt;- function(f, lvls, ...) !fct_match(f, lvls, ...)
+[/code]
 
 we can use
 
