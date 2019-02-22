@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:28:03
+post_date: 2019-02-22 22:28:46
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -73,5 +73,5 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Enter a new PR to <code>forcats</code>(originally to <code>dplyr</code>, but <code>forcats</code>does make more sense) which implements <code>fct_match()</code>. This checks that the </p>
+<p>Enter a new PR to <code>forcats</code>(originally to <code>dplyr</code>, but <code>forcats</code>does make more sense) which implements <code>fct_match(f, lvls)</code>. This checks that all of the values in <code>lvls</code>are actually present in <code>f</code>before returning the logical vector</p>
 <!-- /wp:paragraph -->
