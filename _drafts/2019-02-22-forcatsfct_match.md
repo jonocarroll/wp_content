@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:11:44
+post_date: 2019-02-22 22:11:51
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -12,8 +12,8 @@ published: false
 <p>This journey started almost a year ago, but it's finally been sufficiently worked through and merged! Yay, I've officially contributed to the <a href="https://www.tidyverse.org/">tidyverse</a>. </p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"align":"center"} -->
-<div class="wp-block-image"><figure class="aligncenter"><img src="blob:https://jcarroll.com.au/6de892ad-1607-43ce-88fb-5ff4294e9cb5" alt=""/></figure></div>
+<!-- wp:image {"id":1243,"align":"center"} -->
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://jcarroll.com.au/wp-content/uploads/2019/02/zoidberg_helping.jpeg" alt="" class="wp-image-1243"/></figure></div>
 <!-- /wp:image -->
 
 <!-- wp:more -->
@@ -33,7 +33,7 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]&lt;br&gt;data[data$g %in% c(&quot;X Y&quot;, &quot;Z&quot;), ]&lt;br&gt;[/code]</p>
+<p>[code language="r" light="true"]<br>data[data$g %in% c("X Y", "Z"), ]<br>[/code]</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
