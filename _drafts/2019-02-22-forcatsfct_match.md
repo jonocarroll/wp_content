@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 23:28:46
+post_date: 2019-02-22 23:30:09
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -56,7 +56,7 @@ simpsons_characters %&gt;%
 Technically this is a double-post because I also want to sidenote this with something I am amazed I have not known about yet (I was approximately today years old when I learned about this)... I've used <code>regex</code>matching for a while, and have been surprised at <a href="https://twitter.com/carroll_jono/status/908186714350403584">how well I've been able to make it work</a> occasionally. I'm familiar with counting patterns (<code>(A){2}</code>&nbsp;to match two occurrences of <code>A</code>) and ranges of counts (<code>(A){2,4}</code>&nbsp;to match between two and four occurrences of <code>A</code>) but I was not aware that you can specify a number of <em><strong>mistakes</strong></em> that can be included to still make a match...&nbsp;
 
 [code language="r" light="true"]
-grep(&quot;Bart&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE)
+grep(&quot;Bart&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;, &quot;Brat&quot;), value = TRUE)
 #&gt; [1] &quot;Bart&quot;
 
 grep(&quot;(Bart){~1}&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;), value = TRUE)
