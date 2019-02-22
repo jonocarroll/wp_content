@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:35:34
+post_date: 2019-02-22 22:35:54
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -97,5 +97,9 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p></p>
+<p>[code language="r" light="true"]data %>% filter(fct_match(g, c("X_Y", "Z")))</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Error in filter_impl(.data, quo): Evaluation error: Levels not present in factor: "X Y".[/code]</p></blockquote>
+<!-- /wp:quote -->
