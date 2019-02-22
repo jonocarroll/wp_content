@@ -2,7 +2,7 @@
 ID: 1237
 post_title: forcats::fct_match
 author: Jonathan Carroll
-post_date: 2019-02-22 22:16:49
+post_date: 2019-02-22 22:18:03
 post_excerpt: ""
 layout: post
 permalink: https://jcarroll.com.au/?p=1237
@@ -53,5 +53,9 @@ published: false
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[code language="r" light="true"]</p>
+<p>[code language="r" light="true"]simpsons_characters %>% filter(first_name %in% c("Homer", "Marge", "Bort", "Lisa", "Maggie")[/code]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sorry, someone else </p>
 <!-- /wp:paragraph -->
