@@ -68,7 +68,7 @@ grep(&quot;(Bart){~1}&quot;, c(&quot;Bart&quot;, &quot;Bort&quot;, &quot;Brat&qu
 #&gt; [1] &quot;Bart&quot; &quot;Bort&quot;
 [/code]
 
-("Are you matching to me?"... "No, my regex <em>also<em> matches to 'Bort'")
+("Are you matching to me?"... "No, my regex <em>also</em> matches to 'Bort'")
 
 Use <code>(pattern){~n}</code>to allow up to <code>n</code>substitutions in the pattern matching. Refer <a href="https://twitter.com/klmr/status/1098238987968438273?s=20">here</a> and <a href="https://laurikari.net/tre/documentation/regex-syntax/">here</a>.
 
