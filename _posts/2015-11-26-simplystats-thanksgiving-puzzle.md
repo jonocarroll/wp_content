@@ -9,7 +9,7 @@ permalink: >
   http://jcarroll.com.au/2015/11/26/simplystats-thanksgiving-puzzle/
 published: true
 ---
-I owe a lot to Jeff Leek and Roger Peng for their great Coursera courses, in which I learned to program in R. They (along with Rafa Irizarry) run the <a href="http://simplystatistics.org/" target="_blank">Simply Statistics</a> blog, which I highly reccomend. They posted a Thanksgiving puzzle in which a data.frame needs to be converted from one form to another, spelling out 'thanksgiving'.
+I owe a lot to Jeff Leek and Roger Peng for their great Coursera courses, in which I learned to program in R. They (along with Rafa Irizarry) run the <a href="http://simplystatistics.org/" target="_blank">Simply Statistics</a> blog, which I highly recommend. They posted a Thanksgiving puzzle in which a data.frame needs to be converted from one form to another, spelling out 'thanksgiving'.
 
 <a href="http://simplystatistics.org/2015/11/25/a-thanksgiving-dplyr-rubiks-cube-puzzle-for-you/">http://simplystatistics.org/2015/11/25/a-thanksgiving-dplyr-rubiks-cube-puzzle-for-you/</a>
 
